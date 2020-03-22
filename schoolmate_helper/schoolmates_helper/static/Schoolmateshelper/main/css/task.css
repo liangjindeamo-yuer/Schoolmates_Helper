@@ -1,0 +1,7 @@
+footer .task span {
+    background: url(/static/img/task_selected.png) no-repeat;
+    background-size: 0.513889rem;
+}
+footer .task dd{
+    color: orange;
+}

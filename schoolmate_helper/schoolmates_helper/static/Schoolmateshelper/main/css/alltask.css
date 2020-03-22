@@ -1,0 +1,7 @@
+footer .alltask span {
+    background: url(/static/img/alltask_selected.png) no-repeat;
+    background-size: 0.513889rem;
+}
+footer .alltask dd{
+    color: orange;
+}
