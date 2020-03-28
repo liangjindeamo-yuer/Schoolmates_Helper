@@ -1,0 +1,43 @@
+{% extends 'base_main.html' %}
+
+{% load static %}
+
+{% block ext_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'Schoolmateshelper/main/css/home.css' %}">
+{% endblock %}
+
+{% block ext_js %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'js/swiper.jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Schoolmateshelper/main/js/home.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    <div id="home">
+        {# 首页顶部轮播 #}
+        <div class="swiper-container" id="topSwiper">
+            <div class="swiper-wrapper">
+                {% for main_wheel in main_wheels %}
+                    <div class="swiper-slide">
+                        <img src="{{ main_wheel.img }}" alt="{{ main_wheel.name }}">
+                    </div>
+                {% endfor %}
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+        <br>
+        <p align="center" style="font-size:20px;color:#66ccff">Schoolmates Helper 开启你我的便利之路</p>
+        <br>
+        <a class='' href="{% url 'App:register' %}">
+            <button class="btn btn-success btn-block" type="button">注册</button>
+        </a>
+        <br>
+        <a href="{% url 'App:login' %}">
+            <button class="btn btn-success btn-block" type="button">登录</button>
+        </a>
+    </div>
+{% endblock %}
+

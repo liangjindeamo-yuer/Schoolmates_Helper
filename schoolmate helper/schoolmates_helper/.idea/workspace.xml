@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d3fe759-315c-43f1-801b-b4e6a5e8f1ef" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/dataSources/eb8c0459-2070-4d1e-a635-65dd4f786b04.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/schoolmates_helper.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/migrations/0002_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/views_constant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/views_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/schoolmates_helper/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/schoolmates_helper/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/schoolmates_helper/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/schoolmates_helper/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/main/css/alltask.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/main/css/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/main/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/main/css/mine.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/main/css/task.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/main/js/home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/user/css/register.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/user/css/user.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/user/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/user/js/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/css/swiper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/css/swiper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/alltask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/alltask_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/home_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/mine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/mine_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/task.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/task_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/js/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/js/swiper.jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/js/swiper.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/uploads/icons/2020/03/21/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_6K4gGX1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_JGkkbGV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_LKU0hiY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_hQ5clms.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_mVeEOS9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/base_main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/base_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/main/alltask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/main/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/main/mine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/main/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/user/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/user/register.html" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="schoolmateshelper@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="schoolmateshelper@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="schoolmateshelper@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="schoolmateshelper: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="schoolmateshelper@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="schoolmateshelper: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="smh_user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://eb8c0459-2070-4d1e-a635-65dd4f786b04/schema/schoolmateshelper/table/smh_user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/views_helper.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="e#111#149#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/user/activate.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/main/alltask.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="html" />
+        <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/txb.html" />
+        <option value="$PROJECT_DIR$/templates/main.html" />
+        <option value="$PROJECT_DIR$/templates/task.html" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/mian/css/main.css" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/main/css/home.css" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/main/js/home.js" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/user/css/register.css" />
+        <option value="$PROJECT_DIR$/templates/base_user.html" />
+        <option value="$PROJECT_DIR$/App/views_helper.html" />
+        <option value="$PROJECT_DIR$/templates/main/home.html" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/main/css/alltask.css" />
+        <option value="$PROJECT_DIR$/templates/user/home_alreadylogin.java" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/main/css/main.css" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/main/css/mine.css" />
+        <option value="$PROJECT_DIR$/templates/user/activite.html" />
+        <option value="$PROJECT_DIR$/templates/user/activate.html" />
+        <option value="$PROJECT_DIR$/schoolmates_helper/settings.py" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/user/js/login.js" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/main/js/mine.js" />
+        <option value="$PROJECT_DIR$/App/views_helper.py" />
+        <option value="$PROJECT_DIR$/App/views_constant.py" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/user/js/alltask.js" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/main/js/mine_not_activated.js" />
+        <option value="$PROJECT_DIR$/templates/mine_all/about us.html" />
+        <option value="$PROJECT_DIR$/templates/mine_all/callus.html" />
+        <option value="$PROJECT_DIR$/templates/base_main.html" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/user/js/base_main.js" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/main/css/task.css" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/main/js/task.js" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/user/js/register.js" />
+        <option value="$PROJECT_DIR$/templates/user/register.html" />
+        <option value="$PROJECT_DIR$/templates/user/login.html" />
+        <option value="$PROJECT_DIR$/templates/main/task.html" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/user/js/task.js" />
+        <option value="$PROJECT_DIR$/templates/main/mine_not_activated.html" />
+        <option value="$PROJECT_DIR$/templates/main/mine_not_login.html" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/user/css/alltask_publisher.css" />
+        <option value="$PROJECT_DIR$/templates/main/alltask.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
+        <option value="$PROJECT_DIR$/static/Schoolmateshelper/user/js/alltask_publisher.js" />
+        <option value="$PROJECT_DIR$/templates/main/mine.html" />
+        <option value="$PROJECT_DIR$/App/urls.py" />
+        <option value="$PROJECT_DIR$/templates/user/alltask_hunter.html" />
+        <option value="$PROJECT_DIR$/templates/user/alltask_publisher.html" />
+        <option value="$PROJECT_DIR$/schoolmates_helper/urls.py" />
+        <option value="$PROJECT_DIR$/templates/allhome.html" />
+        <option value="$PROJECT_DIR$/schoolmates_helper/views.py" />
+        <option value="$PROJECT_DIR$/templates/user/home_alreadylogin.html" />
+        <option value="$PROJECT_DIR$/App/models.py" />
+        <option value="$PROJECT_DIR$/App/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="950" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="Schoolmateshelper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="Schoolmateshelper" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="Schoolmateshelper" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="Schoolmateshelper" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="Schoolmateshelper" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="Schoolmateshelper" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="Schoolmateshelper" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="uploads" type="462c0819:PsiDirectoryNode" />
+              <item name="icons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="mine_all" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="eb8c0459-2070-4d1e-a635-65dd4f786b04" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql&#10;sqlite" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../schoolmate helper/schoolmates_helper" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Desktop\courseware\schoolmate helper\schoolmates_helper\static\Schoolmateshelper\user\css" />
+      <recent name="D:\Desktop\courseware\schoolmate helper\schoolmates_helper\templates\user" />
+      <recent name="D:\Desktop\courseware\schoolmate helper\schoolmates_helper\templates\main" />
+      <recent name="D:\Desktop\courseware\schoolmate helper\schoolmates_helper\static\Schoolmateshelper\main\css" />
+      <recent name="D:\Desktop\courseware\schoolmate helper\schoolmates_helper\static\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\courseware\schoolmate helper\schoolmates_helper\static\Schoolmateshelper\user\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="schoolmates_helper" type="Python.DjangoServer" factoryName="Django server">
+      <module name="schoolmates_helper" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d3fe759-315c-43f1-801b-b4e6a5e8f1ef" name="Default Changelist" comment="" />
+      <created>1584691867932</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584691867932</updated>
+      <workItem from="1584691870464" duration="4958000" />
+      <workItem from="1584708148313" duration="12188000" />
+      <workItem from="1584753869083" duration="30907000" />
+      <workItem from="1584927226943" duration="654000" />
+      <workItem from="1584928655733" duration="8544000" />
+      <workItem from="1584959009510" duration="14672000" />
+      <workItem from="1585112864299" duration="6876000" />
+      <workItem from="1585120502441" duration="148000" />
+      <workItem from="1585120668678" duration="8665000" />
+      <workItem from="1585149095570" duration="2351000" />
+      <workItem from="1585193833163" duration="31417000" />
+      <workItem from="1585282019200" duration="10257000" />
+      <workItem from="1585315171084" duration="28000" />
+      <workItem from="1585324633828" duration="971000" />
+      <workItem from="1585363243270" duration="23841000" />
+      <workItem from="1585393150381" duration="5627000" />
+      <workItem from="1585399990023" duration="8000" />
+      <workItem from="1585400097929" duration="211000" />
+      <workItem from="1585400386242" duration="139000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="162462000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20643431" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="DB Browser" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="DB Execution Console" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.2947214" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5013405" side_tool="true" weight="0.28111273" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.329429" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.15281501" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17761394" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="DB Browser" order="2" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.329429" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="DB Execution Console" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49865952" visible="true" weight="0.2942899" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5013405" side_tool="true" weight="0.28111273" />
+      <window_info anchor="bottom" id="Python Console" order="13" />
+      <window_info anchor="bottom" id="Database Console" order="14" weight="0.329429" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="4" weight="0.11930295" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/main/js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/swiper.jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-64006" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/main/js/mine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/main/js/mine_not_activated.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/main/css/mine.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mine_all/callus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/user/js/base_main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/user/css/user.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/main/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/main/css/task.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/user/css/register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main/task.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="76" column="67" selection-start-line="76" selection-start-column="67" selection-end-line="76" selection-end-column="67" />
+          <folding>
+            <element signature="e#2024#2060#0#HTML" expanded="true" />
+            <element signature="e#2295#2331#0#HTML" expanded="true" />
+            <element signature="e#2563#2599#0#HTML" expanded="true" />
+            <element signature="e#2931#2969#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main/mine_not_login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="827">
+          <caret line="102" column="25" lean-forward="true" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main/mine_not_activated.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721">
+          <caret line="101" column="29" lean-forward="true" selection-start-line="101" selection-start-column="29" selection-end-line="101" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/mine_all/about us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/structural.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/user/css/alltask_publisher.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="248" column="26" lean-forward="true" selection-start-line="248" selection-start-column="4" selection-end-line="248" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/user/js/alltask_publisher.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/user/css/alltask_hunter.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/web-forms.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="506" column="16" selection-start-line="506" selection-start-column="16" selection-end-line="506" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/main/css/alltask.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="248" column="26" lean-forward="true" selection-start-line="248" selection-start-column="26" selection-end-line="248" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main/mine.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="66" selection-start-line="43" selection-start-column="66" selection-end-line="43" selection-end-column="66" />
+          <folding>
+            <element signature="e#1007#1032#0#HTML" expanded="true" />
+            <element signature="e#1106#1143#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/alltask_publisher.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="98" column="163" selection-start-line="98" selection-start-column="163" selection-end-line="98" selection-end-column="163" />
+          <folding>
+            <element signature="e#4750#4868#0#HTML" expanded="true" />
+            <element signature="e#5149#5271#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/allhome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolmates_helper/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolmates_helper/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolmates_helper/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <element signature="e#642#674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/alltask_hunter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="96" column="164" selection-start-line="96" selection-start-column="164" selection-end-line="96" selection-end-column="164" />
+          <folding>
+            <element signature="e#4620#4737#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schoolmates_helper/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/user/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-68">
+          <caret line="14" column="69" lean-forward="true" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/home_alreadylogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="33" column="12" lean-forward="true" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/user/js/task.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/user/js/alltask.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/main/css/home.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="200" column="22" lean-forward="true" selection-start-line="199" selection-start-column="4" selection-end-line="200" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/views_constant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/user/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9" selection-start-column="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://eb8c0459-2070-4d1e-a635-65dd4f786b04/schema/schoolmateshelper/table/smh_task">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://eb8c0459-2070-4d1e-a635-65dd4f786b04/schema/schoolmateshelper/table/smh_tasktype">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="28" column="55" lean-forward="true" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+          <folding>
+            <element signature="e#103#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://eb8c0459-2070-4d1e-a635-65dd4f786b04/schema/schoolmateshelper/table/smh_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/views_helper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#111#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/activate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main/alltask.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="95" column="32" selection-start-line="95" selection-start-column="32" selection-end-line="95" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
