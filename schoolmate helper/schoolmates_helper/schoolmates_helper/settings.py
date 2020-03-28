@@ -78,12 +78,8 @@ WSGI_APPLICATION = 'schoolmates_helper.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'SchoolmatesHelper',
-        'USER': 'root',
-        'PASSWORD': '20010612luyu',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
