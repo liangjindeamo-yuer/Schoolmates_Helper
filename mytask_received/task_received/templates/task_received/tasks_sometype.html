@@ -31,15 +31,20 @@
         {% for task in tasklist_sometype %}
             <a href={% url 'task_received:task_detail' task.id %}>{{ task.task_name }}</a><br>
             任务简述：{{ task.task_sketch }}<br>
-            <form action="{% url 'task_received:reasons_revoke' task.id %}" method="post">
-                {% csrf_token %}
-                <input type="submit" value="撤销任务"/>
-            </form>
-            <!--想弄再次确定弹框，点击确定后才跳转到评价页面，而不是直接确定-->
-            <form action="{% url 'task_received:task_finished' task.id %}" method="post">
-                {% csrf_token %}
-                <input type="submit" value="完成任务"/>
-            </form>
+            <!--加了if语句-->
+            {% if task.is_finished == False %}
+                <form action="{% url 'task_received:reasons_revoke' task.id %}" method="post">
+                    {% csrf_token %}
+                    <input type="submit" value="撤销任务"/>
+                </form>
+                <!--想弄再次确定弹框，点击确定后才跳转到评价页面，而不是直接确定-->
+                <form action="{% url 'task_received:task_finished' task.id %}" method="post">
+                    {% csrf_token %}
+                    <input type="submit" value="完成任务"/>
+                </form>
+            {% else %}
+                该任务已完成<br>
+            {% endif %}
         {% endfor %}
         <ol>
 </div>

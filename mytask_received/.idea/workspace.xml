@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="631b33f4-cef7-4efd-a61d-31abf0df1595" name="默认更改列表" comment="" />
+    <list default="true" id="631b33f4-cef7-4efd-a61d-31abf0df1595" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../schoolmate helper/.idea/schoolmate helper.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_received/templates/task_received/all_task_received.html" beforeDir="false" afterPath="$PROJECT_DIR$/task_received/templates/task_received/all_task_received.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schoolmate helper/schoolmates_helper/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../schoolmate helper/schoolmates_helper/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../schoolmate helper/schoolmates_helper/schoolmates_helper/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../schoolmate helper/schoolmates_helper/schoolmates_helper/__init__.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +47,11 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1aJMfolh5qQJkdPZr19Go7mGrRG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -48,6 +59,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -94,6 +106,7 @@
       <workItem from="1586595641716" duration="162000" />
       <workItem from="1586604329851" duration="1860000" />
       <workItem from="1586610126474" duration="1406000" />
+      <workItem from="1586745459954" duration="886000" />
     </task>
     <servers />
   </component>
@@ -133,6 +146,10 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="161" y="187" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1586610127830" />
+    <state x="439" y="263" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586746549704">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="439" y="263" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.689@0.0.1280.689" timestamp="1586746549704" />
     <state x="567" y="9" width="672" height="678" key="search.everywhere.popup" timestamp="1586538381741">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
