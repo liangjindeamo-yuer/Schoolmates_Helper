@@ -9,7 +9,7 @@ class Task1(forms.ModelForm):
         model = Task
         fields = '__all__'
         # exclude用于禁止模型字段转换表单字段
-        exclude = []
+        exclude = ['publisher','is_pickedup','hunter','is_finished']
         labels = {
             'task_name': '任务名',
             'task_file': '相关文件（选填）',
@@ -35,7 +35,7 @@ class User1(forms.ModelForm):
         model = User
         fields = '__all__'
         # exclude用于禁止模型字段转换表单字段
-        exclude = []
+        exclude = ['star','is_active','is_delete']
         labels = {
             'username': '用户名',
             'tel': '手机号（选填）',
