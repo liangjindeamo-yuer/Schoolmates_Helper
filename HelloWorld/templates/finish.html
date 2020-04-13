@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>finish</title>
+</head>
+<body>
+<ul>
+    {% for mission in missions %}
+        {% if mission.finish == True %}
+            <li>{{mission.mission1}}</li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+</body>
+</html>

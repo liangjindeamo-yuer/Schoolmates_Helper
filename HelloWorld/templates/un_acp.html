@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>un_acp</title>
+</head>
+<body>
+<ul>
+    {% for mission in missions %}
+        {% if mission.acp == False %}
+            <li>{{mission.mission1}}</li>
+            <a href="/d_unacpm/?id={{mission.id}}">取消</a>
+        {% endif %}
+    {% endfor %}
+</ul>
+</body>
+</html>

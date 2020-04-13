@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>acp</title>
+</head>
+<body>
+<ul>
+    {% for mission in missions %}
+        {% if mission.acp == True %}
+            {% if mission.finish == False %}
+                <li>{{mission.mission1}}</li>
+                <a href="/f_mission/?id={{mission.id}}">完成</a>
+                <a href="/d_mission/?id={{mission.id}}">取消</a>
+            {%endif%}
+        {% endif %}
+    {% endfor %}
+</ul>
+</body>
+</html>
