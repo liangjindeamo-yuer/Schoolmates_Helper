@@ -1,0 +1,78 @@
+<!--这个HTML，和app task_received 的all_task_received.html类似-->
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta
+             charset="utf-8">
+     
+    <title>任务广场</title> 
+</head>
+<body>
+<h1>任务广场</h1>
+<!--一登录进去就是任务广场，任务广场还要有其他按钮，个人中心、我要发布任务之类的，到时候链接加到这里-->
+<a href={% url 'task_received:all_task_received' %}><h2>我接受的任务</h2></a>
+
+<!--可以把这几个放在一个下拉列表“排序方式”，我不懂怎么放-->
+<a href={% url 'tasks_square:task_square' %}>默认排序</a><br>
+<a href={% url 'tasks_square:reward_up' %}>按酬劳升序</a><br>
+<a href={% url 'tasks_square:reward_down' %}>按酬劳降序</a><br>
+
+<div id="menu" style="background-color:;width:100px;float:left;">
+    <!--任务类别；选中哪个类别的任务，加粗，这个没做出来-->
+    <b>任务类别</b>
+    <ol><a href={% url 'tasks_square:task_square' %}>全部</a></ol>
+    <br>
+    {% for tasktype in task_types %}
+        <ol><a href={% url 'tasks_square:task_square' %}>{{ tasktype.typename }}</a></ol>
+        <br>
+    {% endfor %}
+
+</div>
+<!--下面各种排序的if子句内，都只有for...in...的in后面的变量不一样，前端做好一个子句可以直接copy-->
+<div id="content" style="background-color:#EEEEEE;height:600px;width:450px;float:left;">
+    <b>任务列表</b>
+    <ol>
+        {% if order == 'defalt' %}
+            <!--按数据库里数据表的默认顺序-->
+            {% for task in all_tasks_not_picked %}
+                <a href={% url 'tasks_square:task_detail' task.id %}>{{ task.task_name }}</a><br>
+                任务简述：{{ task.task_sketch }}<br>
+                <!--看前端自己怎么布局吧，金额大概可以显示在右边，“接受任务上面”？或者再任务名前面之类？-->
+                ¥{{ task.task_reward }}<br>
+                <form action="{% url 'tasks_square:check_hunt' task.id %}" method="post">
+                    {% csrf_token %}
+                    <input type="submit" value="接受任务"/>
+                </form>
+            {% endfor %}
+        {% elif order == 'reward_up' %}
+            <!--按酬劳升序-->
+            {% for task in tasks_ordered_by_reward_up %}
+                <a href={% url 'tasks_square:task_detail' task.id %}>{{ task.task_name }}</a><br>
+                任务简述：{{ task.task_sketch }}<br>
+                <!--看怎么布局吧，金额大概可以显示在右边，“接受任务上面”？-->
+                ¥{{ task.task_reward }}<br>
+                <form action="{% url 'tasks_square:check_hunt' task.id %}" method="post">
+                    {% csrf_token %}
+                    <input type="submit" value="接收任务"/>
+                </form>
+            {% endfor %}
+        {% elif order == 'reward_down' %}
+            <!--按酬劳降序-->
+            {% for task in tasks_ordered_by_reward_down %}
+                <a href={% url 'tasks_square:task_detail' task.id %}>{{ task.task_name }}</a><br>
+                任务简述：{{ task.task_sketch }}<br>
+                <!--看怎么布局吧，金额大概可以显示在右边，“接受任务上面”？-->
+                ¥{{ task.task_reward }}<br>
+                <form action="{% url 'tasks_square:check_hunt' task.id %}" method="post">
+                    {% csrf_token %}
+                    <input type="submit" value="接收任务"/>
+                </form>
+            {% endfor %}
+        {% endif %}
+        <ol>
+</div>
+
+
+</body>
+</html>
+
