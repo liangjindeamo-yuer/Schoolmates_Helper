@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.contrib.auth.hashers import check_password
 from hunt.form import User1, Task1
 from django.urls import reverse
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.forms import UserChangeForm
 from django.core.exceptions import ValidationError
 from hunt.models import *
@@ -26,26 +26,6 @@ def index(request):
             return render(request, 'data_form.html', locals())
 
 
-def task_upload(request):
-    if request.method == 'GET':
-        task1 = Task1()
-        return render(request, 'task_form.html', locals())
-    else:
-        task1 = Task1(request.POST)
-        if task1.is_valid():
-            task1.save()
-            username = request.session.get('username')
-            user= User.objects.get(username=username)
-            request.session['task_id'] = task1.id
-
-            task0 = Task.objects.get(pk=task1.id)
-            task0.publisher = user
-
-            return HttpResponse('发布成功')
-        else:
-            return render(request, 'task_form.html', locals())
-
-
 def task_up(request):
     if request.method == 'GET':
         task1 = Task()
@@ -58,13 +38,11 @@ def task_up(request):
         task1.task_sketch = request.POST.get('task_sketch')
         task1.task_type_id = int(task_type)
         task1.ddltime = request.POST.get('ddltime')
-        task1.task_file=request.POST.get('task_file')
+        task1.task_file = request.POST.get('task_file')
         user_id = request.session.get('user_id')
         task1.publisher_id = user_id
         task1.save()
-        return HttpResponse('注册成功')
-
-
+        return render(request, 'task_up_successfully.html')
 
 
 def login(request):
@@ -84,7 +62,8 @@ def login(request):
                 user1.is_active = True  # 登录状态修改
                 request.session['username'] = user1.username
                 request.session['user_id'] = user1.id
-                return redirect(reverse('hunt:up0'))
+                # swf:第二轮之后实现，显示登录成功后几秒自动跳转到任务广场，现在先:直接到任务广场APP的视图
+                return HttpResponseRedirect(reverse('tasks_square:task_square'))
             else:
                 print('密码错误')
                 return HttpResponse('密码错误')

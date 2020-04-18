@@ -1,0 +1,10 @@
+<!--还没写提交后的操作-->
+您将要撤销名为“{{ task.task_name }}”的任务，该任务内容为"{{ task.task_sketch }}"
+
+<form action={% url 'task_received:task_revoke' task.id %}>
+    请输入撤销原因: <br>
+    <!--换种文本框，注意提交方式可能要对应更改-->
+    <input type="text" name="reasons_revoke" value="请输入撤销原因" style="width:500px; height:200px;"><br>
+    <input type="submit" value="提交，确定撤销">
+</form>
+<a href={% url 'task_received:all_task_received' %}>取消，返回</a>
