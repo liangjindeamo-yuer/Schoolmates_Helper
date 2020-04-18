@@ -100,3 +100,41 @@ def d_unacpm(request):
     mission.delete()
 
     return redirect("/release/")
+
+
+def m_detail(request):
+    id = request.GET.get("id")
+    mission = MissionInfo.objects.get(pk=id)
+    context={
+        "mission":mission
+    }
+    return render(request,'m_detail.html',context=context)
+
+
+def m_change(request):
+    if request.method == 'GET':
+        id = request.GET.get("id")
+        request.session['id'] = id
+        mission = MissionInfo.objects.get(pk=id)
+        context={
+            "mission":mission
+        }
+        return render(request,'m_change.html',context=context)
+    elif request.method == 'POST':
+        id = request.session['id']
+        Data = request.POST.get('Data')
+        m1 = request.POST.get('m1')
+        l = request.POST.get('l')
+        d = request.POST.get('d')
+        g = request.POST.get('g')
+        mission = MissionInfo.objects.get(pk=id)
+        mission.m_data = Data
+        mission.mission1 = m1
+        mission.m_label = l
+        mission.m_detail = d
+        mission.m_money = g
+        mission.save()
+        return redirect("/un_acp/")
+
+
+

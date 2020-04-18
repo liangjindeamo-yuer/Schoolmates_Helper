@@ -12,6 +12,8 @@ urlpatterns = [
     url(r'^d_mission/',views.d_mission),
     url(r'^comment',views.comment),
     url(r'^reason',views.reason),
-    url(r'^d_unacpm/',views.d_unacpm)
+    url(r'^d_unacpm/',views.d_unacpm),
+    url(r'^m_detail/',views.m_detail),
+    url(r'^m_change',views.m_change)
 
 ]
