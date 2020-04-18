@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="style1.css">
+
+    <title>haha</title>
+</head>
+<body>
+    <form action="/login"method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label>用户名</label>
+                {{obj.username}}
+                <span>{{ obj.errors.username.0 }}</span>
+            </div>
+            <div class="form-group">
+                <label >密码</label>
+                {{obj.password}}
+                <span>{{ obj.errors.password.0 }}</span>
+            </div>
+
+        <input type="submit" value="提交">
+
+    </form>
+</body>
+</html>

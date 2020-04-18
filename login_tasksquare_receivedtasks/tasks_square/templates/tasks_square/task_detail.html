@@ -1,0 +1,6 @@
+<h1>任务名：{{ task.task_name }}</h1>
+任务简介：{{ task.task_sketch }}<br>
+¥{{ task.task_reward }}<br>
+<form action="{% url 'tasks_square:check_hunt' task.id %}" method="post">
+    {% csrf_token %}
+    <input type="submit" value="接受任务"/>

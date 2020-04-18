@@ -1,0 +1,289 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>School Helper-我要发布</title>
+  <link rel="stylesheet" type="text/css" href="releasetask.css">
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>SCHOOL Helper</h1>
+    <p>发布任务</p>
+  </div>
+
+  <div class="topnav">
+    <a href="#">首页</a>
+    <a href="#">任务广场</a>
+    <a href="#" class="active">我要发布</a>
+
+  </div>
+  <div class="row">
+
+    <div class="rightcolumn">
+      <div>
+        <br />
+        <br />
+
+        <p class="inline">请认真填写以下内容。带有“</p>
+        <p class="inline" style="color:red">*</p>
+        <p class="inline">”号的是必填项。</p>
+        <br />
+      </div>
+      <!--表单-->
+      <div>
+        <br />
+        <form action="html_form_action.php" method="get">
+          <!--title-->
+          <div>
+            <p class="inline" style="color:red">*</p>
+            <label>任务标题：</label><br />
+            <input type="text" class="input" id="tasktitle" maxlength="30">
+            <p class="inline" style="color:grey">（最多30字）</p>
+            <br />
+          </div>
+          <!--summary-->
+          <div>
+            <br />
+            <p class="inline" style="color:red">*</p>
+            <label>任务简述：</label><br />
+            <textarea class="summary" id="tasksummary" maxlength="100"></textarea>
+            <p class="inline" style="color:grey">（将直接显示在任务广场，最多100字）</p>
+            <br />
+          </div>
+          <!--details-->
+          <div>
+            <br />
+            <p class="inline" style="color:red">*</p>
+            <label>任务详情：</label><br />
+            <textarea class="details" id="taskdetails" maxlength="2000"></textarea>
+            <p class="inline" style="color:grey">（最多2000字）</p>
+            <br />
+          </div>
+          <!--image-->
+          <div>
+            <br />
+            <label>图片描述：</label><br />
+            <img width="400" height="250" id="xmTanImg" /><br />
+            <input type="file" id="pic" name="pic" onchange="xmTanUploadImg(this)" />
+            <p class="inline" style="color:grey">（只允许一张）</p>
+            <script src="myScript.js"></script>
+            <br />
+          </div>
+          <!--money-->
+          <div>
+            <br />
+            <p class="inline" style="color:red">*</p>
+            <label>酬金：</label><br />
+            <input type="text" class="input" id="money" maxlength="10">
+            <p class="inline">元</p>
+            <br />
+          </div>
+          <!--label-->
+          <div>
+            <br />
+            <label>添加任务标签：</label><br />
+            <select id="label">
+              <option value="packge">寄快递</option>
+              <option value="sign">签到</option>
+              <option value="other">其他</option>
+            </select>
+            <br />
+          </div>
+          <!--contact-->
+          <div>
+            <br />
+            <label>联系方式:</label><br />
+            <select id="connect">
+              <option value="wechat">微信</option>
+              <option value="qq">QQ</option>
+              <option value="other">其他</option>
+            </select>
+            <br />
+          </div>
+          <!--date-->
+          <div>
+            <br />
+            <p class="inline" style="color:red">*</p>
+            <label>任务截止日期:</label><br />
+            <input type="date" id="txtDate" />
+            <p class="inline" style="color:grey">逾期任务自动撤销</p>
+            <br />
+          </div>
+          <!--button-->
+          <br />
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+  <div class="footer">
+    <h2>
+      <address>
+        Written by Group 5</a>.<br>
+        Visit us at:<br>
+        上海市闵行区东川路800号<br>
+      </address>
+    </h2>
+  </div>
+  </div>
+</body>
+
+=======
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>School Helper-我要发布</title>
+    <link rel="stylesheet" type="text/css" href="releasetask.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>SCHOOL Helper</h1>
+        <p>发布任务</p>
+    </div>
+
+    <div class="topnav">
+        <a href="#">首页</a>
+        <a href="#">任务广场</a>
+        <a href="#" class="active">我要发布</a>
+        <a href="#" style="float:right"><img src="user_center.png" width="35px" height="35px"></a>
+
+    </div>
+    <div class="row">
+
+        <div class="rightcolumn">
+            <div>
+                <br />
+                <br />
+
+                <p class="inline">请认真填写以下内容。带有“</p>
+                <p class="inline" style="color:red">*</p>
+                <p class="inline">”号的是必填项。</p>
+                <br />
+            </div>
+            <!--表单-->
+            <div>
+                <br />
+                <form action="html_form_action.php" method="get">
+                    <!--title-->
+                    <div>
+                        <p class="inline" style="color:red">*</p>
+                        <label>任务标题：</label><br />
+                        <input type="text" class="input" id="tasktitle" maxlength="30">
+                        <p class="inline" style="color:grey">（最多30字）</p>
+                        <br />
+                    </div>
+                    <!--summary-->
+                    <div>
+                        <br />
+                        <p class="inline" style="color:red">*</p>
+                        <label>任务简述：</label><br />
+                        <textarea class="summary" id="tasksummary" maxlength="100"></textarea>
+                        <p class="inline" style="color:grey">（将直接显示在任务广场，最多100字）</p>
+                        <br />
+                    </div>
+                    <!--details-->
+                    <div>
+                        <br />
+                        <p class="inline" style="color:red">*</p>
+                        <label>任务详情：</label><br />
+                        <textarea class="details" id="taskdetails" maxlength="2000"></textarea>
+                        <p class="inline" style="color:grey">（最多2000字）</p>
+                        <br />
+                    </div>
+                    <!--image-->
+                    <div>
+                        <br />
+                        <label>图片描述：</label><br />
+                        <img width="400" height="250" id="xmTanImg" /><br />
+                        <input type="file" id="pic" name="pic" onchange="xmTanUploadImg(this)" />
+                        <p class="inline" style="color:grey">（只允许一张）</p>
+                        <script src="myScript.js"></script>
+                        <br />
+                    </div>
+                    <!--money-->
+                    <div>
+                        <br />
+                        <p class="inline" style="color:red">*</p>
+                        <label>酬金：</label><br />
+                        <input type="text" class="input" id="money" maxlength="10">
+                        <p class="inline">元</p>
+                        <br />
+                    </div>
+                    <!--label-->
+                    <div>
+                        <br />
+                        <label>添加任务标签：</label><br />
+                        <select id="label">
+              <option value="packge">寄快递</option>
+              <option value="sign">签到</option>
+              <option value="other">其他</option>
+            </select>
+                        <br />
+                    </div>
+                    <!--contact-->
+                    <div>
+                        <br />
+                        <label>联系方式:</label><br />
+                        <select id="connect">
+              <option value="wechat">微信</option>
+              <option value="qq">QQ</option>
+              <option value="other">其他</option>
+            </select>
+                        <br />
+                    </div>
+                    <!--date-->
+                    <div>
+                        <br />
+                        <p class="inline" style="color:red">*</p>
+                        <label>任务截止日期:</label><br />
+                        <input type="date" id="txtDate" />
+                        <p class="inline" style="color:grey">逾期任务自动撤销</p>
+                        <br />
+                    </div>
+                    <!--button-->
+                    <br />
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <h2>
+            <address>
+        Written by Group 5</a>.<br>
+        Visit us at:<br>
+        上海市闵行区东川路800号<br>
+      </address>
+        </h2>
+    </div>
+    </div>
+</body>
+
+>>>>>>> 我要发布前端 添加个人中心图标yjl
+</html>
