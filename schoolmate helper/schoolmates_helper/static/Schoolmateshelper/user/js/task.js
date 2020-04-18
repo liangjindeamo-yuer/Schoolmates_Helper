@@ -16,16 +16,16 @@ checktask = function () {
     }
     alert('发布任务成功!可到个人中心查看');
     return true;
-}
+};
 $(function () {
     var $taskname = $('#taskname_input');
     $taskname.change(function () {
         var $taskname_info = $('#taskname_info');
         $taskname_info.html('');
-    })
+    });
     var $taskreward = $('#taskreward_input');
     $taskreward.change(function () {
         var $taskreward_info = $('#taskreward_info');
         $taskreward_info.html('');
-    })
-})
+    });
+});

@@ -48,6 +48,13 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db.sqlite3" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+        <item name="App_missioninfo: table" type="3d80ac25:SqliteImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -71,7 +78,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="SQLITE-SQL" />
-    <property name="last_opened_file_path" value="D:/moban4196" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../moban4196" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -93,7 +100,7 @@
       <workItem from="1586509736624" duration="6051000" />
       <workItem from="1586614215109" duration="22508000" />
       <workItem from="1586694228210" duration="5561000" />
-      <workItem from="1586744568189" duration="1275000" />
+      <workItem from="1586744568189" duration="13921000" />
     </task>
     <servers />
   </component>
@@ -157,10 +164,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="164" y="235" width="439" height="333" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824@0.0.1536.824" timestamp="1586615528356" />
-    <state x="752" y="87" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586614688162">
+    <state x="925" y="72" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1587191666248">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="752" y="87" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1586614688162" />
+    <state x="925" y="72" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1587191666248" />
     <state x="545" y="187" width="638" height="386" key="com.intellij.ide.util.TipDialog" timestamp="1586744568757">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

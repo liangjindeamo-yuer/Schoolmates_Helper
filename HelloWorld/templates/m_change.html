@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>m_change</title>
+</head>
+<body>
+<li>截止日期</li>
+<li>{{mission.m_data}}</li>
+<li>任务类型</li>
+<li>{{mission.m_label}}</li>
+<li>任务详情</li>
+<li>{{mission.m_detail}}</li>
+<li>酬金（元）</li>
+<li>{{mission.m_money}}</li>
+<li></li>
+<li></li>
+<li>修改</li>
+<form method="post">
+    截止日期<input type="date" name="Data">
+    任务简述<input type="text" name="m1" >
+    任务类型<input type="text" name="l" >
+    任务详情<input type="text" name="d">
+    酬金（元）<input type="number" name="g">
+    <input type="submit" name="Submit" value="提交">
+</form>
+</body>
+</html>

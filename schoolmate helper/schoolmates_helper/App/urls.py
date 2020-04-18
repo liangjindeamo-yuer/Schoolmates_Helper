@@ -32,6 +32,8 @@ urlpatterns = [
 
     path('receivetask/', views.receivetask, name='receivetask'),
     path('relievetask/', views.relievetask, name='relievetask'),
+    path('relievetask2/', views.relievetask2, name='relievetask2'),
+    path('finishtask/', views.finishtask, name='finishtask'),
 
     path('aboutus/', views.aboutus, name='aboutus'),
     path('callus/', views.callus, name='callus'),
@@ -47,4 +49,13 @@ urlpatterns = [
          name='alltaskhunter_with_params'),
     path('alltaskhuntersort/<int:typeid>/<int:sort_way>/',
          views.alltaskhunter_sort, name='alltaskhunter_sort'),
+
+    path('huntertask/<int:typeid>/<int:sort_way>/', views.hunertask, name='huntertask'),
+    path('publishertask/<int:typeid>/<int:sort_way>/', views.publishertask, name='publishertask'),
+    path('taskfinished/<int:typeid>/<int:sort_way>/', views.taskfinished, name='taskfinished'),
+    path('comment/<int:typeid>/<int:sort_way>/', views.comment, name='comment'),
+    path('taskcontent/<int:task_id>/', views.taskcontent, name='taskcontent'),
+
+    path('modifyuser/', views.modifyuser, name='modifyuser'),
+    path('modifytask/<int:task_id>/', views.modifytask, name='modifytask'),
 ]

@@ -15,10 +15,10 @@ class User(models.Model):
     username = models.CharField(max_length=32, unique=True)
     password = models.CharField(max_length=256)
     email = models.CharField(max_length=64, unique=True)
-    icon = models.ImageField(upload_to='icons/%Y/%m/%d/')
+    icon = models.ImageField(upload_to='icons/%Y/%m/%d/',null=True)
     is_active = models.BooleanField(default=False)
     is_delete = models.BooleanField(default=False)
-
+    rank = models.IntegerField(default=0)
     class Meta:
         db_table = 'smh_user'
 class TaskType(models.Model):
@@ -39,13 +39,18 @@ class Task(models.Model):
     task_date_month = models.IntegerField(default=0,null=True)
     task_date_day = models.IntegerField(default=0,null=True)
 
-    task_reward = models.IntegerField(default=0,null=True)
+    task_reward = models.FloatField(default=0,null=True)
 
     is_pickedup = models.BooleanField(default=False)
     is_finished = models.BooleanField(default=False)
+    is_overtime = models.BooleanField(default=False)
 
     publisher = models.ForeignKey(User,on_delete=models.CASCADE,related_name='publisher',verbose_name='发布人')
     hunter = models.ForeignKey(User,on_delete=models.DO_NOTHING,related_name='hunter',verbose_name='委托人',db_constraint=False,null=True)
+
+    comment_publisher = models.CharField(max_length=1000,null=True)
+    comment_hunter = models.CharField(max_length=1000,null=True)
+
 
     def removehunter(self):
         self.hunter = None

@@ -74,7 +74,7 @@
                 <ul>
                     {% for task in task_list %}
                         <li>
-                            <a href="#" class="list-group-item">
+                            <a href="{% url 'App:taskcontent' task.id %}" class="list-group-item">
                                 <h4 class="list-group-item-heading" style="color: darkorange;display: inline-block;
                                 text-align: center;vertical-align: center;line-height: 0.4rem;font-weight: 800;">
                                     {{ task.task_name }}</h4><!--border: 1px solid orange; border-radius: 1000px;-->
@@ -94,17 +94,33 @@
 
                                     <div>
                                         {% if task.is_pickedup %}
-                                            <h1 style="color: red;border:1px solid red;border-radius: 1500px;display: inline-block;position: absolute;right: 0.15rem;">
-                                                已被接取</h1>
-                                            <button class="btn-danger" onclick="relievetask({{ task.id }})" style="position: absolute;right:0.15rem;margin-top: 0.5rem">解除委托</button>
+                                            {% if task.is_finished %}
+                                                <h1 style="color: green;border:1px solid green;border-radius: 1500px;display:inline-block;position: absolute;right: 0.15rem;">
+                                                    已完成</h1>
+                                            {% else %}
+                                                <h1 style="color: red;border:1px solid red;border-radius: 1500px;display: inline-block;position: absolute;right: 0.15rem;margin-top: -0.5rem;">
+                                                    未完成</h1>
+                                                <button class="btn-danger" onclick="relievetask({{ task.id }})"
+                                                        style="position: absolute;right:0.15rem;">解除委托
+                                                </button>
+                                                <button class="btn-success" onclick="finishtask({{ task.id }})"
+                                                        style="position: absolute;right:0.15rem;margin-top: 0.5rem">任务完成
+                                                </button>
+                                            {% endif %}
+
                                         {% else %}
                                             <h1 style="color: green;border:1px solid green;border-radius: 1500px;display: inline-block;position: absolute;right: 0.15rem;">
                                                 未被接取</h1>
+                                            <button class="btn-success" onclick="modifytask({{ task.id }})"
+                                                    style="position:absolute;right:0.15rem;margin-top:0.5rem;">
+                                                修改任务
+                                            </button>
                                         {% endif %}
                                     </div>
                                 </div>
                             </a>
                         </li>
+
                     {% endfor %}
                 </ul>
             </menu>

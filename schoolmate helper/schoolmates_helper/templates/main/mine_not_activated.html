@@ -27,14 +27,14 @@
                     <span class="glyphicon glyphicon-user"></span>
                     </span>
                 {% endif %}
-                <p>{{ user.username }}</p>
+                <p>{{ user.username }}<a style="font-size:medium;color: black;" href="{% url 'App:modifyuser' %}">修改个人信息</a></p>
                 <p>
                     <span class="glyphicon glyphicon-education"></span>
                     {% if user.is_active %}
-                        <span style="font-size: 0.5rem">正式会员</span>
+                        <span style="font-size: 0.5rem">等级:{{ user.rank }}正式会员</span>
                     {% else %}
                         <span style="font-size: 0.5rem;color: grey" id="not_activate">
-                              未激活
+                              等级:{{ user.rank }} 未激活
                         </span>
                     {% endif %}
 
@@ -96,40 +96,6 @@
                     <li onclick="on_click_mine_not_activated()">
                         <dl>
                             <dt>
-                                <span class="glyphicon glyphicon-send"></span>
-                            </dt>
-                            <dd>取消任务</dd>
-                        </dl>
-                    </li>
-                    <li onclick="on_click_mine_not_activated()">
-                        <dl>
-                            <dt>
-                                <span class="glyphicon glyphicon-log-out"></span>
-                            </dt>
-                            <dd>解除委托</dd>
-                        </dl>
-                    </li>
-                </ul>
-                <ul>
-                    <li onclick="on_click_mine_not_activated()">
-                        <dl>
-                            <dt>
-                                <span class="glyphicon glyphicon-jpy"></span>
-                            </dt>
-                            <dd>待付款</dd>
-                        </dl>
-                    </li>
-                    <li onclick="on_click_mine_not_activated()">
-                        <dl>
-                            <dt>
-                                <span class="glyphicon glyphicon-usd"></span>
-                            </dt>
-                            <dd>待收款</dd>
-                        </dl>
-                    </li>
-                    <li onclick="on_click_mine_not_activated()">
-                        <dl>
-                            <dt>
                                 <span class="glyphicon glyphicon-edit"></span>
                             </dt>
                             <dd>待评价</dd>
@@ -147,14 +113,6 @@
             </nav>
             <menu>
                 <ul>
-                    <li onclick="on_click_mine_not_activated()">
-                        <dl>
-                            <dt>
-                                <span class="glyphicon glyphicon-retweet"></span>
-                            </dt>
-                            <dd>退款/纠纷</dd>
-                        </dl>
-                    </li>
                     <li onclick="window.location.href='/App/callus/'; ">
                         <dl>
                             <dt>
