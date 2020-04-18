@@ -23,6 +23,59 @@ def send_email_activate(username,receive,u_token):
     html_message =loader.get_template('user/activate.html').render(data)
     send_mail(subject=subject,message=message,html_message=html_message,from_email=from_email,recipient_list=recipient_list)
 
+def send_email_receive(username_publisher,username_hunter,task_id,task_name,receive,email):
+    subject = 'SchoolHelper_activation'
+    message = '<h1>Hello<h1>'
+    from_email = EMAIL_HOST_USER
+    recipient_list = [receive,]
+    data = {
+        'username_hunter':username_hunter,
+        'username_publisher':username_publisher,
+        'task_id':task_id,
+        'task_name':task_name,
+        'email':email,
+    }
+    html_message =loader.get_template('user/receive.html').render(data)
+    send_mail(subject=subject,message=message,html_message=html_message,from_email=from_email,recipient_list=recipient_list)
+def send_email_relieve(username_publisher,username_hunter,task_id,task_name,receive):
+    subject = 'SchoolHelper_activation'
+    message = '<h1>Hello<h1>'
+    from_email = EMAIL_HOST_USER
+    recipient_list = [receive,]
+    data = {
+        'username_hunter':username_hunter,
+        'username_publisher':username_publisher,
+        'task_id':task_id,
+        'task_name':task_name,
+    }
+    html_message =loader.get_template('user/relieve.html').render(data)
+    send_mail(subject=subject,message=message,html_message=html_message,from_email=from_email,recipient_list=recipient_list)
+def send_email_relieve2(username_publisher,username_hunter,task_id,task_name,receive):
+    subject = 'SchoolHelper_activation'
+    message = '<h1>Hello<h1>'
+    from_email = EMAIL_HOST_USER
+    recipient_list = [receive,]
+    data = {
+        'username_hunter':username_hunter,
+        'username_publisher':username_publisher,
+        'task_id':task_id,
+        'task_name':task_name,
+    }
+    html_message =loader.get_template('user/relieve2.html').render(data)
+    send_mail(subject=subject,message=message,html_message=html_message,from_email=from_email,recipient_list=recipient_list)
+def send_email_finish(username_publisher,username_hunter,task_id,task_name,receive):
+    subject = 'SchoolHelper_activation'
+    message = '<h1>Hello<h1>'
+    from_email = EMAIL_HOST_USER
+    recipient_list = [receive,]
+    data = {
+        'username_hunter':username_hunter,
+        'username_publisher':username_publisher,
+        'task_id':task_id,
+        'task_name':task_name,
+    }
+    html_message =loader.get_template('user/finish.html').render(data)
+    send_mail(subject=subject,message=message,html_message=html_message,from_email=from_email,recipient_list=recipient_list)
 
 
 def is_activated(user_id):

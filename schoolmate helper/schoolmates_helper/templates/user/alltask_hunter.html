@@ -13,6 +13,7 @@
 {% block ext_js %}
     {{ block.super }}
     <script type="text/javascript" src="{% static 'js/swiper.jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Schoolmateshelper/user/js/alltask_hunter.js' %}"></script>
 
 {% endblock %}
 
@@ -74,7 +75,7 @@
                 <ul>
                     {% for task in task_list %}
                         <li>
-                            <a href="#" class="list-group-item">
+                            <a href="{% url 'App:taskcontent'  task.id %}" class="list-group-item">
                                 <h4 class="list-group-item-heading" style="color: darkorange;display: inline-block;
                                 text-align: center;vertical-align: center;line-height: 0.4rem;font-weight: 800;">
                                     {{ task.task_name }}</h4><!--border: 1px solid orange; border-radius: 1000px;-->
@@ -99,6 +100,7 @@
                                         {% else %}
                                             <h1 style="color: green;border:1px solid green;border-radius: 1500px;display: inline-block;position: absolute;right: 0.15rem;">
                                                 未完成</h1>
+                                            <button class="btn-danger" onclick="relievetask2({{ task.id }})" style="position: absolute;right:0.15rem;margin-top: 0.5rem">取消任务</button>
                                         {% endif %}
                                     </div>
                                 </div>

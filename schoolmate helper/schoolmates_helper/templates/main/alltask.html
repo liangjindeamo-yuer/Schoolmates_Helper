@@ -70,7 +70,7 @@
                 <ul>
                     {% for task in task_list %}
                         <li>
-                            <a href="#" class="list-group-item">
+                            <a href="{% url 'App:taskcontent'  task.id %}" class="list-group-item">
                                 <h4 class="list-group-item-heading" style="color: darkorange;display: inline-block;
                                 text-align: center;vertical-align: center;line-height: 0.4rem;font-weight: 800;">
                                     {{ task.task_name }}</h4><!--border: 1px solid orange; border-radius: 1000px;-->

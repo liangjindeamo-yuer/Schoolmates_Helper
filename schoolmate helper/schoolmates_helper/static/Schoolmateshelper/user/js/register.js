@@ -1,4 +1,4 @@
-var key = false
+var key = false;
 $(function () {
 
     var $username = $('#username_input');
@@ -18,7 +18,7 @@ $(function () {
 
         }
     })
-})
+});
 $(function () {
     var $email = $('#email_input');
     $email.change(function () {
@@ -37,7 +37,7 @@ $(function () {
 
         }
     })
-})
+});
 
 
 $(function () {
@@ -57,7 +57,7 @@ $(function () {
             var $password_confirm_info = $('#password_confirm_info');
             $password_confirm_info.html('验证密码一致').css('color', 'green');
         }
-    })
+    });
     $password.change(function () {
         var password_confirm = $password_confirm.val().trim();
         password_confirm = password_confirm.toString();
@@ -73,7 +73,7 @@ $(function () {
             $password_confirm_info.html('验证密码一致').css('color', 'green');
         }
     })
-})
+});
 
 function check() {
 

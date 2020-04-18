@@ -9,10 +9,15 @@
 
 {% block ext_js %}
     {{ block.super }}
-    <script type="text/javascript" src="{% static 'Schoolmateshelper/user/js/register.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Schoolmateshelper/user/js/register.js' %}">
+    {% if status == 907 %}
+        alert('邮箱错误');
+    {% endif %}
+    </script>
 {% endblock %}
 
 {% block content %}
+
     <div class="container">
         <form method="post" enctype="multipart/form-data" action="{% url 'App:register' %}" onsubmit="return check()">
 
