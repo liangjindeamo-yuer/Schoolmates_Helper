@@ -1,5 +1,7 @@
+<title>确定接受</title> 
 确定接收这个名为“{{ task.task_name }}”，任务简介为“{{ task.task_sketch }}”的任务吗？<br>
 <form action="{% url 'tasks_square:hunt_task' task.id%}" method="post">
 {% csrf_token %}
 <input type="submit" value="确认接收"/><br>
+</form>
 <a href={% url 'tasks_square:task_square' %}>取消，再考虑一下</a>

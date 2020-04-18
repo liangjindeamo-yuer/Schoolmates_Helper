@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02a49685-4dc2-4b26-8b30-4febb71085fb" name="Default Changelist" comment="" />
+    <list default="true" id="02a49685-4dc2-4b26-8b30-4febb71085fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks_square/templates/tasks_square/check_hunt.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/templates/tasks_square/check_hunt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks_square/templates/tasks_square/hunt_successfully.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/templates/tasks_square/hunt_successfully.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks_square/templates/tasks_square/task_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/templates/tasks_square/task_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks_square/templates/tasks_square/task_square.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/templates/tasks_square/task_square.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks_square/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks_square/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,16 +32,16 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="db [3]" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="db [3]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="db [3]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
       </path>
@@ -48,7 +59,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1aO7PXSEuuBvxg3yYLDspxh2iqZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -58,8 +73,9 @@
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../schoolmate helper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -116,6 +132,7 @@
       <workItem from="1586749183778" duration="159000" />
       <workItem from="1586753744693" duration="91000" />
       <workItem from="1586965215755" duration="33473000" />
+      <workItem from="1587181321596" duration="16868000" />
     </task>
     <servers />
   </component>
@@ -160,9 +177,9 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="99" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1587136689495" />
-    <state x="287" y="9" width="672" height="678" key="search.everywhere.popup" timestamp="1587149101729">
+    <state x="287" y="9" width="672" height="678" key="search.everywhere.popup" timestamp="1587196856157">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="287" y="9" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1587149101729" />
+    <state x="287" y="9" width="672" height="678" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1587196856157" />
   </component>
 </project>
