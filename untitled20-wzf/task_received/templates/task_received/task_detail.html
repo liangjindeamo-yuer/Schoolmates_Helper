@@ -1,0 +1,11 @@
+<h1>任务名：{{ task.task_name }}</h1><br>
+任务简介：{{ task.task_sketch }}<br>
+<form action="{% url 'task_received:reasons_revoke' task.id %}" method="post">
+    {% csrf_token %}
+    <input type="submit" value="撤销任务"/>
+</form>
+
+<form action="{% url 'task_received:task_finished' task.id %}" method="post">
+    {% csrf_token %}
+    <input type="submit" value="完成任务"/>
+</form>
