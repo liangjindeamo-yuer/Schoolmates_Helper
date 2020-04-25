@@ -45,8 +45,7 @@ class Task(models.Model):
     def removehunter(self):
         self.hunter = None
 
-# swf：以下全是2020年4月25日新增内容 未提交到github
-# 今天写写评论、原因、原因展现在任务里面、评论展现在各自的个人信息、任务详情页可以点进去看发布方信息
+# swf：以下全是2020年4月25日新增内容
 class Comment(models.Model):
     comment_for_hunter = models.CharField(max_length=512,null=True)
     comment_for_publisher = models.CharField(max_length=512,null=True)

@@ -1,7 +1,7 @@
 # Create your views here.
 from django.shortcuts import render, redirect
 from django.db.models import Q
-
+from django.contrib.auth import authenticate, login
 from django.contrib.auth.hashers import check_password
 from hunt.form import User1, Task1
 from django.urls import reverse
@@ -13,19 +13,9 @@ from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
-def index(request):
-    if request.method == 'GET':
-        user1 = User1()
-        return render(request, 'data_form.html', locals())
-    else:
-        user1 = User1(request.POST)
-        if user1.is_valid():
-            user1.save()
-            return HttpResponse('注册成功')
-        else:
-            return render(request, 'data_form.html', locals())
 
 
+#任务发布
 def task_up(request):
     if request.method == 'GET':
         task1 = Task()
@@ -42,9 +32,9 @@ def task_up(request):
         user_id = request.session.get('user_id')
         task1.publisher_id = user_id
         task1.save()
-        return render(request, 'task_up_successfully.html')
+        return HttpResponse('注册成功')
 
-
+#用户登录
 def login(request):
     if request.method == 'GET':
         data = {
@@ -59,7 +49,8 @@ def login(request):
             users = users.filter(password=password)
             if users.exists():
                 user1 = users.first()
-                user1.is_active = True  # 登录状态修改
+                user1.is_active = True
+                user1.save()# 登录状态修改
                 request.session['username'] = user1.username
                 request.session['user_id'] = user1.id
                 # swf:第二轮之后实现，显示登录成功后几秒自动跳转到任务广场，现在先:直接到任务广场APP的视图
@@ -70,10 +61,46 @@ def login(request):
         print('用户名不存在')
         return HttpResponse('用户名不存在')
 
+#注册
+def index(request):
+    if request.method == 'GET':
+        user1 = User1()
+        return render(request, 'data_form.html', locals())
+    else:
+        user1 = User1(request.POST)
+        if user1.is_valid():
+            user1.save()
+            return HttpResponse('注册成功')
+        else:
+            return render(request, 'data_form.html', locals())
 
-def mine(request):
-    data = {
-        'title': '个人主页',
-        'is_login': 0,
-        'is_activate': 0,
-    }
+#个人信息显示与修改
+def edit0(request):
+    user_id = request.session.get('user_id')
+    user = User.objects.get(id=user_id)
+    if request.method == "POST":
+        user_form = User1(request.POST)
+        user.username = '12ub#$dubu'
+        user.email = '1@10.codefvm'
+        user.save()
+        if user_form.is_valid():#这里认证失败
+            user_cd = user_form.cleaned_data
+            user.email = user_cd['email']
+            user.tel = user_cd['tel']
+            user.username=user_cd['username']
+            user.qq = user_cd['qq']
+            user.wechat = user_cd['wechat']
+            user.other = user_cd['other']
+            user.photo=user_cd['photo']
+            user.save()
+            return HttpResponse('ye')
+        else:
+            ErrorDict = user_form.errors
+
+            return HttpResponse(ErrorDict)
+    else:
+
+        user_form = User1(instance=user)
+
+        return render(request, 'edit.html', {"user_form": user_form})
+
