@@ -1,0 +1,68 @@
+<!--继承自received_tasks_finished-->
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <meta charset="utf-8">
+    <title>接受任务:已完成</title> 
+    <link rel="stylesheet" type="text/css" href="..\..\..\static\css\style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>SCHOOL Helper</h1>
+        <p><b>发布任务</b></p>
+    </div>
+
+    <div class="topnav">
+        <a href="#" style="margin-left: 100px;">首页</a>
+        <a href="#">任务广场</a>
+        <a href="#" class="active">我要发布</a>
+        <a href="#">个人中心</a>
+        <a href="#" style="float:right; margin-right: 100px;"><img src="..\..\..\static\image\user_center.png" width="35px" height="35px"></a>
+
+    </div>
+
+    <div id="navbar">
+        <h2>我接受的任务</h2>
+        <ul>
+            <li><a href={% url 'task_received:all_task_received' %} class="current-top">全部</a></li>
+            <li><a href={% url 'task_received:received_tasks_not_finished' %}>未完成</a></li>
+            <li><a href={% url 'task_received:received_tasks_finished' %}>已完成</a></li>
+            <li><a href={% url 'tasks_square:task_square' %}>回到任务广场</a></li>
+        </ul>
+    </div>
+<div id="content">
+    <div id="menu">
+
+        <!--任务类别；选中哪个类别的任务，加粗显示现在是什么类别，这个没做出来-->
+        <!-- <b>任务类别</b> -->
+        <a href={% url 'task_received:received_tasks_finished' %}>全部</a>
+        {% for tasktype in task_types %}
+        {% if tasktype.pk == typeid_now %}
+        <a href={% url 'task_received:task_sometype' tasktype.id %} class="current_menu">{{ tasktype.typename }}</a>
+        {% else %}
+        <a href={% url 'task_received:task_sometype' tasktype.id %}>{{ tasktype.typename }}</a>
+        {% endif %}
+        {% endfor %}
+
+    </div>
+
+    <b style="font-size: 30px; margin-left: 380px; margin-top: 20px;">任务列表</b>
+            {% for task in tasklist_sometype_finished %}
+            <div class="task_box">
+            <a href={% url 'task_received:task_detail' task.id %}>{{ task.task_name }}</a>
+            <p>任务简述：{{ task.task_sketch }}</p>
+            <div id="status">
+            <p style="float: right; margin-right: 18px; margin-top: 50px; display: block;
+            background: rgb(168, 185, 223); padding: 10px;border-radius: 25px;
+            ">该任务已完成</p>
+            </div>
+            </div>
+            {% endfor %}
+    </div>
+
+
+</body>
+
+</html>
