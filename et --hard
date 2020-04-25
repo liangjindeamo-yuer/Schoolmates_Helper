@@ -1,0 +1,299 @@
+[33mcommit d62ccfd57335715f487cfdbdd67c432690738c4f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: a4e24d0 140382a
+Author: Wangxiaohuo0903 <Slow_Walker@sjtu.edu.cn>
+Date:   Sat Apr 25 17:35:52 2020 +0800
+
+    更新个人信息修改
+
+[33mcommit a4e24d06eb4a4027d213d9c1e71d1f6890a77e48[m
+Author: Wangxiaohuo0903 <Slow_Walker@sjtu.edu.cn>
+Date:   Sat Apr 25 16:47:45 2020 +0800
+
+    新增个人信息修改功能
+
+[33mcommit 21854b4a4fad67c52fd70ff59c7cb2a749ba5ccf[m
+Author: Wangxiaohuo0903 <Slow_Walker@sjtu.edu.cn>
+Date:   Sat Apr 25 16:04:40 2020 +0800
+
+    用户注册登录任务发布改良，新增个人信息显示修改
+
+[33mcommit 140382ae0e94ca068db41c398600252b29075c37[m
+Author: wangzifan184 <1040676581@qq.com>
+Date:   Fri Apr 24 14:10:09 2020 +0800
+
+    我接受的任务，前后端合并
+
+[33mcommit 36aa88224c71b9bc8b4b8539745e4d93b57ed863[m
+Author: 77SWF <77SUSU@sjtu.edu.cn>
+Date:   Sat Apr 18 23:38:27 2020 +0800
+
+    增加：任务广场、我接受的任务
+
+[33mcommit ac92b28696dbf4a7da048876fd62684e82273449[m
+Author: 77SWF <77SUSU@sjtu.edu.cn>
+Date:   Sat Apr 18 21:37:16 2020 +0800
+
+    删除误传文件
+
+[33mcommit 0ebd7fa7069deb7fece896cf0c6b98524ca2d6e0[m
+Author: 77SWF <77SUSU@sjtu.edu.cn>
+Date:   Sat Apr 18 21:32:02 2020 +0800
+
+    删除HelloWorld_2
+
+[33mcommit 8b54eb80a8762a9e855a349241228f01a39292c9[m
+Author: 77SWF <77SUSU@sjtu.edu.cn>
+Date:   Sat Apr 18 21:28:14 2020 +0800
+
+    删除untitled19
+
+[33mcommit 5460d345cc907c3150c9fdcc544bf360da688490[m
+Author: 77SWF <77SUSU@sjtu.edu.cn>
+Date:   Sat Apr 18 21:27:21 2020 +0800
+
+    删除untitled13
+
+[33mcommit 15396f21124315327c365de91ac9ba270c2f07b2[m
+Author: 77SWF <77SUSU@sjtu.edu.cn>
+Date:   Sat Apr 18 21:11:13 2020 +0800
+
+    删除releasetasksk_1
+
+[33mcommit bdfbe62ccec28778b89c5da56cc76467eace1489[m
+Merge: b3a7bad 83c23ba
+Author: yujl5555 <yujl5555@sjtu.edu.cn>
+Date:   Sat Apr 18 20:52:55 2020 +0800
+
+    Merge branch 'master' of http://github.com/liangjindeamo-yuer/Schoolmates_Helper
+
+[33mcommit b3a7bad4311c31fd6a83dfc1d517c94981f44d54[m
+Author: yujl5555 <yujl5555@sjtu.edu.cn>
+Date:   Sat Apr 18 20:51:43 2020 +0800
+
+    前后端结合我发布的任务
+
+[33mcommit 83c23baa7a60a0d91b014f189fcbcddfbcf09344[m
+Author: wangzifan184 <1040676581@qq.com>
+Date:   Sat Apr 18 20:44:35 2020 +0800
+
+    我接受的任务前端(未完善、风格未统一)
+
+[33mcommit 82dbcff38273bf1437d9dbbebce143ddf98c6939[m
+Author: wangzifan184 <1040676581@qq.com>
+Date:   Sat Apr 18 20:28:03 2020 +0800
+
+    我接受的任务前端(未完善)
+
+[33mcommit 6af99997e4996398a2e2b3ff8b1ac3a4135fc59e[m
+Merge: 5f47ba4 75ae882
+Author: Wangxiaohuo0903 <Slow_Walker@sjtu.edu.cn>
+Date:   Sat Apr 18 20:42:32 2020 +0800
+
+    Merge branch 'master' of github.com:liangjindeamo-yuer/Schoolmates_Helper
+
+[33mcommit 5f47ba460f15ff11622d3844b1afd4171f251948[m
+Author: Wangxiaohuo0903 <Slow_Walker@sjtu.edu.cn>
+Date:   Sat Apr 18 20:41:43 2020 +0800
+
+    发布登陆注册基本功能实现（因为之前的有点问题所以必须重开个project
+
+[33mcommit 75ae882b07257f2a512fb30283bd12d128b671e3[m
+Author: yujl5555 <62171025+yujl5555@users.noreply.github.com>
+Date:   Sat Apr 18 20:40:04 2020 +0800
+
+    Add files via upload
+
+[33mcommit 9423c4d63538e4710629fd33f4c0e437e5726b2c[m
+Author: Wangxiaohuo0903 <Slow_Walker@sjtu.edu.cn>
+Date:   Sat Apr 18 20:17:32 2020 +0800
+
+    登陆发布注册
+
+[33mcommit 18f90bec657ac6cf15853a4e9bb7843321db337b[m
+Merge: 7bed6b4 d71ff37
+Author: 77SWF <77SUSU@sjtu.edu.cn>
+Date:   Sat Apr 18 16:56:19 2020 +0800
+
+    Merge branch 'master' of github.com:liangjindeamo-yuer/Schoolmates_Helper
+
+[33mcommit 7bed6b4d24d40ada310c45c1ad45de4646f0b58b[m
+Author: 77SWF <77SUSU@sjtu.edu.cn>
+Date:   Sat Apr 18 16:51:56 2020 +0800
+
+    添加任务按类别查看和按酬劳排序功能
+
+[33mcommit d71ff37b2a01c0d1ebb559c7ec009597446887fc[m
+Merge: b012e85 ac36195
+Author: liangjin <liangjindeamo@163.com>
+Date:   Sat Apr 18 16:22:52 2020 +0800
+
+    添加
+
+[33mcommit b012e8533b02a5fdc091713ffc4a160f5cba5d1d[m
+Author: liangjin <liangjindeamo@163.com>
+Date:   Sat Apr 18 16:03:22 2020 +0800
+
+    第四次更新：手机端网页基本完成
+
+[33mcommit ac36195fa7581e785e427d2db6f6d4a186378fd2[m
+Author: Zjt <2268811915@qq.com>
+Date:   Sat Apr 18 15:32:38 2020 +0800
+
+    Second commit
+
+[33mcommit 59b83d3673cb0d0cdd2af836112bf9de5ff02361[m
+Author: 77SWF <77SUSU@sjtu.edu.cn>
+Date:   Sat Apr 18 11:40:09 2020 +0800
+
+    登录(wyy) 新增任务广场+整合我接受的任务(swf)
+
+[33mcommit b543771101ad6eb8fc3eedd4073b670acc41c6a4[m
+Author: yujl5555 <62171025+yujl5555@users.noreply.github.com>
+Date:   Mon Apr 13 12:21:27 2020 +0800
+
+    我要发布 添加了个人中心图标yjl
+
+[33mcommit 4040204bae0d3f78bdc809cfb6adbec5767796b9[m
+Merge: cc980c2 37f3ccc
+Author: Zjt <2268811915@qq.com>
+Date:   Mon Apr 13 11:27:26 2020 +0800
+
+    Merge branch 'master' of github.com:liangjindeamo-yuer/Schoolmates_Helper
+
+[33mcommit cc980c25ff0bd051cc43663fc1571f19c7a8be4b[m
+Merge: ebc45cf 8a74397
+Author: Zjt <2268811915@qq.com>
+Date:   Mon Apr 13 11:23:52 2020 +0800
+
+    Merge branch 'master' of github.com:liangjindeamo-yuer/Schoolmates_Helper
+
+[33mcommit ebc45cffa53e71b5615a2cbd87cf618a825a27a3[m
+Author: Zjt <2268811915@qq.com>
+Date:   Mon Apr 13 11:23:13 2020 +0800
+
+    fabude
+
+[33mcommit 37f3cccd755945b75626d871d86ca31bcd087747[m
+Merge: 5aa0034 8a74397
+Author: 77SWF <77SUSU@sjtu.edu.cn>
+Date:   Mon Apr 13 11:18:36 2020 +0800
+
+    Merge branch 'master' of github.com:liangjindeamo-yuer/Schoolmates_Helper
+
+[33mcommit 8a7439768299452562daecda27baf716eab02ab8[m
+Author: Wangxiaohuo0903 <52432785+Wangxiaohuo0903@users.noreply.github.com>
+Date:   Mon Apr 13 11:17:53 2020 +0800
+
+    第二次更新，任务发布的后端完成了
+
+[33mcommit 5aa0034b858cef0965d127ddc33d80b5892e4b88[m
+Merge: 48ef29f b35b5b0
+Author: 77SWF <77SUSU@sjtu.edu.cn>
+Date:   Mon Apr 13 11:10:56 2020 +0800
+
+    Merge branch 'master' of github.com:liangjindeamo-yuer/Schoolmates_Helper
+
+[33mcommit b35b5b0bd230af4b754551f3f7ac24b32a1ac3bb[m
+Author: Wangxiaohuo0903 <52432785+Wangxiaohuo0903@users.noreply.github.com>
+Date:   Mon Apr 13 11:08:08 2020 +0800
+
+    Add files via upload
+
+[33mcommit 48ef29f7c9042857aee01328f7bb49b8d3eaeb79[m
+Author: 77SWF <77SUSU@sjtu.edu.cn>
+Date:   Mon Apr 13 10:57:23 2020 +0800
+
+    swf:html改动 已完成任务不显示撤销/完成按钮
+
+[33mcommit 0f408452b87eba9c907c1e279bff4e069ea87b7e[m
+Author: yujl5555 <62171025+yujl5555@users.noreply.github.com>
+Date:   Mon Apr 13 10:46:01 2020 +0800
+
+    我要发布前端yjl
+
+[33mcommit a76ab05f8975dc7261f8eb20594df9676e16d84d[m
+Author: wangzifan184 <61766787+wangzifan184@users.noreply.github.com>
+Date:   Mon Apr 13 10:34:11 2020 +0800
+
+    注册页面前端
+
+[33mcommit 93c9c9ba852294309a35f07ecf5567025ca017d1[m
+Author: 77SWF <77SUSU@sjtu.edu.cn>
+Date:   Sat Apr 11 22:23:44 2020 +0800
+
+    swf:我接受的任务界面app
+
+[33mcommit 86abf45586c2dc51fd3ab9e8337645f460355479[m
+Author: liangjin <liangjindeamo@163.com>
+Date:   Sat Mar 28 21:25:12 2020 +0800
+
+    第三次更新：数据库
+
+[33mcommit 5283c0348089c99e913aa7e687feea5ab2b50162[m
+Author: liangjin <liangjindeamo@163.com>
+Date:   Sat Mar 28 21:03:40 2020 +0800
+
+    第二次更新
+
+[33mcommit cfc2954ef3232f2323c029c8409a795372c87408[m
+Merge: a3a3557 992eb21
+Author: liangjin <liangjindeamo@163.com>
+Date:   Tue Mar 24 11:16:37 2020 +0800
+
+    Merge branch 'master' of https://github.com/liangjindeamo-yuer/Schoolmates_Helper 第一次更新by莨瑾
+
+[33mcommit a3a35573e681fd02318cd457fec4fde5f4df13be[m
+Author: liangjin <liangjindeamo@163.com>
+Date:   Tue Mar 24 11:16:03 2020 +0800
+
+    第一次更新+1
+
+[33mcommit f89bddec64b44525ba48a69c382c4dcd5f6d1f88[m
+Author: liangjin <liangjindeamo@163.com>
+Date:   Tue Mar 24 11:14:45 2020 +0800
+
+    第一次更新by莨瑾
+
+[33mcommit 992eb2130431ceb0f759dc3837b04d141bfe41bd[m
+Author: liangjindeamo-yuer <61941806+liangjindeamo-yuer@users.noreply.github.com>
+Date:   Tue Mar 24 11:12:54 2020 +0800
+
+    Delete 项目代码
+
+[33mcommit 3df34b5eafeaafeb19c3ae188832299bbdb4958f[m
+Author: liangjindeamo-yuer <61941806+liangjindeamo-yuer@users.noreply.github.com>
+Date:   Tue Mar 24 11:12:40 2020 +0800
+
+    Delete LICENSE
+
+[33mcommit 5e1da37e965496087d69383e020f1957105fdcc3[m
+Merge: 123688d 29b9a35
+Author: liangjin <liangjindeamo@163.com>
+Date:   Sun Mar 22 22:57:27 2020 +0800
+
+    MC
+
+[33mcommit 29b9a35927afa46dcce71b6e01e4ee81e772e4b8[m
+Author: 莨瑾 <liangjindeamo@163.com>
+Date:   Sun Mar 22 22:54:16 2020 +0800
+
+    add 项目代码.
+
+[33mcommit 123688d022a0626cf10ac5892305c1744ff42e8c[m
+Merge: 5c7b0bb 1c4c03e
+Author: liangjin <liangjindeamo@163.com>
+Date:   Sun Mar 22 22:48:44 2020 +0800
+
+    Merge branch 'master' of https://gitee.com/liangjindeamo/software_engineering
+
+[33mcommit 5c7b0bba1a84994fd8c72d1328a5b28c6b178399[m
+Author: liangjin <liangjindeamo@163.com>
+Date:   Sun Mar 22 22:40:11 2020 +0800
+
+    the first
+
+[33mcommit 1c4c03eb5d62f3124cfe8de871008a8937a24a5e[m
+Author: 莨瑾 <liangjindeamo@163.com>
+Date:   Sun Mar 22 22:30:57 2020 +0800
+
+    Initial commit
