@@ -1,0 +1,14 @@
+<title>任务详情</title> 
+<h1>任务名：{{ task.task_name }}</h1>
+<!--swf 2020年4月25日 改动 新增用户信息页面-->
+发布者：<a href={% url 'tasks_square:publisher_detail' task.publisher_id %}>{{task.publisher.username}}</a><br>
+<!--swf 2020年4月25日 新增：显示头像，且点击头像可以进入发布者用户详情页面？怎么放？-->
+<!--<img src="{{ task.hunter.photo }}" width="50%" height="20%"/>-->
+任务简介：{{ task.task_sketch }}<br>
+任务酬劳：¥{{ task.task_reward }}<br>
+截止时间：¥{{ task.ddltime }}<br>
+
+<form action="{% url 'tasks_square:check_hunt' task.id %}" method="post">
+    {% csrf_token %}
+    <input type="submit" value="接受任务"/>
+</form>
