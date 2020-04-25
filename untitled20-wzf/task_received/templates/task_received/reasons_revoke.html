@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <meta charset="utf-8">
+    <title>我接受的任务</title> 
+    <link rel="stylesheet" type="text/css" href="..\..\..\..\static\css\rev_fin.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>SCHOOL Helper</h1>
+        <p><b>发布任务</b></p>
+    </div>
+
+    <div class="topnav">
+        <a href="#" style="margin-left: 100px;">首页</a>
+        <a href="#">任务广场</a>
+        <a href="#" class="active">我要发布</a>
+        <a href="#">个人中心</a>
+        <a href="#" style="float:right; margin-right: 100px;"><img src="..\..\..\..\static\image\user_center.png"
+                width="35px" height="35px"></a>
+
+    </div>
+
+    <!--还没写提交后的操作-->
+    <div id="content">
+        <b>您将要撤销名为“{{ task.task_name }}”的任务，该任务内容为"{{ task.task_sketch }}"</b>
+
+        <form action={% url 'task_received:task_revoke' task.id %}>
+            <p><b>请输入撤销原因: </b></p>
+            <!--换种文本框，注意提交方式可能要对应更改-->
+            <input type="text" name="reasons_revoke" value="请输入撤销原因"
+                style="width:800px; height:200px; margin-top: 20px;"><br>
+            <input type="submit" id="btn" value="提交，确定撤销">
+        </form>
+        <a href={% url 'task_received:all_task_received' %}>取消，返回</a>
+    </div>
+</body>
+
+</html>

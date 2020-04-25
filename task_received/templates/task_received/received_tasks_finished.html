@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <meta charset="utf-8">
+    <title>接受任务：已完成</title> 
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            height: 48px;
+        }
+
+
+        /* 导航条链接 */
+
+        .topnav a {
+            float: left;
+            display: block;
+            width: 100px;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+
+        /* 链接颜色修改 */
+
+        .topnav a:hover:not(.active) {
+            background-color: #ddd;
+            color: black;
+        }
+
+
+        /* 激活 */
+
+        .topnav a.active {
+            background-color: rgb(160, 160, 151);
+            color: black;
+        }
+
+
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .header p {
+            margin-top: 10px;
+        }
+
+        body {
+            background: #f2f2f2;
+        }
+
+        #navbar {
+            float: left;
+            padding-top: 20px;
+            width: 15%;
+            margin-left: 10%;
+            background: #dddddd;
+        }
+
+        #navbar h2 {
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 40px;
+        }
+
+        #navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #ddd;
+        }
+
+        #navbar ul li {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        #navbar ul li a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            background-color: #555;
+            color: white;
+        }
+
+        .current-top {
+            background: rgb(201, 190, 190);
+            color: black;
+            border-right: #000 10px solid;
+        }
+
+
+
+
+        #content {
+            float: left;
+            background-image: linear-gradient(to bottom left, rgb(201, 190, 190), #f2f2f2);
+            width: 60%;
+            padding-top: 20px;
+        }
+
+        #content #menu {
+            background-image: linear-gradient(to left, rgba(19, 18, 18, .8), #dad7d7);
+            font-size: 20px;
+            padding: 10px;
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+
+        #content #menu b {
+            margin-left: 300px;
+            margin-right: 140px;
+        }
+
+        #content #menu a {
+            text-decoration: none;
+            color: #dfd9d9;
+            margin-left: 25px;
+        }
+
+        #content #menu a:hover {
+            border-bottom: #000 solid;
+            color: aliceblue;
+        }
+
+        .current_menu {
+            font-size: 25px;
+        }
+
+        .task_box {
+            background: #c9c3c3;
+            margin-right: 50px;
+            margin-top: 50px;
+            border: solid;
+            border-radius: 20px;
+            padding: 10px;
+            padding-left: 20px;
+            height: 100px;
+            border-left-color: rgb(211, 233, 233);
+            border-top-color: rgb(211, 233, 233);
+        }
+
+        .task_box a {
+            float: left;
+            text-decoration: none;
+            display: block;
+            width: 100px;
+            margin-top: 30px;
+            color: black;
+            font-size: 25px;
+        }
+
+        .task_box a:hover {
+            color: rgb(105, 101, 96);
+            text-decoration: overline;
+        }
+
+        .task_box p {
+            float: left;
+            margin-left: 40px;
+        }
+
+        #status {
+            float: right;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+
+        #status p {
+            display: block;
+            border: rgb(150, 143, 143) solid;
+            padding: 5px;
+            margin-top: 55px;
+            background-color: rgba(32, 65, 33, .5);
+            color: white;
+        }
+
+        .task_box form input {
+            background-color: rgba(32, 65, 33, .5);
+            border: 1px solid rgb(60, 65, 60);
+            color: white;
+            padding: 10px 24px;
+            cursor: pointer;
+            width: 100%;
+            display: block;
+            margin-right: 10px;
+            margin-top: 5px;
+        }
+
+
+
+        .task_box form input:hover {
+            background-color: #a2afa2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>SCHOOL Helper</h1>
+        <p><b>发布任务</b></p>
+    </div>
+
+    <div class="topnav">
+        <a href="#" style="margin-left: 100px;">首页</a>
+        <a href="#">任务广场</a>
+        <a href="#" class="active">我要发布</a>
+        <a href="#">个人中心</a>
+        <a href="#" style="float:right; margin-right: 100px;"><img src="user_center.png" width="35px" height="35px"></a>
+
+    </div>
+
+
+
+
+    <div id="navbar">
+        <h2>我接受的任务</h2>
+        <ul>
+            <li><a href=/task_received/all_task_received / >全部</a></li>
+            <li><a href=/task_received/received_tasks_not_finished />未完成</a></li>
+            <li><a href=/task_received/received_tasks_finished / class="current-top">已完成</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="menu">
+            <!--任务类别；选中哪个类别的任务，加粗显示现在是什么类别，这个没做出来-->
+            <b>任务类别</b>
+            <a href=/task_received/received_tasks_finished / class="current_menu">全部</a>
+            <a href=/task_received/received_tasks_finished/1 />取快递</a>
+            <a href=/task_received/received_tasks_finished/2 />签到</a>
+            <a href=/task_received/received_tasks_finished/3 />其他</a>
+        </div>
+
+        <b style="font-size: 30px; margin-left: 380px;">任务列表</b>
+            <div class="task_box">
+                <a href=/task_received/2/task_detail>签到</a>
+                <p>任务简述：签到简介</p>
+            </div>
+            <div class="task_box"> 
+                <a href=/task_received/3/task_detail>事情1</a>
+                <p>任务简述：事情1简介</p>
+            </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>

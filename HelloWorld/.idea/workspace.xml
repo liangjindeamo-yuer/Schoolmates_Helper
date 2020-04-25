@@ -61,12 +61,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1ZprFgS0RPN71eKcQkC94jmASYZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -76,14 +82,23 @@
     <property name="DatabaseDriversLRU" value="sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="SQLITE-SQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../moban4196" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/image" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Fluorite\git\yujlgit\Schoolmates_Helper\HelloWorld\static\image" />
+      <recent name="C:\Users\Fluorite\git\yujlgit\Schoolmates_Helper\HelloWorld\static\css" />
+      <recent name="C:\Users\Fluorite\git\yujlgit\Schoolmates_Helper\HelloWorld\templates" />
       <recent name="D:\HelloWorld\static\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Fluorite\git\yujlgit\Schoolmates_Helper\HelloWorld\static\image" />
+      <recent name="C:\Users\Fluorite\git\yujlgit\Schoolmates_Helper\HelloWorld\static\css" />
+      <recent name="C:\Users\Fluorite\git\yujlgit\Schoolmates_Helper\HelloWorld\static\images" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -101,6 +116,10 @@
       <workItem from="1586614215109" duration="22508000" />
       <workItem from="1586694228210" duration="5561000" />
       <workItem from="1586744568189" duration="13921000" />
+      <workItem from="1587197788357" duration="6590000" />
+      <workItem from="1587206306326" duration="147000" />
+      <workItem from="1587206528558" duration="4865000" />
+      <workItem from="1587213363036" duration="4000" />
     </task>
     <servers />
   </component>
@@ -116,9 +135,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="889" y="218" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1585582384757" />
-    <state x="883" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585563503380">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="736" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1587208458758">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="736" y="131" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1587208458758" />
     <state x="883" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1585563503380" />
     <state x="499" y="335" key="DBNavigator.CreateRenameSessionDialog" timestamp="1585582996513">
       <screen x="0" y="0" width="1536" height="824" />

@@ -45,7 +45,12 @@ def un_acp(request):
 
 
 def release(request):
-    return render(request, 'release.html')
+    user = UserInfo.objects.get(pk=1)
+    missions = user.missioninfo_set.all()
+    context = {
+        "missions": missions
+    }
+    return render(request, 'release.html', context=context)
 
 
 def f_mission(request):
