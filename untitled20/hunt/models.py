@@ -50,7 +50,7 @@ class Task(models.Model):
 class Comment(models.Model):
     comment_for_hunter = models.CharField(max_length=512,null=True)
     comment_for_publisher = models.CharField(max_length=512,null=True)
-    task = models.ForeignKey(Task, on_delete=models.CASCADE,unique=True,related_name='commented_tasks')
+    task = models.ForeignKey(Task, on_delete=models.CASCADE,related_name='commented_tasks')
 
 class  Revoke_reason(models.Model):
     revoke_reason = models.CharField(max_length=512,null=True)

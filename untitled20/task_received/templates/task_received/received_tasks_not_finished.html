@@ -1,52 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head> 
-    <meta
-             charset="utf-8">
-     
-    <title>接受任务：未完成</title> 
+    <meta charset="utf-8">
+    <title>接受任务:未完成</title> 
+    <link rel="stylesheet" type="text/css" href="..\..\static\css\style.css">
 </head>
+
 <body>
+    <div class="header">
+        <h1>SCHOOL Helper</h1>
+        <p><b>我接受的任务</b></p>
+    </div>
 
-<h1>我接受的任务：未完成</h1>
-<a href={% url 'task_received:all_task_received' %}><h2>全部</h2></a>
-<a href={% url 'task_received:received_tasks_finished' %}><h2>已完成</h2></a>
-<a href={% url 'tasks_square:task_square' %}>回到任务广场</a>
+    <div class="topnav">
+        <a href="#" style="margin-left: 100px;">首页</a>
+        <a href={% url 'tasks_square:task_square' %}>任务广场</a>
+        <a href={% url 'hunt:up0' %} class="active">我要发布</a>
+        <a href="#">个人中心</a>
+        <a href="#" style="float:right; margin-right: 100px;"><img src="..\..\static\image\user_center.png" width="35px"
+                height="35px"></a>
 
-<br>
+    </div>
 
-<div id="menu" style="background-color:;width:120px;float:left;">
+    <div id="navbar">
+        <h2>我接受的任务</h2>
+        <ul>
+            <li><a href={% url 'task_received:all_task_received' %}>全部</a></li>
+            <li><a href={% url 'task_received:received_tasks_not_finished' %} class="current-top">未完成</a></li>
+            <li><a href={% url 'task_received:received_tasks_finished' %}>已完成</a></li>
+            <li><a href={% url 'tasks_square:task_square' %}>回到任务广场</a></li>
+        </ul>
+    </div>
 
-    <!--任务类别；选中哪个类别的任务，加粗显示现在是什么类别，这个没做出来-->
-    <b>任务类别</b>
-    <ol><a href={% url 'task_received:received_tasks_not_finished' %}>全部</a></ol>
-    <br>
-    {% for tasktype in task_types %}
-        <ol><a href={% url 'task_received:task_sometype_not_finished' tasktype.id %}>{{ tasktype.typename }}</a></ol>
-        <br>
-    {% endfor %}
 
-</div>
+    <div id="content">
+        <div id="menu">
+            <!--任务类别；选中哪个类别的任务，加粗显示现在是什么类别，这个没做出来-->
+            <!-- <b>任务类别</b> -->
+            <a href={% url 'task_received:received_tasks_not_finished' %} class="current_menu">全部</a>
+            {% for tasktype in task_types %}
+            <a href={% url 'task_received:task_sometype_not_finished' tasktype.id %}>{{ tasktype.typename }}</a>
+            {% endfor %}
 
-<div id="content" style="background-color:#EEEEEE;height:600px;width:450px;float:left;">
-    <b>任务列表</b>
-    <ol>
+        </div>
+
+        <b style="font-size: 30px; margin-left: 380px; margin-top: 20px;">任务列表</b>
+
         {% for task in taskslist_received_not_finished %}
-            <a href={% url 'task_received:task_detail' task.id %}>{{ task.task_name }}</a><br>
-            任务简述：{{ task.task_sketch }}<br>
-            <form action="{% url 'task_received:reasons_revoke' task.id %}" method="post">
-                {% csrf_token %}
-                <input type="submit" value="撤销任务"/>
-            </form>
-            <!--想弄再次确定弹框，点击确定后才跳转到评价页面，而不是直接确定-->
-            <form action="{% url 'task_received:task_finished' task.id %}" method="post">
-                {% csrf_token %}
-                <input type="submit" value="完成任务"/>
-            </form>
+        <div class="task_box">
+            <a href={% url 'task_received:task_detail' task.id %}>{{ task.task_name }}</a>
+            <p>任务简述：{{ task.task_sketch }}</p>
+            <div id="status">
+                <form action="{% url 'task_received:reasons_revoke' task.id %}" method="post">
+                    {% csrf_token %}
+                    <input type="submit" value="撤销任务" />
+                </form>
+                <!--想弄再次确定弹框，点击确定后才跳转到评价页面，而不是直接确定-->
+                <form action="{% url 'task_received:task_finished' task.id %}" method="post">
+                    {% csrf_token %}
+                    <input type="submit" value="完成任务" />
+                </form>
+            </div>
+        </div>
         {% endfor %}
-        <ol>
-</div>
-
-
+    </div>
 </body>
+
 </html>
