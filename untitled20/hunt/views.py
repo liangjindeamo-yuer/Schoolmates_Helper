@@ -79,8 +79,8 @@ def edit0(request):
     user = User.objects.get(id=user_id)
     if request.method == "POST":
         user_form = User1(request.POST)
-        user.username = '1'
-        user.email = '1@10.com'
+        user.username = '12ub#$dubu'
+        user.email = '1@10.codefvm'
         user.save()
         if user_form.is_valid():#这里认证失败
             user_cd = user_form.cleaned_data
