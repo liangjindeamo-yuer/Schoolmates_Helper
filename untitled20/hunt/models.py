@@ -24,6 +24,9 @@ class TaskType(models.Model):
     typesort = models.IntegerField(default=1)
 
 class Task(models.Model):
+    # 根据User类，contact可以取值qq,tel,wechat,email,other这几个字符串
+    contacthunter=models.CharField(max_length=32,null=True,default='email')
+    contactpublisher=models.CharField(max_length=32,null=True,default='email')
     task_name = models.CharField(max_length=32)
     task_sketch = models.CharField(max_length=512, null=True, blank=True)
     task_file = models.FileField(upload_to='static/%Y/%m/%d/', null=True, blank=True)

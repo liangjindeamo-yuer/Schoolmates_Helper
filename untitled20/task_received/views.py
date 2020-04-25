@@ -30,6 +30,7 @@ def task_revoke(request, task_id):
     target_task = Task.objects.get(pk=task_id)
     target_task.is_pickedup = False
     target_task.hunter = None
+    target_task.contacthunter = 'email'
     target_task.save()
     return HttpResponseRedirect(reverse('task_received:all_task_received'))
 
@@ -58,7 +59,9 @@ def task_detail(request, task_id):
     username = request.session.get('username')
     user = User.objects.get(username=username)
     task = Task.objects.get(pk=task_id)
-    return render(request, 'task_received/task_detail.html', context={'task': task})
+    contact=getattr(user, task.contactpublisher)
+    return render(request, 'task_received/task_detail.html', context={'task': task,
+                                                                      'contact':contact})
 
 
 # swf：2020年4月25日 改动
