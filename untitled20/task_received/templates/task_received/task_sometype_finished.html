@@ -23,7 +23,11 @@
     <ol><a href={% url 'task_received:received_tasks_finished' %}>全部</a></ol>
     <br>
     {% for tasktype in task_types %}
-        <ol><a href={% url 'task_received:task_sometype_finished' tasktype.id %}>{{ tasktype.typename }}</a></ol>
+        {% if tasktype.pk == typeid_now %}
+            <ol><a href={% url 'task_received:task_sometype' tasktype.id %}>{{ tasktype.typename }}</a></ol>
+        {% else %}
+            <ol><a href={% url 'task_received:task_sometype' tasktype.id %}>{{ tasktype.typename }}</a></ol>
+        {% endif %}
         <br>
     {% endfor %}
 
