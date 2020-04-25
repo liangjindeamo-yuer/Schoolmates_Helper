@@ -8,7 +8,8 @@ urlpatterns = [
     #注册,
     path('login/',views.login,name='login'),
     #登录
-    path('up/',views.task_upload,name='up'),
+    path('edit',views.edit0,name='edit'),
+    #个人信息修改
     path('up0/',views.task_up,name='up0'),
     #任务发布
     ]
