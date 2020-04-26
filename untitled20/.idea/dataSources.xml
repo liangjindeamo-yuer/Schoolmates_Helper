@@ -15,13 +15,19 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Django default" uuid="5cd01b26-3f7d-4d14-9f75-3d1fd695ce47">
+    <data-source source="LOCAL" name="db [2]" uuid="fbc3dc1c-928a-4e35-a115-ec09cba3e8b1">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>$PROJECT_DIR$/untitled20/settings.py</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\susu\Documents\Schoolmates_Helper\untitled20\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\软工大作业\untitled20\db.sqlite3</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/sqlite-jdbc-3.25.1.jar</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>

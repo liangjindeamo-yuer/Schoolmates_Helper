@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>un_acp</title>
+</head>
+<body>
+<ul>
+    <a href="http://127.0.0.1:8000/task_released/un_acp">未被接</a>
+    <a href="http://127.0.0.1:8000/task_released/acp">已被接</a>
+    <a href="http://127.0.0.1:8000/task_released/finish">已完成</a>
+    <li></li>
+    <a href="http://127.0.0.1:8000/task_square/">回到任务广场</a>
+    {% for mission in missions %}
+        {% if mission.is_pickedup == False %}
+            <li>{{mission.task_name}}</li>
+            <a href="/task_released/d_unacpm/?id={{mission.id}}">取消</a>
+            <a href="/task_released/m_detail/?id={{mission.id}}">任务详情</a>
+            <a href="/task_released/m_change/?id={{mission.id}}">修改任务</a>
+        {% endif %}
+    {% endfor %}
+</ul>
+</body>
+</html>

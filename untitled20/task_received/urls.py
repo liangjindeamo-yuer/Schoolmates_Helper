@@ -15,7 +15,4 @@ urlpatterns = [
     path('received_tasks_not_finished/', views.received_tasks_not_finished, name='received_tasks_not_finished'),
     path('received_tasks_not_finished/<int:tasktype_id>', views.task_sometype_not_finished,
          name='task_sometype_not_finished'),
-    # 2020年4月25日 swf 新增
-    path('comment/',views.comment,name='comment'),
-    path('revoke/',views.revoke,name='revoke'),
 ]

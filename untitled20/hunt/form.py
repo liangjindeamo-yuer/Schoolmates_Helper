@@ -33,7 +33,16 @@ class Type1(forms.ModelForm):
         # exclude用于禁止模型字段转换表单字段
         exclude = []
         labels = {
-
+            'username': '用户名',
+            'tel': '手机号（选填）',
+            'qq': 'QQ（选填）',
+            'wechat': '微信（选填）',
+            'email': '邮箱',
+            'other': '其他信息（选填）',
+            'password': '密码',
+            'star': '信誉',
+            'ddltime':'截止时间',
+            'photo':'头像'
 
         }
 
@@ -60,8 +69,8 @@ class User1(forms.ModelForm):
             'email': '邮箱',
             'other': '其他信息（选填）',
             'password': '密码',
-            'photo':'头像'
-
+            'star': '信誉',
+            'ddltime':'截止时间'
 
         }
 
