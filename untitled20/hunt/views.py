@@ -28,7 +28,7 @@ def task_up(request):
         task1.task_sketch = request.POST.get('task_sketch')
         task1.task_type_id = int(task_type)
         task1.ddltime = request.POST.get('ddltime')
-        task1.task_file = request.POST.get('task_file')
+        task1.task_file = request.FILES.get('task_file')
         user_id = request.session.get('user_id')
         task1.publisher_id = user_id
         task1.save()
@@ -67,7 +67,7 @@ def index(request):
         user1 = User1()
         return render(request, 'data_form.html', locals())
     else:
-        user1 = User1(request.POST)
+        user1 = User1(request.POST, request.FILES)
         if user1.is_valid():
             user1.save()
             return HttpResponse('注册成功')
@@ -79,19 +79,21 @@ def edit0(request):
     user_id = request.session.get('user_id')
     user = User.objects.get(id=user_id)
     if request.method == "POST":
-        user_form = User1(request.POST)
-        user.username = '12ub#$dubu'
-        user.email = '1@10.codefvm'
+#注意：这里由于用户名邮箱设置不能重名,所以这里的方法是调用修改后先把他改成一个其他的东西，
+# 这样子如果不修改用户名邮箱，之前的用户名邮箱就会替代这个乱码，这样可能会导致一些问题但目前还没遇到，，
+        user.username = '121ub#$deded2ubu'
+        user.email = '1@10.code21213fvm'
+        user_form = User1(request.POST, request.FILES)
         user.save()
-        if user_form.is_valid():#这里认证失败
+        if user_form.is_valid():  # 这里认证失败
             user_cd = user_form.cleaned_data
             user.email = user_cd['email']
             user.tel = user_cd['tel']
-            user.username=user_cd['username']
+            user.username = user_cd['username']
             user.qq = user_cd['qq']
             user.wechat = user_cd['wechat']
             user.other = user_cd['other']
-            user.photo=user_cd['photo']
+            user.photo = user_cd['photo']
             user.save()
             return HttpResponse('ye')
         else:
@@ -103,4 +105,5 @@ def edit0(request):
         user_form = User1(instance=user)
 
         return render(request, 'edit.html', {"user_form": user_form})
+
 

@@ -8,7 +8,7 @@ class User(models.Model):
     password = models.CharField(max_length=20, default='0')
     tel = models.PositiveIntegerField(blank=True, null=True)
     email = models.EmailField(max_length=30,unique=True)
-    photo = models.ImageField(upload_to='static/%Y/%m/%d/',null=True,blank=True,default='static/1.jpg')
+    photo = models.ImageField(upload_to='photo/%Y/%m/%d/',null=True,blank=True,default='static/1.jpg')
     qq = models.CharField(max_length=20, blank=True, null=True)
     wechat = models.CharField(max_length=20, blank=True, null=True)
     other = models.CharField(max_length=20, blank=True, null=True)
@@ -29,7 +29,7 @@ class Task(models.Model):
     contactpublisher=models.CharField(max_length=32,null=True,default='email')
     task_name = models.CharField(max_length=32)
     task_sketch = models.CharField(max_length=512, null=True, blank=True)
-    task_file = models.FileField(upload_to='static/%Y/%m/%d/', null=True, blank=True)
+    task_file = models.FileField(upload_to='%Y/%m/%d/', null=True, blank=True)
     task_type = models.ForeignKey(TaskType,default=5,on_delete=models.SET_DEFAULT)
     ddltime=models.DateField(blank=True,null=True)
 

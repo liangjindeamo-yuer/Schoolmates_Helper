@@ -55,7 +55,7 @@ ROOT_URLCONF = 'untitled20.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': [os.path.join(BASE_DIR, 'hunt/templates')]
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -116,3 +116,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,'hunt/static'),
+]
+MEDIA_ROOT = os.path.join(BASE_DIR, 'hunt/static/uploads')
+MEDIA_KEY_PREFIX = '/static/'
