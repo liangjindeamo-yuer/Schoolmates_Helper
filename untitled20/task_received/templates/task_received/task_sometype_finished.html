@@ -26,9 +26,9 @@
     <div id="navbar">
         <h2>我接受的任务</h2>
         <ul>
-            <li><a href={% url 'task_received:all_task_received' %} class="current-top">全部</a></li>
+            <li><a href={% url 'task_received:all_task_received' %}>全部</a></li>
             <li><a href={% url 'task_received:received_tasks_not_finished' %}>未完成</a></li>
-            <li><a href={% url 'task_received:received_tasks_finished' %}>已完成</a></li>
+            <li><a href={% url 'task_received:received_tasks_finished' %} class="current-top">已完成</a></li>
             <li><a href={% url 'tasks_square:task_square' %}>回到任务广场</a></li>
         </ul>
     </div>
@@ -40,9 +40,9 @@
         <a href={% url 'task_received:received_tasks_finished' %}>全部</a>
         {% for tasktype in task_types %}
         {% if tasktype.pk == typeid_now %}
-        <a href={% url 'task_received:task_sometype' tasktype.id %} class="current_menu">{{ tasktype.typename }}</a>
+        <a href={% url 'task_received:task_sometype_finished' tasktype.id %} class="current_menu">{{ tasktype.typename }}</a>
         {% else %}
-        <a href={% url 'task_received:task_sometype' tasktype.id %}>{{ tasktype.typename }}</a>
+        <a href={% url 'task_received:task_sometype_finished' tasktype.id %}>{{ tasktype.typename }}</a>
         {% endif %}
         {% endfor %}
 
@@ -52,7 +52,11 @@
             {% for task in tasklist_sometype_finished %}
             <div class="task_box">
             <a href={% url 'task_received:task_detail' task.id %}>{{ task.task_name }}</a>
-            <p>任务简述：{{ task.task_sketch }}</p>
+            <!--加这个标签，让简介只显示两行简介：但是页面移位了？？？article可以换成p span等 但是都有问题-->
+            <p>任务简述：
+                <article
+                        style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;">{{ task.task_sketch }}</article>
+            </p>
             <div id="status">
             <p style="float: right; margin-right: 18px; margin-top: 50px; display: block;
             background: rgb(168, 185, 223); padding: 10px;border-radius: 25px;

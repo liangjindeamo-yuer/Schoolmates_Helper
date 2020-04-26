@@ -63,6 +63,7 @@ def hunt_task(request, task_id):
     task = Task.objects.get(pk=task_id)
     task.is_pickedup = True
     task.hunter_id = user_id
+    task.contacthunter=request.POST.get('contacthunter')
     task.save()
     return render(request, 'tasks_square/hunt_successfully.html', context={'task': task})
 

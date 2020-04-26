@@ -37,7 +37,9 @@ Welcome，{{ username }}！
     <ol>
         {% for task in tasks_list %}
             <a href={% url 'tasks_square:task_detail' task.id %}>{{ task.task_name }}</a><br>
-            任务简述：{{ task.task_sketch }}<br>
+            任务简述：
+            <!--查到css可以实现只显示两行，现在这种因为用了p，前后距离大，前端或许能改-->
+            <span style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;">{{ task.task_sketch }}</span>
             截止时间：{{ task.ddltime }}<br>
             ¥{{ task.task_reward }}<br>
             <form action="{% url 'tasks_square:check_hunt' task.id %}" method="post">
