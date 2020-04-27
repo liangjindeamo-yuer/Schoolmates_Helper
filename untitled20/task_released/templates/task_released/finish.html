@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>finish</title>
+
+</head>
+<body>
+<ul>
+    <li><a href="http://127.0.0.1:8000/task_released/finish" class="active">&nbsp;&nbsp;&nbsp;&nbsp;已完成的任务</a></li>
+                <li><a href="http://127.0.0.1:8000/task_released/acp">&nbsp;&nbsp;&nbsp;&nbsp;未完成的任务</a></li>
+                <li><a href="http://127.0.0.1:8000/task_released/un_acp"
+                       >&nbsp;&nbsp;&nbsp;&nbsp;尚未被接受的任务</a></li>
+                <li><a href="http://127.0.0.1:8000/task_square/">&nbsp;&nbsp;&nbsp;&nbsp;回到任务广场</a></li>
+    {% for mission in missions %}
+        {% if mission.is_finished == True %}
+            <li>{{mission.task_name}}</li>
+            <a href="/m_detail/?id={{mission.id}}">任务详情</a>
+        {% endif %}
+    {% endfor %}
+</ul>
+<div class="footer">
+    <h4>
+
+        Written by Group 5.<br>
+        Visit us at:<br>
+        上海市闵行区东川路800号<br>
+
+    </h4>
+</div>
+</body>
+</html>

@@ -30,7 +30,7 @@ def task_revoke(request, task_id):
     target_task = Task.objects.get(pk=task_id)
     target_task.is_pickedup = False
     target_task.hunter = None
-    target_task.contacthunter = 'email'
+    target_task.contact_type_hunter = None
     target_task.save()
     return HttpResponseRedirect(reverse('task_received:all_task_received'))
 
@@ -59,7 +59,8 @@ def task_detail(request, task_id):
     username = request.session.get('username')
     user = User.objects.get(username=username)
     task = Task.objects.get(pk=task_id)
-    contact=getattr(user, task.contactpublisher)
+    contact1=Contact.objects.get(id=task.contact_type_publisher)
+    contact=getattr(user, contact1.typename)
     return render(request, 'task_received/task_detail.html', context={'task': task,
                                                                       'contact':contact})
 
@@ -80,10 +81,7 @@ def comment(request):
         username = request.session.get('username')
         user = User.objects.get(username=username)
         task.is_finished = True
-        comment1 = Comment()
-        comment1.task = task
-        comment1.comment_for_publisher = request.POST.get('comment')
-        comment1.save()
+        task.comment_for_publisher = request.POST.get('comment')
         task.save()
         return render(request, 'task_received/comment_or_revoke_successfuly.html',
                       context={'task': task, 'comment': 1, 'revoke': 0})

@@ -29,6 +29,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'task_released.apps.TaskReleasedConfig',
     'task_received.apps.TaskReceivedConfig',
     'tasks_square.apps.TasksSquareConfig',
     'hunt.apps.HuntConfig',
@@ -118,7 +119,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'hunt/static'),
+    os.path.join(BASE_DIR, 'hunt/static'),
 ]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'hunt/static/uploads')
 MEDIA_KEY_PREFIX = '/static/'

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我发布的任务</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/change.css">
+</head>
+<body>
+<div class="header">
+    <h1>SCHOOL Helper</h1>
+    <h3>个人中心</h3>
+    <p>我发布的任务</p>
+</div>
+
+<div class="topnav">
+    <a href="#">首页</a>
+    <a href="#">任务广场</a>
+    <a href="#">我要发布</a>
+    <a href="#" style="float:right" class="active"><img src="../static/image/user_center.png" width="35px" height="35px"
+                                                        alt="user center"></a>
+
+</div>
+<div class="row">
+
+    <div class="leftcolumn">
+        <div class="card">
+            <h2>截止日期</h2>
+            <hr>
+            <p>{{mission.m_data}}</p>
+        </div>
+        <div class="card">
+            <h2>任务类型</h2>
+            <hr>
+            <p>{{mission.m_label}}</p>
+        </div>
+        <div class="card">
+            <h2>任务详情</h2>
+            <hr>
+            <p>{{mission.m_detail}}</p>
+        </div>
+        <div class="card">
+            <h2>酬金（元）</h2>
+            <hr>
+            <p>{{mission.m_money}}</p>
+        </div>
+    </div>
+
+    <br/>
+    <br/>
+    <div class="rightcolumn">
+        <h1>修改</h1>
+        <form method="post">
+            截止日期<input type="date" name="Data">
+            <br>
+            任务简述<input type="text" name="m1">
+            <br>
+            任务类型<input type="text" name="l">
+            <br>
+            任务详情<input type="text" name="d">
+            <br>
+            酬金（元）<input type="number" name="g">
+            <br>
+            <input type="submit" name="Submit" value="提交">
+        </form>
+    </div>
+</div>
+</body>
+</html>
