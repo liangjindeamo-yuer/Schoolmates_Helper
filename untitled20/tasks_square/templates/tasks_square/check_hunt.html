@@ -1,0 +1,15 @@
+<title>确定接受</title> 
+确定接收这个名为“{{ task.task_name }}”的任务吗？<br>
+<form action="{% url 'tasks_square:hunt_task' task.id %}" method="post">
+    {% csrf_token %}
+    <label for="task_type_input">联系方式</label>
+    <select class="form-control" id="task_type_input" name="contacthunter" style="width: 10rem;">
+        <option value='qq'>QQ</option>
+        <option value='wechat'>微信</option>
+        <option value='tel'>手机号</option>
+        <option value='email'>邮箱</option>
+        <option value='other'>其他方式</option>
+    </select>
+    <input type="submit" value="接受该任务"/><br>
+</form>
+<a href={% url 'tasks_square:task_square' %}>取消，再考虑一下</a>

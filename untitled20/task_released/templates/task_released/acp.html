@@ -2,30 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<<<<<<< HEAD
-    <title>acp</title>
-</head>
-<body>
-<ul>
-    <a href="http://127.0.0.1:8000/task_released/un_acp">未被接</a>
-    <a href="http://127.0.0.1:8000/task_released/acp">已被接</a>
-    <a href="http://127.0.0.1:8000/task_released/finish">已完成</a>
-    <li></li>
-    <a href="http://127.0.0.1:8000/task_square/">回到任务广场</a>
-    {% for mission in missions %}
-        {% if mission.is_pickedup == True %}
-            {% if mission.is_finished == False %}
-                <li>{{mission.task_name}}</li>
-                <a href="/task_released/f_mission/?id={{mission.id}}">完成</a>
-                <a href="/task_released/d_mission/?id={{mission.id}}">取消</a>
-                <a href="/task_released/m_detail/?id={{mission.id}}">任务详情</a>
-            {%endif%}
-        {% endif %}
-    {% endfor %}
-</ul>
-</body>
-</html>
-=======
     <title>我发布的任务</title>
     <link rel="stylesheet" type="text/css" href="../static/css/what_I_release.css">
 </head>
@@ -92,4 +68,3 @@
 </body>
 
 </html>
->>>>>>> 3d9f7ec7a0d08b69e166ba83145d96e51a5bd8a7

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="" method="post"enctype="multipart/form-data">{% csrf_token %}
+    <div class="row">
+        <div class="col-md-4 text-right"><span>邮箱:</span></div>
+        <div class="col-md-8 text-left">{{user_form.email}}</div>
+    </div>
+        <div class="row">
+        <div class="col-md-4 text-right"><span>用户名:</span></div>
+        <div class="col-md-8 text-left">{{user_form.username}}</div>
+    </div>
+        <div class="row">
+        <div class="col-md-4 text-right"><span>密码:</span></div>
+        <div class="col-md-8 text-left">{{user_form.password}}</div>
+    </div>
+        <div class="row">
+        <div class="col-md-4 text-right"><span>QQ:</span></div>
+        <div class="col-md-8 text-left">{{user_form.qq}}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-right"><span>微信:</span></div>
+        <div class="col-md-8 text-left">{{user_form.wechat}}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-right"><span>其他信息:</span></div>
+        <div class="col-md-8 text-left">{{user_form.other}}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 text-right"><span>手机号:</span></div>
+        <div class="col-md-8 text-left">{{user_form.tel}}</div>
+    </div>
+        <div class="row">
+        <div class="col-md-4 text-right"><span>头像:(不要勾选clear)</span></div>
+        <div class="col-md-8 text-left">{{user_form.photo}}</div>
+    </div>
+    <button type="submit" class="btn btn-block btn-warning">修改信息</button>
+</form>
+</body>
+</html>

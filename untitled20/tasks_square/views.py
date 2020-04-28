@@ -27,9 +27,9 @@ def task_square_sort(request, type_id, order):
         ordername = '按酬劳升序'
     elif order == '-task_reward':
         ordername = '按酬劳降序'
-    elif order =='ddltime':
+    elif order == 'ddltime':
         ordername = '按截止时间升序'
-    elif order =='-ddltime':
+    elif order == '-ddltime':
         ordername = '按截止时间降序'
     else:
         ordername = '默认排序'
@@ -63,10 +63,7 @@ def hunt_task(request, task_id):
     task = Task.objects.get(pk=task_id)
     task.is_pickedup = True
     task.hunter_id = user_id
-<<<<<<< HEAD
-=======
     task.contact_type_hunter=request.POST.get('contacthunter')
->>>>>>> 3d9f7ec7a0d08b69e166ba83145d96e51a5bd8a7
     task.save()
     return render(request, 'tasks_square/hunt_successfully.html', context={'task': task})
 
@@ -74,3 +71,12 @@ def hunt_task(request, task_id):
 def task_detail(request, task_id):
     task = Task.objects.get(pk=task_id)
     return render(request, 'tasks_square/task_detail.html', context={'task': task})
+
+
+# swf 2020年4月25日 新增
+def publisher_detail(request, publisher_id):
+    publisher = User.objects.get(pk=publisher_id)
+    his_alltasks = publisher.publisher.all()
+    return render(request, 'tasks_square/publisher_detail.html',
+                  context={'publisher': publisher,
+                           'his_alltasks': his_alltasks})
