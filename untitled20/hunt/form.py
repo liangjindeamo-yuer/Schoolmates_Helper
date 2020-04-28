@@ -1,34 +1,42 @@
 from django import forms
-from .models import User, Task,TaskType
+from .models import User, Task, TaskType
 from django.contrib.auth.forms import UserChangeForm
 from django.core.exceptions import ValidationError
 from django.contrib.auth.forms import UserCreationForm
 
+class DateInput(forms.DateInput):
+    input_type = 'ddltime'
 
 class Task1(forms.ModelForm):
     class Meta:
         model = Task
         fields = '__all__'
         # exclude用于禁止模型字段转换表单字段
-        exclude = ['is_pickedup', 'hunter','reason', 'is_finished','comment_for_hunter','comment_for_publisher','contact_type_hunter']
+        exclude = ['is_pickedup', 'hunter', 'reason', 'is_finished', 'comment_for_hunter', 'comment_for_publisher',
+                   'contact_type_hunter']
         labels = {
             'task_name': '任务名',
             'task_file': '相关文件（选填）',
             'task_reward': '任务奖励（必填）',
             'task_sketch': '任务描述（必填）',
-            'ddltime':'截止时间（必填格式）',
-            'task_type':'任务类型',
-            'contact_type_publisher':'你希望给出的联系方式'
+            'ddltime': '截止时间（必填格式）',
+            'task_type': '任务类型',
+            'contact_type_publisher': '你希望给出的联系方式'
 
         }
 
         error_messages = {
             '__all__': {'required': '请输入',
-                'invalid': '请检查格式'},
+                        'invalid': '请检查格式'},
             'ddltime': {'required': '请输入截止时间',
-                     'invalid': '格式应为2020-09-03'
-                     }
+                        'invalid': '格式应为2020-09-03'
+                        }
         }
+        widgets = {
+            'ddltime': DateInput(),
+        }
+
+
 class Type1(forms.ModelForm):
     class Meta:
         model = TaskType
@@ -36,7 +44,6 @@ class Type1(forms.ModelForm):
         # exclude用于禁止模型字段转换表单字段
         exclude = []
         labels = {
-
 
         }
 
@@ -63,18 +70,19 @@ class User1(forms.ModelForm):
             'email': '邮箱',
             'other': '其他信息（选填）',
             'password': '密码',
-            'icon':'头像'
-
+            'icon': '头像'
 
         }
 
         error_messages = {
             '__all__': {
+                'required':'请输入这个信息',
                 'invalid': '请检查格式'},
             'name': {'required': '请输入',
                      'invalid': '请检查格式'
                      }
         }
+
     def clean_email(self):
         email = self.cleaned_data.get("email")
         if "@sjtu.edu.cn" in email:

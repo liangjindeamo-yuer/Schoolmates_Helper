@@ -50,7 +50,7 @@ class Task(models.Model):
     task_type = models.ForeignKey(TaskType, default=0, on_delete=models.SET_DEFAULT)
     ddltime = models.DateField(default='2021-09-03')
 
-    task_reward = models.IntegerField(default=0, null=True, blank=True)
+    task_reward = models.IntegerField(default=0)
 
     is_pickedup = models.BooleanField(default=False)
     # 发布者确认

@@ -41,17 +41,11 @@ def task_up(request):
     else:
         task1 = Task1(request.POST, request.FILES)
         if task1.is_valid():
-            try:
-                user_id = request.session.get('user_id')
-
-                task1.save()
-                task1.cleaned_data['publisher_id'] = user_id
-                Task.objects.create(**task1.cleaned_data)
-                return HttpResponse('发布成功')
-            except:
-                ErrorDict = task1.errors
-
-                return HttpResponse(ErrorDict)
+            user_id = request.session.get('user_id')
+            task1.save()
+            task1.cleaned_data['publisher_id'] = user_id
+            Task.objects.create(**task1.cleaned_data)
+            return HttpResponse('发布成功')
         else:
             return render(request, 'Task_form.html', locals())
 
