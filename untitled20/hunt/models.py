@@ -6,7 +6,7 @@ import datetime
 
 class User(models.Model):
     username = models.CharField(max_length=20, unique=True)
-    password = models.CharField(max_length=20, default='0')
+    password = models.CharField(max_length=20)
     tel = models.PositiveIntegerField(blank=True, null=True)
     email = models.EmailField(max_length=30, unique=True)
     # 重构成icon
