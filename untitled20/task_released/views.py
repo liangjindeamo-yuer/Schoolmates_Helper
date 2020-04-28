@@ -5,7 +5,10 @@ from hunt.models import Task
 from hunt.models import User
 from hunt.models import TaskType
 from django.shortcuts import redirect
+<<<<<<< HEAD
 from hunt.models import Cnt
+=======
+>>>>>>> 3d9f7ec7a0d08b69e166ba83145d96e51a5bd8a7
 from django.views.decorators.csrf import csrf_exempt
 
 
@@ -53,6 +56,7 @@ def f_mission(request):
 @csrf_exempt
 def comment(request):
     if request.method == 'GET':
+<<<<<<< HEAD
         return render(request, 'comment.html')
     elif request.method == 'POST':
         comment1 = request.POST.get('comment')
@@ -60,6 +64,15 @@ def comment(request):
         comments.cnt1 = comment1
         comments.c_mission_id = request.session['id']
         comments.save()
+=======
+        return render(request, 'task_released/comment.html')
+    elif request.method == 'POST':
+        comment1 = request.POST.get('comment')
+        id1 = request.session.get("id")
+        task = Task.objects.get(pk=id1)
+        task.comment_for_hunter=comment1
+        task.save()
+>>>>>>> 3d9f7ec7a0d08b69e166ba83145d96e51a5bd8a7
         return redirect('/task_released/finish/')
 
 
@@ -73,12 +86,20 @@ def d_mission(request):
 
     return redirect("/task_released/reason/")
 
+<<<<<<< HEAD
 
+=======
+# 问题：应该就只能一个任务对应一个reason？大概要改一下。
+>>>>>>> 3d9f7ec7a0d08b69e166ba83145d96e51a5bd8a7
 @csrf_exempt
 def reason(request):
 
     if request.method == 'GET':
+<<<<<<< HEAD
         return render(request, 'reason.html')
+=======
+        return render(request, 'task_released/reason.html')
+>>>>>>> 3d9f7ec7a0d08b69e166ba83145d96e51a5bd8a7
     elif request.method == 'POST':
         reason = request.POST.get('reason')
         id1 = request.session['id']

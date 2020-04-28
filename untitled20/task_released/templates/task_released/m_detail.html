@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <title>detail</title>
 </head>
 <body>
@@ -10,5 +11,63 @@
 <li>任务详情:</li>
 <li>{{mission.task_sketch}}</li>
 <li>酬金（元）:{{mission.task_reward}}</li>
+=======
+    <title>我发布的任务</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/what_I_release.css">
+</head>
+<body>
+<div class="header">
+    <h1>SCHOOL Helper</h1>
+    <h3>个人中心</h3>
+    <p>我发布的任务</p>
+</div>
+
+<div class="topnav">
+    <a href="#">首页</a>
+    <a href="#">任务广场</a>
+    <a href="#">我要发布</a>
+    <a href="#" style="float:right" class="active"><img src="../static/image/user_center.png" width="35px" height="35px"
+                                                        alt="user center"></a>
+
+</div>
+<div class="row">
+    <div class="leftcolumn">
+        <img src="../static/image/details.png" alt="details button">
+    </div>
+    <div class="rightcolumn">
+        <div class="card">
+            <h2>截止日期</h2>
+            <hr>
+            <p>{{mission.ddltime}}</p>
+        </div>
+        <div class="card">
+            <h2>任务类型</h2>
+            <hr>
+            <p>{{type}}</p>
+        </div>
+        <div class="card">
+            <h2>任务详情</h2>
+            <hr>
+            <p>{{mission.task_sketch}}</p>
+        </div>
+        <div class="card">
+        <h2>酬金（元）</h2>
+        <hr>
+        <p>{{mission.task_reward}}</p>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <h4>
+
+
+
+        Written by Group 5.<br>
+        Visit us at:<br>
+        上海市闵行区东川路800号<br>
+
+    </h4>
+</div>
+>>>>>>> 3d9f7ec7a0d08b69e166ba83145d96e51a5bd8a7
 </body>
 </html>

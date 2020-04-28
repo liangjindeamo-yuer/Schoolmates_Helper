@@ -117,3 +117,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+<<<<<<< HEAD
+=======
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'hunt/static'),
+]
+MEDIA_ROOT = os.path.join(BASE_DIR, 'hunt/static/uploads')
+MEDIA_KEY_PREFIX = '/static/'
+>>>>>>> 3d9f7ec7a0d08b69e166ba83145d96e51a5bd8a7

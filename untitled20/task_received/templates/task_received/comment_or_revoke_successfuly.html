@@ -1,9 +1,0 @@
-<!--swf:2020年4月25日 整个文件新增-->
-{% if comment == 1 %}
-    评价成功,该任务已完成！
-    <title>任务已完成</title>
-{% elif revoke == 1 %}
-    <title>撤销成功</title>
-    提交成功，该任务已撤销！
-{% endif %}
-<a href={% url 'task_received:all_task_received' %}> 返回 </a>
