@@ -9,7 +9,7 @@ class User(models.Model):
     password = models.CharField(max_length=20)
     tel = models.PositiveIntegerField(blank=True, null=True)
     email = models.EmailField(max_length=30, unique=True)
-    # 重构成icon
+    # 重构成icon 4.28
     icon = models.ImageField(upload_to='photo/%Y/%m/%d/', null=True, blank=True, default='static/1.jpg')
     qq = models.CharField(max_length=20, blank=True, null=True)
     wechat = models.CharField(max_length=20, blank=True, null=True)

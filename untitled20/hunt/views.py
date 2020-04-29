@@ -106,8 +106,8 @@ def edit0(request):
     if request.method == "POST":
         # 注意：这里由于用户名邮箱设置不能重名,所以这里的方法是调用修改后先把他改成一个其他的东西，
         # 这样子如果不修改用户名邮箱，之前的用户名邮箱就会替代这个乱码，这样可能会导致一些问题但目前还没遇到，，
-        user.username = '121ub#$deded2ubu'
-        user.email = '1@10.code21213fvm'
+        user.username = '121ub#$dseded2ubu'
+        user.email = '1shshhs@sjtu.edu.cn'
         user_form = User1(request.POST, request.FILES)
         user.save()
         if user_form.is_valid():
@@ -118,7 +118,7 @@ def edit0(request):
             user.qq = user_cd['qq']
             user.wechat = user_cd['wechat']
             user.other = user_cd['other']
-            user.icon = user_cd['photo']
+            user.icon = user_cd['icon']
             user.save()
             return HttpResponse('ye')
         else:

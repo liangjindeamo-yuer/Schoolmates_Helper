@@ -70,7 +70,8 @@ class User1(forms.ModelForm):
             'email': '邮箱',
             'other': '其他信息（选填）',
             'password': '密码',
-            'icon': '头像'
+            'icon': '头像',
+            'photo':'头像'
 
         }
 
