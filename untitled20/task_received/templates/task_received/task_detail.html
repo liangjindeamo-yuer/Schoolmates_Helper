@@ -1,7 +1,16 @@
+<title>任务详情:{{ task.task_name }}</title>
 <h1>任务名：{{ task.task_name }}</h1><br>
 任务简介：{{ task.task_sketch }}<br>
-发布人：{{ task.publisher.username }}<br>
+发布者：<a href={% url 'tasks_square:publisher_detail' task.publisher_id %}>{{ task.publisher.username }}</a><br>
 联系方式：{{ task.contactpublisher }}{{ contact }}<br>
+<b>撤销记录：</b><br>
+{% if task.revoked_tasks.all.exists %}
+    {% for reason in task.revoked_tasks.all %}
+        匿名用户：{{ reason.revoke_reason }}<br>
+    {% endfor %}
+{% else %}
+    暂无撤销记录
+{% endif %}
 
 <!--swf 2020年4月25日 加了if语句-->
 {% if task.is_finished == False %}

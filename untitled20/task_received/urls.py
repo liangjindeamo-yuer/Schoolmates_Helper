@@ -18,4 +18,6 @@ urlpatterns = [
     # 2020年4月25日 swf 新增
     path('comment/',views.comment,name='comment'),
     path('revoke/',views.revoke,name='revoke'),
+    # 2020年4月30日 swf 新增
+    path('logout/',views.logout,name='logout'),
 ]

@@ -5,7 +5,7 @@ from . import views
 app_name = 'hunt'
 urlpatterns = [
 
-    path('1/', views.index, name='index'),
+    path('logon/', views.index, name='index'),
     #注册,
     path('login/',views.login,name='login'),
     #登录

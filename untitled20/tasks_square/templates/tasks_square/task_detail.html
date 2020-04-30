@@ -1,14 +1,64 @@
-<title>任务详情</title> 
+<head>
+    <title>任务详情</title> 
+</head>
 <h1>任务名：{{ task.task_name }}</h1>
 <!--swf 2020年4月25日 改动 新增用户信息页面-->
-发布者：<a href={% url 'tasks_square:publisher_detail' task.publisher_id %}>{{task.publisher.username}}</a><br>
+发布者：<a href={% url 'tasks_square:publisher_detail' task.publisher_id %}>{{ task.publisher.username }}</a><br>
 <!--swf 2020年4月25日 新增：显示头像，且点击头像可以进入发布者用户详情页面？怎么放？-->
 <!--<img src="{{ task.hunter.photo }}" width="50%" height="20%"/>-->
 任务简介：{{ task.task_sketch }}<br>
 任务酬劳：¥{{ task.task_reward }}<br>
 截止时间：¥{{ task.ddltime }}<br>
-
+<b>撤销记录：</b><br>
+{% if task.revoked_tasks.all.exists %}
+    {% for reason in task.revoked_tasks.all %}
+        匿名用户：{{ reason.revoke_reason }}<br>
+    {% endfor %}
+{% else %}
+    暂无撤销记录
+{% endif %}
+{% if user_id %}
 <form action="{% url 'tasks_square:check_hunt' task.id %}" method="post">
     {% csrf_token %}
     <input type="submit" value="接受任务"/>
 </form>
+
+<!--2020年4月30日 swf 新增 讨论-->
+<h2>问答</h2>
+{% if task.discussed_task.all.exists %}
+    <ol>
+        {% for discussion in task.discussed_task.all %}
+            <li>
+                {{ discussion.discuss }}<a
+                    href={% url 'tasks_square:publisher_detail' discussion.discussant.id %}>({{ discussion.discussant.username }})</a>
+                {# 查过 可以用前端实现 点击"回复"后显示回复框 现在直接显示出来 #}
+                <a href="#">回复</a><br>
+                {% if discussion.response_discuss.all.exists %}
+                    <ol>
+                        {% for response in discussion.response_discuss.all %}
+                            <li>{{ response.response }}<a
+                                    href={% url 'tasks_square:publisher_detail' response.respondent.id %}>({{ response.respondent.username }})</a><br>
+                            </li>
+                        {% endfor %}
+                    </ol>
+                {% endif %}
+                <form action="{% url 'tasks_square:response' task.id discussion.id %}" method="post">
+                    {% csrf_token %}
+                    {# 前端可以设置一下这个input非空 #}
+                    <input type="text" name="response" id="response">
+                    <input type="submit" value="回复"/><br>
+                </form>
+            </li>
+        {% endfor %}
+    </ol>
+{% endif %}
+<form action="{% url 'tasks_square:discuss' task.id %}" method="post">
+    {% csrf_token %}
+    <label for="discussion">输入想说的内容</label>
+    {# 前端可以设置一下这个input非空 #}
+    <input type="text" name="discussion" id="discussion">
+    <input type="submit" value="发布"/><br>
+</form>
+{% else %}
+<a href={% url 'hunt:login' %}>请先登录！</a>
+{% endif %}

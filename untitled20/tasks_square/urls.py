@@ -11,4 +11,10 @@ urlpatterns = [
     path('<int:task_id>/task_detail', views.task_detail, name='task_detail'),
     # swf 2020年4月25日 新增
     path('<int:publisher_id>/publisher_detail/',views.publisher_detail,name='publisher_detail'),
+    # swf 2020年4月30日 关键词查找任务
+    path('findtasks/',views.findtasks,name='findtasks'),
+    # swf 2020年4月30日 讨论
+    path('discuss/<int:task_id>/', views.discuss, name='discuss'),
+    path('response/<int:task_id>/<int:discussion_id>/', views.response, name='response'),
+
 ]

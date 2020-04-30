@@ -12,17 +12,18 @@
     <h1>SCHOOL Helper</h1>
     <p><b>我接受的任务</b></p>
 </div>
+<!--2020年4月30日 新增 swf 未登录显示 if-->
+{% if user_id %}
 
 <div class="topnav">
     <a href="#" style="margin-left: 100px;">首页</a>
     <a href={% url 'tasks_square:task_square' %}>任务广场</a>
-    <a href={% url 'hunt:up0' %} class="active">我要发布</a>
-    <a href={% url 'hunt:edit' %}>个人中心</a>
+    <a href={% url 'hunt:up0' %}>我要发布</a>
+    <a href={% url 'hunt:edit' %} class="active">个人中心</a>
     <a href="#" style="float:right; margin-right: 100px;"><img src="..\..\static\image\user_center.png" width="35px"
                                                                height="35px"></a>
 
 </div>
-
 <div id="navbar">
     <h2>我接受的任务</h2>
     <ul>
@@ -70,7 +71,27 @@
             </div>
         </div>
     {% endfor %}
+<!--2020年4月30日 swf 分页功能-->
+<div class="pagination">
+    <span class="step-links">
+        {% if task_received_list.has_previous %}
+            <a href="?page={{ task_received_list.previous_page_number }}">上一页</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ task_received_list.number }} of {{ task_received_list.paginator.num_pages }}.
+        </span>
+
+        {% if task_received_list.has_next %}
+            <a href="?page={{ task_received_list.next_page_number }}">下一页</a>
+        {% endif %}
+    </span>
 </div>
+</div>
+
+{% else %}
+<a href={% url 'hunt:login' %}>请先登录！</a>
+{% endif %}
 </body>
 
 </html>
