@@ -216,3 +216,23 @@ body {
     -webkit-box-orient: vertical;
     float: left;
 }
+
+.pagination
+{
+    float: left;
+    margin-left: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagination a {
+    color: black;
+    padding: 4px 6px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) 
+{
+    background-color: #9b94e0;
+}
