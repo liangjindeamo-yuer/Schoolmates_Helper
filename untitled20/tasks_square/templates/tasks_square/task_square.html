@@ -30,8 +30,9 @@
 
 <div class="topnav">
     <a href="#">首页</a>
-    <a href="#" class="active">任务广场</a>
-    <a href="#">我要发布</a>
+    <a href={% url 'tasks_square:task_square' %} class="active">任务广场</a>
+    <a href={% url 'hunt:up0' %}>我要发布</a>
+    <a href={% url 'hunt:edit' %}>个人中心</a>
     <a href="#" style="float:right"><img src="/../../static/image/user_center.png" width="35px" height="35px"
                                          alt="user center"></a>
 
@@ -88,7 +89,7 @@
 
                             <div class="card-exceprt">
                                 <!--查到css可以实现只显示两行，现在这种因为用了p，前后距离大，前端或许能改-->
-                                <span style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 1;-webkit-box-orient: vertical;">{{ task.task_sketch }}</span>
+                                <span style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;">{{ task.task_sketch }}</span>
                             </div>
                             <br/>
                             <br/>

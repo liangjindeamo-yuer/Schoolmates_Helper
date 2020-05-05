@@ -16,5 +16,6 @@ urlpatterns = [
     # swf 2020年4月30日 讨论
     path('discuss/<int:task_id>/', views.discuss, name='discuss'),
     path('response/<int:task_id>/<int:discussion_id>/', views.response, name='response'),
+    path('delete/<int:id>/<slug:type>/<int:task_id>/', views.delete, name='delete'),
 
 ]
