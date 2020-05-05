@@ -1,64 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>任务详情</title> 
+    <link rel="stylesheet" type="text/css" href="/../../static/css/detail.css">
 </head>
-<h1>任务名：{{ task.task_name }}</h1>
-<!--swf 2020年4月25日 改动 新增用户信息页面-->
-发布者：<a href={% url 'tasks_square:publisher_detail' task.publisher_id %}>{{ task.publisher.username }}</a><br>
-<!--swf 2020年4月25日 新增：显示头像，且点击头像可以进入发布者用户详情页面？怎么放？-->
-<!--<img src="{{ task.hunter.photo }}" width="50%" height="20%"/>-->
-任务简介：{{ task.task_sketch }}<br>
-任务酬劳：¥{{ task.task_reward }}<br>
-截止时间：¥{{ task.ddltime }}<br>
-<b>撤销记录：</b><br>
-{% if task.revoked_tasks.all.exists %}
-    {% for reason in task.revoked_tasks.all %}
-        匿名用户：{{ reason.revoke_reason }}<br>
-    {% endfor %}
-{% else %}
-    暂无撤销记录
-{% endif %}
-{% if user_id %}
-<form action="{% url 'tasks_square:check_hunt' task.id %}" method="post">
-    {% csrf_token %}
-    <input type="submit" value="接受任务"/>
-</form>
+<body>
+<div class="header">
+    <h1>SCHOOL Helper</h1>
+    <h3>任务广场</h3>
+</div>
 
-<!--2020年4月30日 swf 新增 讨论-->
-<h2>问答</h2>
-{% if task.discussed_task.all.exists %}
-    <ol>
-        {% for discussion in task.discussed_task.all %}
-            <li>
-                {{ discussion.discuss }}<a
-                    href={% url 'tasks_square:publisher_detail' discussion.discussant.id %}>({{ discussion.discussant.username }})</a>
-                {# 查过 可以用前端实现 点击"回复"后显示回复框 现在直接显示出来 #}
-                <a href="#">回复</a><br>
-                {% if discussion.response_discuss.all.exists %}
-                    <ol>
-                        {% for response in discussion.response_discuss.all %}
-                            <li>{{ response.response }}<a
-                                    href={% url 'tasks_square:publisher_detail' response.respondent.id %}>({{ response.respondent.username }})</a><br>
+<div class="topnav">
+    <a href="#">首页</a>
+    <a href="#" class="active">任务广场</a>
+    <a href="#">我要发布</a>
+    <a href="#" style="float:right"><img src="/../../static/image/user_center.png" width="35px" height="35px"
+                                         alt="user center"></a>
+
+</div>
+<div class="row">
+    <div class="leftcolumn">
+        <img src="/../../static/image/details.png" alt="details button">
+    </div>
+    <div class="rightcolumn">
+        <div class="card">
+            <h1>{{ task.task_name }}</h1></div>
+        <!--swf 2020年4月25日 改动 新增用户信息页面-->
+        <div class="card">
+            <h2>发布者</h2>
+            <hr>
+
+
+            <!--swf 2020年4月25日 新增：显示头像，且点击头像可以进入发布者用户详情页面？怎么放？-->
+            <!-- yjl 5.3 图片无法显示-->
+            <a href={% url 'tasks_square:publisher_detail' task.publisher_id %}><img src="{{ task.hunter.photo }}"
+                                                                                     width="50%" height="20%"></a>
+            <br/>
+            <a style="text-decoration: none;color:black"
+               href={% url 'tasks_square:publisher_detail' task.publisher_id %}>{{ task.publisher.username }}</a><br>
+        </div>
+        <div class="card">
+            <h2>任务简介
+                <hr>
+            </h2>
+            {{ task.task_sketch }}<br></div>
+        <div class="card">
+            <h2>任务酬劳
+                <hr>
+            </h2>
+            ¥{{ task.task_reward }}<br></div>
+        <div class="card">
+            <h2>截止时间
+                <hr>
+            </h2>
+            {{ task.ddltime }}<br></div>
+        <div class="card"><b>撤销记录：</b><br>
+            {% if task.revoked_tasks.all.exists %}
+                {% for reason in task.revoked_tasks.all %}
+                    匿名用户：{{ reason.revoke_reason }}<br>
+                {% endfor %}
+            {% else %}
+                暂无撤销记录
+            {% endif %}
+        </div>
+        <br/>
+        <br/>
+        <div style="text-align:center">
+            {% if user_id %}
+                <form action="{% url 'tasks_square:check_hunt' task.id %}" method="post">
+                    {% csrf_token %}
+                    <input class="button" type="submit" value="接受任务"/>
+                </form>
+                </div>
+
+                <!--2020年4月30日 swf 新增 讨论-->
+                <h2>问答</h2>
+
+                {% if task.discussed_task.all.exists %}
+                    <ul>
+                        {% for discussion in task.discussed_task.all %}
+                            <li>
+                                <div class="card">
+                                    <a href={% url 'tasks_square:publisher_detail' discussion.discussant.id %}><strong>{{ discussion.discussant.username }}</strong></a>
+                                    <br/>
+                                    {{ discussion.discuss }}
+
+                                </div>
+                                {# 查过 可以用前端实现 点击"回复"后显示回复框 现在直接显示出来 #}
+
+
+                                {% if discussion.response_discuss.all.exists %}
+                                    <ul>
+                                        {% for response in discussion.response_discuss.all %}
+                                            <li>
+                                                <div class="card">
+                                                    <a href={% url 'tasks_square:publisher_detail' response.respondent.id %}><strong>{{ response.respondent.username }}</strong></a>
+                                                    <br>
+                                                    {{ response.response }}
+
+                                                </div>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+
+                                <form action="{% url 'tasks_square:response' task.id discussion.id %}" method="post">
+                                    <script type="text/javascript">
+                                        window.onload = function () {
+                                            var wenzi = document.getElementById('check');
+                                            var res = document.getElementById('response');
+                                            var sub = document.getElementById('submit');
+                                            wenzi.onfocus = function () {
+                                                if (res.style.display == 'block') {
+                                                    res.style.display = 'none';
+                                                } else {
+                                                    res.style.display = 'block';
+                                                }
+                                                if (sub.style.display == 'block') {
+                                                    sub.style.display = 'none';
+                                                } else {
+                                                    sub.style.display = 'block';
+                                                }
+                                            }
+                                        }
+
+                                    </script>
+                                    {% csrf_token %}
+                                    {# 前端可以设置一下这个input非空 #}
+                                    <br/>
+                                    <br/>
+                                    <input class="button" type="button" id="check" style="display:block;"
+                                           value="回复本楼层"><br>
+                                    <textarea class="sub"  style="display:none;" name="response" id="response" required></textarea>
+                                    <input class="button" style="display:none;" id="submit" type="submit"
+                                           value="提交" ><br>
+
+
+                                </form>
                             </li>
                         {% endfor %}
-                    </ol>
+                    </ul>
                 {% endif %}
-                <form action="{% url 'tasks_square:response' task.id discussion.id %}" method="post">
+                <form action="{% url 'tasks_square:discuss' task.id %}" method="post">
                     {% csrf_token %}
+                    <label for="discussion"><strong>讨论</strong></label>
+                    <br/>
                     {# 前端可以设置一下这个input非空 #}
-                    <input type="text" name="response" id="response">
-                    <input type="submit" value="回复"/><br>
+                    <textarea class="discussion" name="discussion" id="discussion" required></textarea>
+                    <br/>
+                    <input class="button" type="submit" value="发布"/><br>
                 </form>
-            </li>
-        {% endfor %}
-    </ol>
-{% endif %}
-<form action="{% url 'tasks_square:discuss' task.id %}" method="post">
-    {% csrf_token %}
-    <label for="discussion">输入想说的内容</label>
-    {# 前端可以设置一下这个input非空 #}
-    <input type="text" name="discussion" id="discussion">
-    <input type="submit" value="发布"/><br>
-</form>
-{% else %}
-<a href={% url 'hunt:login' %}>请先登录！</a>
-{% endif %}
+                </div>
+                </div>
+            {% else %}
+                <a href={% url 'hunt:login' %}>请先登录！</a>
+            {% endif %}
+<div class="footer">
+    <h4>
+
+
+        Written by Group 5.<br>
+        Visit us at:<br>
+        上海市闵行区东川路800号<br>
+
+    </h4>
+</div>
+</body>
+</html>

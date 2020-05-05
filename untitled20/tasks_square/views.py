@@ -85,7 +85,7 @@ def task_square_sort(request, type_id, order):
             tasks_list = Task.objects.filter(is_pickedup=False).order_by(order)
 
     data = {
-        'tasks_list': tasks_list,
+        'tasks': tasks_list,
         'username': username,
         'task_types': task_types,
         'type_id': type_id,
