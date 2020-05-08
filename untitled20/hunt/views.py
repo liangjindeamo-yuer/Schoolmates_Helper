@@ -11,7 +11,7 @@ from django.core.exceptions import ValidationError
 from hunt.models import *
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-
+import random
 
 # 任务发布
 def taskup0(request):
@@ -78,6 +78,7 @@ def login(request):
                 request.session['user_id'] = user1.id
                 # swf:第二轮之后实现，显示登录成功后几秒自动跳转到任务广场，现在先:直接到任务广场APP的视图
                 return HttpResponseRedirect(reverse('tasks_square:task_square'))
+                #return HttpResponse('发布成功')
             else:
                 print('密码错误')
                 return HttpResponse('密码错误')
@@ -94,22 +95,32 @@ def index(request):
         user1 = User1(request.POST, request.FILES)
         if user1.is_valid():
             user1.save()
-            return HttpResponse('注册成功')
+            return HttpResponseRedirect(reverse('hunt:login'))
+
         else:
             return render(request, 'data_form.html', locals())
 
 
 # 个人信息显示与修改
 def edit0(request):
+
+    alphabet = 'abcdefghijklmnopqrstuvwxyz!@#$%^&*()'
+    character = random.sample(alphabet, 5)
+    characters=character[0]+character[1]+character[2]+character[3]+character[4]
+
     user_id = request.session.get('user_id')
     user = User.objects.get(id=user_id)
     if request.method == "POST":
         # 注意：这里由于用户名邮箱设置不能重名,所以这里的方法是调用修改后先把他改成一个其他的东西，
         # 这样子如果不修改用户名邮箱，之前的用户名邮箱就会替代这个乱码，这样可能会导致一些问题但目前还没遇到，，
-        user.username = '121ub#$dseded2ubu'
-        user.email = '1shshhs@sjtu.edu.cn'
+        user.username = characters
+        user.email = characters+'1shshhs@sjtu.edu.cn'
         user_form = User1(request.POST, request.FILES)
         user.save()
+        Photo=user.icon
+        context = {
+            'imgs': Photo
+        }
         if user_form.is_valid():
             user_cd = user_form.cleaned_data
             user.email = user_cd['email']
@@ -124,7 +135,7 @@ def edit0(request):
         else:
             ErrorDict = user_form.errors
 
-            return HttpResponse(ErrorDict)
+            return render(request, 'edit.html', locals())
     else:
 
         user_form = User1(instance=user)
