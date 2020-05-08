@@ -19,7 +19,7 @@ class User(models.Model):
     is_delete = models.BooleanField(default=False)
     # 信誉度（没想好怎么实现）
     # 其他地方有用到吗？没有就直接改成rank
-    star = models.PositiveIntegerField(default=5)
+    rank = models.PositiveIntegerField(default=5)
 
 
 class TaskType(models.Model):

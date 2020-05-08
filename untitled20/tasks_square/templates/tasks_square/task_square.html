@@ -9,21 +9,6 @@
 </head>
 <body>
 <!--2020年4月30日 新增 swf 退出登录-->
-<<<<<<< HEAD
-{% if username %}
-    Welcome,{{ username }}！<br>
-    <a href={% url 'task_received:logout' %}>退出登录</a>
-{% else %}
-    Welcome,游客!<br>
-    <a href={% url 'hunt:login' %}>登录</a>
-    <a href={% url 'hunt:index' %}>注册</a>
-{% endif %}
-<h1>任务广场</h1>
-<!--一登录进去就是任务广场，含有其他按钮:个人中心、我要发布任务之类，链接加到这里-->
-<a href={% url 'task_received:all_task_received' %}><h2>我接受的任务</h2></a>
-<a href="http://127.0.0.1:8000/task_released/un_acp"><h2>我发布的任务</h2></a>
-<a href={% url 'hunt:up0' %}><h2>我要发布任务</h2></a>
-=======
 <div>
     {% if username %}
         <strong>Welcome,{{ username }}！</strong>
@@ -31,16 +16,17 @@
     {% else %}
         <strong>Welcome,游客!</strong>
         <a class="button" href={% url 'hunt:login' %}>登录</a>
+        <a class="button" href={% url 'hunt:index' %}>注册</a>
+
 
 
     {% endif %}
-<br/>
-        <br/>
+    <br/>
+    <br/>
 </div>
 <div class="header">
     <h1>SCHOOL Helper</h1>
     <h3>任务广场</h3>
->>>>>>> 4943715117c8c3a5c093ef30c1ea345c85256346
 
 </div>
 
@@ -114,10 +100,10 @@
                             </div>
                             <br/>
                             <div style="text-align: center;">
-                            <form action="{% url 'tasks_square:check_hunt' task.id %}" method="post">
-                                {% csrf_token %}
-                                <input class="card-button" type="submit" value="接受任务"/>
-                            </form>
+                                <form action="{% url 'tasks_square:check_hunt' task.id %}" method="post">
+                                    {% csrf_token %}
+                                    <input class="card-button" type="submit" value="接受任务"/>
+                                </form>
                             </div>
 
                         </div>
@@ -154,7 +140,6 @@
 </div>
 <div class="footer">
     <h4>
-
 
 
         Written by Group 5.<br>
