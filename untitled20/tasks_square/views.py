@@ -84,8 +84,19 @@ def task_square_sort(request, type_id, order):
         else:
             tasks_list = Task.objects.filter(is_pickedup=False).order_by(order)
 
+    paginator = Paginator(tasks_list, 10)  # Show 5 contacts per page
+    page = request.GET.get('page')
+    try:
+        tasks = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        tasks = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        tasks = paginator.page(paginator.num_pages)
+
     data = {
-        'tasks_list': tasks_list,
+        'tasks': tasks,
         'username': username,
         'task_types': task_types,
         'type_id': type_id,
@@ -210,3 +221,10 @@ def response(request, task_id, discussion_id):
         return HttpResponseRedirect(reverse('tasks_square:task_detail', args=[task_id]))
     else:
         return render(request,'tasks_square/task_detail.html')
+
+def delete(request,id,type,task_id):
+    if type=='discuss':
+        Discuss.objects.get(pk=id).delete()
+    elif type=='response':
+        Response.objects.get(pk=id).delete()
+    return HttpResponseRedirect(reverse('tasks_square:task_detail', args=[task_id]))

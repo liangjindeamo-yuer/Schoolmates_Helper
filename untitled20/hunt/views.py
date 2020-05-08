@@ -47,7 +47,7 @@ def task_up(request):
             Task.objects.create(**task1.cleaned_data)
             return HttpResponse('发布成功')
         else:
-            return render(request, 'Task_form.html', locals())
+            return render(request, 'task_form.html', locals())
 
 
 def taskcopy(request):

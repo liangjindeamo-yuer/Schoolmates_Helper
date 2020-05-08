@@ -61,8 +61,20 @@ body {
     background-color: white;
     color: black;
 }
+/* 搜索框 */
 
+.search {
+    height: 42px;
+    width: 250px;
+    border-radius: 42px;
+    background: rgba(255, 255, 255, 0.5);
+    float: right;
+}
 
+.search input:focus {
+    width: 300px;
+    height: 30px;
+}
 /* 创建两列 */
 
 
@@ -70,65 +82,27 @@ body {
 
 .leftcolumn {
     float: left;
-    width: 25%;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-}
-
-li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-li a.active {
-    background-color: #0099FF;
-    color: white;
-}
-
-li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
+    width: 15%;
 }
 
 
-/* 右侧栏 */
+
+/* 右侧 */
 
 .rightcolumn {
     float: left;
     width: 75%;
     padding-left: 20px;
 }
-
-
-
-
-/* 文章卡片效果 */
-
 .card {
-    background-color: white;
+    background-color: rgba(255,255,255,0.7);
     padding: 20px;
     margin-top: 20px;
+    margin-right: 20px;
+
 }
-
-
-/* 列后面清除浮动 */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-/* 连接按钮 */
 .button {
-   background: #1e7db9;
+    background: #1e7db9;
     padding: 5px 10px 6px;
     color: #fff;
     text-decoration: none;
@@ -143,7 +117,39 @@ li a:hover:not(.active) {
     position: relative;
     cursor: pointer;
 }
-
+ul {
+    list-style-type: none;
+}
+li a {
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.sub {
+    width: 300px;
+    height: 150px;
+    resize: none;
+    font-size: 18px;
+    border: solid thin #AAAAAA;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 0px 5px;
+}
+.discussion {
+    width: 600px;
+    height: 150px;
+    resize: none;
+    font-size: 18px;
+    border: solid thin #AAAAAA;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 0px 5px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 /* 底部 */
 
 .footer {
