@@ -156,9 +156,11 @@ def task_detail(request, task_id):
 def publisher_detail(request, publisher_id):
     publisher = User.objects.get(pk=publisher_id)
     his_alltasks = publisher.publisher.all()
+    his_finished = publisher.hunter.all()
     return render(request, 'tasks_square/publisher_detail.html',
                   context={'publisher': publisher,
-                           'his_alltasks': his_alltasks})
+                           'his_alltasks': his_alltasks,
+                           'his_finished':his_finished})
 
 
 def findtasks(request):

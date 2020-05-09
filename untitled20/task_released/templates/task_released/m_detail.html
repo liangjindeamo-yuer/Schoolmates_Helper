@@ -25,6 +25,14 @@
         <img src="/../../static/image/details.png" alt="details button">
     </div>
     <div class="rightcolumn">
+        {% if mission.hunter != Null %}
+            接收者：<a href={% url 'tasks_square:publisher_detail' mission.hunter_id %}>{{ mission.hunter.username }}</a><br>
+        {% endif %}
+        <div class="card">
+            <h2>希望的联系方式</h2>
+            <hr>
+            <p>{{mission.contact_type_publisher}}</p>
+        </div>
         <div class="card">
             <h2>截止日期</h2>
             <hr>

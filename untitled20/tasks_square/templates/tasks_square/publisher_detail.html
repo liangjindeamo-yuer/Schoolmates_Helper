@@ -28,7 +28,7 @@
             <h1>{{ publisher.username }}</h1>
         </div>
 
-
+        发布的任务
         {% for task in his_alltasks %}
             <ul>
                 <li>
@@ -43,7 +43,34 @@
                         {% else %}
                             暂无评价<br>
                         {% endif %}
-                        <b style="color:grey;">撤销记录：</b><br>
+                        <b style="color:grey;">作为发布者撤销记录：</b><br>
+                        {% if task.canceled_tasks.all.exists %}
+                            {% for reason in task.canceled_tasks.all %}
+                                匿名用户：{{ reason.canceled_reason }}<br>
+                            {% endfor %}
+                        {% else %}
+                            暂无撤销记录
+                        {% endif %}
+                    </div>
+                </li>
+            </ul>
+        {% endfor %}
+        完成或取消的任务
+        {% for task in his_finished %}
+            <ul>
+                <li>
+                    <div class="card"><b style="color:grey;">任务名：</b>
+                            {{ task.task_name }}
+                        <br>
+                        <b style="color:grey;">任务完成评论：</b><br>
+                        {% if task.commented_tasks.all.exists %}
+                            {% for comment in task.commented_tasks.all %}
+                                {{ task.publisher.username }}：{{ comment.comment_for_hunter }}<br>
+                            {% endfor %}
+                        {% else %}
+                            暂无评价<br>
+                        {% endif %}
+                        <b style="color:grey;">作为接收者撤销记录：</b><br>
                         {% if task.revoked_tasks.all.exists %}
                             {% for reason in task.revoked_tasks.all %}
                                 匿名用户：{{ reason.revoke_reason }}<br>

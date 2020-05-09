@@ -6,6 +6,7 @@ from hunt import models
 from hunt.models import Task
 from hunt.models import User
 from hunt.models import TaskType
+from hunt.models import Cancel_reason
 from django.shortcuts import redirect
 from django.views.decorators.csrf import csrf_exempt
 
@@ -140,13 +141,13 @@ def comment(request):
 
 
 def d_mission(request):
-
     id1 = request.GET.get("id")
-    mission = Task.objects.get(pk=id1)
-    mission.is_pickedup = False
-    mission.save()
+    task = Task.objects.get(pk=id1)
+    task.is_pickedup = False
+    request.session['hunter'] = task.hunter_id
+    task.hunter = None
+    task.save()
     request.session['id'] = id1
-
     return redirect("/task_released/reason/")
 
 # 问题：应该就只能一个任务对应一个reason？大概要改一下。
@@ -158,9 +159,12 @@ def reason(request):
     elif request.method == 'POST':
         reason = request.POST.get('reason')
         id1 = request.session['id']
-        mission = Task.objects.get(pk=id1)
-        mission.reason = reason
-        mission.save()
+        hunter = request.session['hunter']
+        cancel = Cancel_reason()
+        cancel.cancel_reason = reason
+        cancel.task = Task.objects.get(pk=id1)
+        cancel.user = User.objects.get(pk=hunter)
+        cancel.save()
         return redirect("/task_released/finish/")
 
 
@@ -200,6 +204,7 @@ def m_change(request):
         Data = request.POST.get('Data')
         m1 = request.POST.get('m1')
         l = request.POST.get('task_type')
+        c = request.POST.get('task_contact')
         d = request.POST.get('task_sketch')
         g = request.POST.get('g')
         file = request.FILES.get('task_file')
@@ -215,6 +220,7 @@ def m_change(request):
         mission.task_sketch = d
         mission.task_reward = g
         mission.task_file = file.name
+        mission.contact_type_publisher = c
         mission.save()
         return redirect("/task_released/un_acp/")
 

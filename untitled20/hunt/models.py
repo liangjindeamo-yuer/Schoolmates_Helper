@@ -42,7 +42,6 @@ class Contact(models.Model):
 
 class Task(models.Model):
     # zjt新增的(2020年4月27日晚上讨论之后，另外新增的)，记得告诉 ly
-    reason = models.CharField(max_length=128, null=True)
 
     comment_for_hunter = models.CharField(max_length=512, null=True)
     comment_for_publisher = models.CharField(max_length=512, null=True)
@@ -75,6 +74,12 @@ class Task(models.Model):
 class Revoke_reason(models.Model):
     revoke_reason = models.CharField(max_length=512, null=True)
     task = models.ForeignKey(Task, on_delete=models.CASCADE, related_name='revoked_tasks', db_constraint=False)
+
+
+class Cancel_reason(models.Model):
+    cancel_reason = models.CharField(max_length=512, null=True)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE, related_name='canceled_tasks', db_constraint=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_canceled', db_constraint=False)
 
 
 # swf 2020年5月1日 (告诉ly) 任务下方讨论功能
