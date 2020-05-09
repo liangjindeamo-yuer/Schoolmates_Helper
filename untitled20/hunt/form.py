@@ -34,6 +34,9 @@ class Task1(forms.ModelForm):
         }
         widgets = {
             'ddltime': DateInput(),
+            'password': forms.PasswordInput(),
+            'repassword':forms.PasswordInput()
+
         }
 
 
@@ -75,7 +78,12 @@ class User1(forms.ModelForm):
             'photo':'头像'
 
         }
+        widgets = {
+            'ddltime': DateInput(),
+            'password': forms.PasswordInput(),
+            'repassword':forms.PasswordInput()
 
+        }
         error_messages = {
             '__all__': {
                 'required':'请输入这个信息',
@@ -91,17 +99,13 @@ class User1(forms.ModelForm):
             return email
         else:
             raise forms.ValidationError("请输入交大邮箱")
-    def clean00(self):
+
+    def clean_repassword(self):
         pwd1 = self.cleaned_data.get('password')
 
         pwd2 = self.cleaned_data.get('repassword')
 
-        if pwd1 == pwd2:
-
-            pass
-
+        if pwd1 != pwd2:
+            raise forms.ValidationError('密码输入不一致')
         else:
-
-            from django.core.exceptions import ValidationError  # 这里异常模块导入要放在函数里面，放到文件开头有时会报错，找不到
-
-            raise ValidationError('密码输入不一致')
+            return self.cleaned_data
