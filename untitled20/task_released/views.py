@@ -1,3 +1,5 @@
+import os
+
 from django.shortcuts import render
 from django.shortcuts import HttpResponse
 from hunt import models
@@ -198,7 +200,11 @@ def m_change(request):
         l = request.POST.get('task_type')
         d = request.POST.get('task_sketch')
         g = request.POST.get('g')
-        file = request.POST.get('task_file')
+        file = request.FILES.get('task_file')
+        destination = open(os.path.join("D:/Schoolmates_Helper/untitled20/static/uploads",file.name),'wb+')
+        for chunk in file.chunks():
+            destination.write(chunk)
+        destination.close()
         mission = Task.objects.get(pk=id1)
         type = TaskType.objects.get(pk=l)
         mission.ddltime = Data
@@ -206,15 +212,17 @@ def m_change(request):
         mission.task_type = type
         mission.task_sketch = d
         mission.task_reward = g
-        mission.task_file = file
+        mission.task_file = file.name
         mission.save()
         return redirect("/task_released/un_acp/")
 
 
 def download(request):
-    site = request.GET.get('site')
+    site = 'D:/Schoolmates_Helper/untitled20/static/uploads/'
+    name = request.GET.get("name")
+    site = site + name
     file = open(site,'rb')
     response = HttpResponse(file)
     response['Content-Type'] = 'application/octet-stream'
-    response['Content-Disposition'] = 'attachment'
+    response['Content-Disposition'] = 'attachment;filename ='+name.encode('utf-8').decode('ISO-8859-1')
     return response

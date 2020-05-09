@@ -50,7 +50,7 @@
 
     <div class="rightcolumn">
         <h1>修改</h1>
-        <form method="post">
+        <form enctype="multipart/form-data" method="post">
             截止日期<input type="date" name="Data">
             <div class="form-group">
                 <label for="task_type_input">任务类型</label>
@@ -74,7 +74,7 @@
             <br>
             <div class="form-group">
                 <label for="task_file_input">任务附件</label>
-                <input type="file" name="task_file">#}
+                <input type="file" name="task_file">
             </div>
             <br>
             <input type="submit" name="Submit" value="提交">
