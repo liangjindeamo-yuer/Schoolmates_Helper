@@ -81,6 +81,7 @@ def login(request):
             if users.exists():
                 user1 = users.first()
                 user1.is_active = True
+
                 user1.save()  # 登录状态修改
                 request.session['username'] = user1.username
                 request.session['user_id'] = user1.id
@@ -102,6 +103,7 @@ def index(request):
     else:
         user1 = User1(request.POST, request.FILES)
         if user1.is_valid():
+
             user1.save()
             return render(request, 'hunt/logon_successfully.html')
 
