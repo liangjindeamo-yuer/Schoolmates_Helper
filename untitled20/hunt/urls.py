@@ -13,5 +13,5 @@ urlpatterns = [
     #个人信息修改
     path('up0/',views.task_up,name='up0'),
     #任务发布
-    path('up1/', views.taskup0, name='up1')
+    # path('up1/', views.taskup0, name='up1')
     ]

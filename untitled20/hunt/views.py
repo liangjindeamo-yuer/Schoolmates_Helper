@@ -13,8 +13,8 @@ from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 import random
 
-# 任务发布
-def taskup0(request):
+# 任务发布 2020年5月9日 旧版发布不注释掉，每次会发布两个任务
+'''def taskup0(request):
     if request.method == 'GET':
         task1 = Task()
         return render(request, 'task.html', locals())
@@ -30,14 +30,14 @@ def taskup0(request):
         user_id = request.session.get('user_id')
         task1.publisher_id = user_id
         task1.save()
-        return HttpResponse('发布成功')
+        return HttpResponse('发布成功')'''
 
 
 # 新版任务发布，以这个为准，之前的先不删了，对应的前端是task_form.html
 def task_up(request):
     if request.method == 'GET':
         task1 = Task1()
-        return render(request, 'task_form.html', locals())
+        return render(request, 'hunt/task_form.html', locals())
     else:
         task1 = Task1(request.POST, request.FILES)
         if task1.is_valid():
@@ -45,9 +45,9 @@ def task_up(request):
             task1.save()
             task1.cleaned_data['publisher_id'] = user_id
             Task.objects.create(**task1.cleaned_data)
-            return HttpResponse('发布成功')
+            return render(request, 'hunt/task_up_successfully.html', locals())
         else:
-            return render(request, 'task_form.html', locals())
+            return render(request, 'hunt/task_form.html', locals())
 
 
 def taskcopy(request):
@@ -63,7 +63,7 @@ def login(request):
         data = {
             'title': '登录',
         }
-        return render(request, 'login.html', context=data)
+        return render(request, 'hunt/login.html', context=data)
     elif request.method == 'POST':
         username = request.POST.get('username')
         password = request.POST.get('password')
@@ -90,15 +90,15 @@ def login(request):
 def index(request):
     if request.method == 'GET':
         user1 = User1()
-        return render(request, 'data_form.html', locals())
+        return render(request, 'hunt/data_form.html', locals())
     else:
         user1 = User1(request.POST, request.FILES)
         if user1.is_valid():
             user1.save()
-            return HttpResponseRedirect(reverse('hunt:login'))
+            return render(request, 'hunt/logon_successfully.html')
 
         else:
-            return render(request, 'data_form.html', locals())
+            return render(request, 'hunt/data_form.html', locals())
 
 
 # 个人信息显示与修改
@@ -133,7 +133,7 @@ def edit0(request):
             user.other = user_cd['other']
             user.icon = user_cd['icon']
             user.save()
-            return HttpResponse('ye')
+            return render(request, 'hunt/edit.html', {"user_form": user_form})
         else:
             ErrorDict = user_form.errors
 
@@ -142,4 +142,4 @@ def edit0(request):
 
         user_form = User1(instance=user)
 
-        return render(request, 'edit.html', {"user_form": user_form})
+        return render(request, 'hunt/edit.html', {"user_form": user_form})

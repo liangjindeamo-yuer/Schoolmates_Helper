@@ -15,11 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('hunt/', include(('hunt.urls', 'hunt'), namespace='hunt')),
-    path('task_square/', include('tasks_square.urls')),
-    path('task_received/', include('task_received.urls')),
-    path('task_released/', include('task_released.urls')),
-]
+                  path('admin/', admin.site.urls),
+                  path('hunt/', include(('hunt.urls', 'hunt'), namespace='hunt')),
+                  path('task_square/', include('tasks_square.urls')),
+                  path('task_received/', include('task_received.urls')),
+                  path('task_released/', include('task_released.urls')),
+              ]
+
+# if settings.DEBUG:
+  #   urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
