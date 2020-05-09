@@ -91,7 +91,7 @@ class User1(forms.ModelForm):
             return email
         else:
             raise forms.ValidationError("请输入交大邮箱")
-    def clean(self):
+    def clean00(self):
         pwd1 = self.cleaned_data.get('password')
 
         pwd2 = self.cleaned_data.get('repassword')
