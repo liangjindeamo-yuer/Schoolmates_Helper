@@ -1,9 +1,0 @@
-您尚未填写“{{ contactname }}”!<br>
-“确定”转到个人中心填写{{ contactname }}；“取消”返回并选择其他联系方式。<br>
-    <a href={% url 'hunt:edit' %}>确定</a>
-
-
-<form action="{% url 'tasks_square:check_hunt' task.id %}" method="post">
-    {% csrf_token %}
-    <input class="card-button" type="submit" value="取消"/>
-</form>

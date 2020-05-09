@@ -121,17 +121,12 @@ def hunt_task(request, task_id):
     user_id = request.session.get('user_id')
     user = User.objects.get(pk=user_id)
     contactid = request.POST.get('contacthunter')
-    contactname=Contact.objects.get(pk=contactid).typename
     task = Task.objects.get(pk=task_id)
     task.is_pickedup = True
     task.hunter_id = user_id
     task.contact_type_hunter_id = contactid
-    if getattr(user, contactname)==None:
-        return render(request, 'tasks_square/contacttype_error.html', context={'task': task,
-                                                                               'contactname': contactname,})
-    else:
-        task.save()
-        return render(request, 'tasks_square/hunt_successfully.html', context={'task': task,})
+    task.save()
+    return render(request, 'tasks_square/hunt_successfully.html', context={'task': task})
 
 
 def task_detail(request, task_id):

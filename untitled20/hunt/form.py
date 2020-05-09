@@ -61,7 +61,7 @@ class User1(forms.ModelForm):
         model = User
         fields = '__all__'
         # exclude用于禁止模型字段转换表单字段
-        exclude = ['star', 'is_active', 'is_delete']
+        exclude = ['rank', 'is_active', 'is_delete']
         labels = {
             'username': '用户名',
             'tel': '手机号（选填）',
@@ -70,6 +70,7 @@ class User1(forms.ModelForm):
             'email': '邮箱',
             'other': '其他信息（选填）',
             'password': '密码',
+            'repassword':'再次输入密码',
             'icon': '头像',
             'photo':'头像'
 
@@ -90,3 +91,17 @@ class User1(forms.ModelForm):
             return email
         else:
             raise forms.ValidationError("请输入交大邮箱")
+    def clean(self):
+        pwd1 = self.cleaned_data.get('password')
+
+        pwd2 = self.cleaned_data.get('repassword')
+
+        if pwd1 == pwd2:
+
+            pass
+
+        else:
+
+            from django.core.exceptions import ValidationError  # 这里异常模块导入要放在函数里面，放到文件开头有时会报错，找不到
+
+            raise ValidationError('密码输入不一致')

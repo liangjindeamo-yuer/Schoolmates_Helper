@@ -127,6 +127,8 @@ def edit0(request):
             user.tel = user_cd['tel']
             user.username = user_cd['username']
             user.qq = user_cd['qq']
+            user.password=user_cd['password']
+            user.repassword = user_cd['password']
             user.wechat = user_cd['wechat']
             user.other = user_cd['other']
             user.icon = user_cd['icon']
@@ -135,7 +137,7 @@ def edit0(request):
         else:
             ErrorDict = user_form.errors
 
-            return render(request, 'edit.html', locals())
+            return HttpResponse(ErrorDict)
     else:
 
         user_form = User1(instance=user)

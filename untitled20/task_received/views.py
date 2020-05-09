@@ -8,11 +8,9 @@ from django.http import HttpResponseRedirect
 from hunt.models import *
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
-
 # 进入“我接受的任务”按钮
 def index(request):
     return render(request, 'task_received/index.html')
-
 
 # swf 2020年4月30日 改 未登录
 def all_task_received(request):
@@ -33,7 +31,7 @@ def all_task_received(request):
         context = {
             'task_types': task_types,
             'task_received_list': task_received_list,
-            'user_id': user_id,
+            'user_id':user_id,
         }
         return render(request, 'task_received/all_task_received.html', context)
     else:
@@ -43,7 +41,6 @@ def all_task_received(request):
             'user_id': None,
         }
         return render(request, 'task_received/all_task_received.html', context)
-
 
 # ?好像没用到？不敢删
 def task_revoke(request, task_id):
@@ -104,7 +101,6 @@ def comment(request):
         username = request.session.get('username')
         user = User.objects.get(username=username)
         task.is_finished = True
-        user.rank += 1
         task.comment_for_publisher = request.POST.get('comment')
         task.save()
         return render(request, 'task_received/comment_or_revoke_successfuly.html',
@@ -230,7 +226,6 @@ def received_tasks_not_finished(request):
         'taskslist_received_not_finished': taskslist_received_not_finished,
     }
     return render(request, 'task_received/received_tasks_not_finished.html', context)
-
 
 # 退出登录
 def logout(request):

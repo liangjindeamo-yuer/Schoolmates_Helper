@@ -9,15 +9,23 @@
 
 <body>
     <form action="" method="post" enctype="multipart/form-data">
-        {% csrf_token %}
+        <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
         <table border="0">
             <caption>
                 <h1>注册</h1>
             </caption>
-            {{ user1.as_table }}
+            <tr><th><label for="id_username">用户名:</label></th><td><input type="text" name="username" maxlength="20" required id="id_username"></td></tr>
+<tr><th><label for="id_password">密码:</label></th><td><input type="password" name="password" maxlength="20" required id="id_password"></td></tr>
+<tr><th><label for="id_repassword">再次输入密码:</label></th><td><input type="password" name="repassword" maxlength="20" required id="id_repassword"></td></tr>
+<tr><th><label for="id_tel">手机号（选填）:</label></th><td><input type="number" name="tel" min="0" id="id_tel"></td></tr>
+<tr><th><label for="id_email">邮箱:</label></th><td><input type="email" name="email" maxlength="30" required id="id_email"></td></tr>
+<tr><th><label for="id_icon">头像:</label></th><td><input type="file" name="icon" accept="image/*" id="id_icon"></td></tr>
+<tr><th><label for="id_qq">QQ（选填）:</label></th><td><input type="text" name="qq" maxlength="20" id="id_qq"></td></tr>
+<tr><th><label for="id_wechat">微信（选填）:</label></th><td><input type="text" name="wechat" maxlength="20" id="id_wechat"></td></tr>
+<tr><th><label for="id_other">其他信息（选填）:</label></th><td><input type="text" name="other" maxlength="20" id="id_other"></td></tr>
         </table>
         <input type="submit" value="提交">
-        {{ user1.type.type }}
+
     </form>
 </body>
 
