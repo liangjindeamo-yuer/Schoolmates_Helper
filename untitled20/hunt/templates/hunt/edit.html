@@ -16,9 +16,14 @@
         <div class="col-md-4 text-right"><span>用户名:</span></div>
         <div class="col-md-8 text-left">{{user_form.username}}</div>
     </div>
-<tr><th><label for="id_password">密码:</label></th><td><input type="password" name="password" maxlength="20" required id="id_password"></td></tr>
-<tr><th><label for="id_repassword">再次输入密码:</label></th><td><input type="password" name="repassword" maxlength="20" required id="id_repassword"></td></tr>
-
+        <div class="row">
+        <div class="col-md-4 text-right"><span>密码:</span></div>
+        <div class="col-md-8 text-left">{{user_form.password}}</div>
+    </div>
+            <div class="row">
+        <div class="col-md-4 text-right"><span>确认密码:</span></div>
+        <div class="col-md-8 text-left">{{user_form.repassword}}</div>
+    </div>
         <div class="row">
         <div class="col-md-4 text-right"><span>QQ:</span></div>
         <div class="col-md-8 text-left">{{user_form.qq}}</div>

@@ -42,7 +42,7 @@ def task_up(request):
         task1 = Task1(request.POST, request.FILES)
         if task1.is_valid():
             user_id = request.session.get('user_id')
-            task1.save()
+
             task1.cleaned_data['publisher_id'] = user_id
             Task.objects.create(**task1.cleaned_data)
             return render(request, 'hunt/task_up_successfully.html', locals())
