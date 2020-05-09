@@ -26,39 +26,56 @@
         <div class="card">
             <h2>截止日期</h2>
             <hr>
-            <p>{{mission.m_data}}</p>
+            <p>{{mission.ddltime}}</p>
         </div>
         <div class="card">
             <h2>任务类型</h2>
             <hr>
-            <p>{{mission.m_label}}</p>
+            <p>{{type}}</p>
         </div>
         <div class="card">
             <h2>任务详情</h2>
             <hr>
-            <p>{{mission.m_detail}}</p>
+            <p>{{mission.task_sketch}}</p>
         </div>
         <div class="card">
             <h2>酬金（元）</h2>
             <hr>
-            <p>{{mission.m_money}}</p>
+            <p>{{mission.task_reward}}</p>
         </div>
     </div>
 
     <br/>
     <br/>
+
     <div class="rightcolumn">
         <h1>修改</h1>
         <form method="post">
             截止日期<input type="date" name="Data">
+            <div class="form-group">
+                <label for="task_type_input">任务类型</label>
+                <select class="form-control" name="task_type" style="width: 10rem;">
+                    <option value=1>快递服务</option>
+                    <option value=2>修理服务</option>
+                    <option value=3>课业指导</option>
+                    <option value=4>邂逅表白</option>
+                    <option value=5>其他服务</option>
+                </select>
+            </div>
+            <div class="form-group">
             <br>
-            任务简述<input type="text" name="m1">
+            <label for="task_sketch_input">任务简介</label>
+            <textarea rows="3" class="form-control" placeholder="请输入任务简介,以简单地描述你的任务(不超过200字)"
+                          name="task_sketch"></textarea>
             <br>
-            任务类型<input type="text" name="l">
-            <br>
-            任务详情<input type="text" name="d">
+            任务名<input type="text" name="m1">
             <br>
             酬金（元）<input type="number" name="g">
+            <br>
+            <div class="form-group">
+                <label for="task_file_input">任务附件</label>
+                <input type="file" name="task_file">#}
+            </div>
             <br>
             <input type="submit" name="Submit" value="提交">
         </form>
