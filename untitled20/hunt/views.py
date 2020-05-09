@@ -42,10 +42,18 @@ def task_up(request):
         task1 = Task1(request.POST, request.FILES)
         if task1.is_valid():
             user_id = request.session.get('user_id')
+            user = User.objects.get(pk=user_id)
+            contactid = request.POST.get('contact_type_publisher')
+            contactname = Contact.objects.get(pk=contactid).typename
 
             task1.cleaned_data['publisher_id'] = user_id
-            Task.objects.create(**task1.cleaned_data)
-            return render(request, 'hunt/task_up_successfully.html', locals())
+            if getattr(user, contactname) == None:
+                #return render(request, 'hunt/task_form.html', locals())
+                return render(request, 'hunt/task_nocontact.html', context={'task': task1,
+                                                                      'contactname': contactname, })
+            else:
+                Task.objects.create(**task1.cleaned_data)
+                return render(request, 'hunt/task_up_successfully.html', locals())
         else:
             return render(request, 'hunt/task_form.html', locals())
 
