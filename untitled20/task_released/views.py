@@ -8,6 +8,7 @@ from django.shortcuts import redirect
 from django.views.decorators.csrf import csrf_exempt
 
 
+@csrf_exempt
 def acp(request):
     if request.method == 'GET':
         id2 = 0
@@ -42,6 +43,7 @@ def acp(request):
         return render(request, 'task_released/acp.html', context=context)
 
 
+@csrf_exempt
 def finish(request):
     if request.method == 'GET':
         id2 = 0

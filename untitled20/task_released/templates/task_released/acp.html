@@ -52,25 +52,19 @@
     </form>
     <div class="rightcolumn">
         {% for mission in missions %}
-        {% if mission.is_pickedup == True %}
-        {% if mission.is_finished == False %}
-        {% if id2 == 0 or mission.task_type.type_id == id2 %}
-        <div class="card">
-
-            <h2>{{ mission.task_name }}</h2>
+            {% if mission.is_pickedup == True and mission.is_finished == False %}
+            {% if id2 == 0 or mission.task_type.type_id == id2 %}
+                <div class="card">
+                    <h2>{{ mission.task_name }}</h2>
                     <a class="button" href="/task_released/f_mission/?id={{ mission.id }}">完成</a>
                     <a class="button" href="/task_released/d_mission/?id={{ mission.id }}">取消</a>
                     <a class="button" href="/task_released/m_detail/?id={{ mission.id }}">任务详情</a>
-
-        </div>
-        {% endif %}
-        {% endif %}
-        {% endif %}
+                </div>
+            {% endif %}
+            {% endif %}
         {% endfor %}
-
     </div>
 </div>
-
 <div class="footer">
     <h4>
 
@@ -84,3 +78,4 @@
 </body>
 
 </html>
+

@@ -23,15 +23,14 @@
 <div class="row">
     <div class="leftcolumn">
         <div class="card">
-         <h2>我发布的任务</h2>
-
-<ul>
-    <li><a href="http://127.0.0.1:8000/task_released/finish" class="active">&nbsp;&nbsp;&nbsp;&nbsp;已完成的任务</a></li>
+            <h2>我发布的任务</h2>
+            <ul>
+                <li><a href="http://127.0.0.1:8000/task_released/finish" class="active">&nbsp;&nbsp;&nbsp;&nbsp;已完成的任务</a></li>
                 <li><a href="http://127.0.0.1:8000/task_released/acp">&nbsp;&nbsp;&nbsp;&nbsp;未完成的任务</a></li>
                 <li><a href="http://127.0.0.1:8000/task_released/un_acp">&nbsp;&nbsp;&nbsp;&nbsp;尚未被接受的任务</a></li>
                 <li><a href="http://127.0.0.1:8000/task_square/">&nbsp;&nbsp;&nbsp;&nbsp;回到任务广场</a></li>
 
-   </ul>
+            </ul>
         </div>
     </div>
     <form method="post">
@@ -50,17 +49,15 @@
     </form>
     <div class="rightcolumn">
         {% for mission in missions %}
-        {% if mission.finish == True %}
-        {% if id2 == 0 or mission.task_type.type_id == id2 %}
-        <div class="card">
-            <h2>{{mission.mission1}}</h2>
-            <a class="button" href="/m_detail/?id={{mission.id}}" >任务详情</a>
-
-        </div>
-        {% endif %}
-        {% endif %}
+            {% if mission.is_finished == True %}
+            {% if id2 == 0 or mission.task_type.type_id == id2 %}
+                <div class="card">
+                    <h2>{{ mission.task_name }}</h2>
+                    <a class="button" href="/task_released/m_detail/?id={{ mission.id }}">任务详情</a>
+                </div>
+            {% endif %}
+            {% endif %}
         {% endfor %}
-
     </div>
 </div>
 <div class="footer">
@@ -72,5 +69,7 @@
 
     </h4>
 </div>
+
 </body>
+
 </html>
