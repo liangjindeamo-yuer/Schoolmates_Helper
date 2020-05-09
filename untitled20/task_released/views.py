@@ -209,3 +209,12 @@ def m_change(request):
         mission.task_file = file
         mission.save()
         return redirect("/task_released/un_acp/")
+
+
+def download(request):
+    site = request.GET.get('site')
+    file = open(site,'rb')
+    response = HttpResponse(file)
+    response['Content-Type'] = 'application/octet-stream'
+    response['Content-Disposition'] = 'attachment'
+    return response
