@@ -1,5 +1,7 @@
 # author：苏婉芳
-from django.http import HttpResponseRedirect
+import os
+
+from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
 from django.urls import reverse
 
@@ -121,27 +123,27 @@ def hunt_task(request, task_id):
     user_id = request.session.get('user_id')
     user = User.objects.get(pk=user_id)
     contactid = request.POST.get('contacthunter')
-    contactname=Contact.objects.get(pk=contactid).typename
+    contactname = Contact.objects.get(pk=contactid).typename
     task = Task.objects.get(pk=task_id)
     task.is_pickedup = True
     task.hunter_id = user_id
     task.contact_type_hunter_id = contactid
-    if getattr(user, contactname)==None:
+    if getattr(user, contactname) == None:
         return render(request, 'tasks_square/contacttype.html', context={'task': task,
-                                                                               'contactname': contactname,})
+                                                                         'contactname': contactname, })
     else:
         task.save()
-        return render(request, 'tasks_square/hunt_successfully.html', context={'task': task,})
+        return render(request, 'tasks_square/hunt_successfully.html', context={'task': task, })
 
 
 def task_detail(request, task_id):
     task = Task.objects.get(pk=task_id)
-    user_id=request.session.get('user_id')
+    user_id = request.session.get('user_id')
     if user_id:
-        data={
+        data = {
             'task': task,
-            'user_id':user_id,
-              }
+            'user_id': user_id,
+        }
     else:
         data = {
             'task': task,
@@ -225,11 +227,21 @@ def response(request, task_id, discussion_id):
         response1.save()
         return HttpResponseRedirect(reverse('tasks_square:task_detail', args=[task_id]))
     else:
-        return render(request,'tasks_square/task_detail.html')
+        return render(request, 'tasks_square/task_detail.html')
 
-def delete(request,id,type,task_id):
-    if type=='discuss':
+
+def delete(request, id, type, task_id):
+    if type == 'discuss':
         Discuss.objects.get(pk=id).delete()
-    elif type=='response':
+    elif type == 'response':
         Response.objects.get(pk=id).delete()
     return HttpResponseRedirect(reverse('tasks_square:task_detail', args=[task_id]))
+
+# 未实现 swf 日期
+def download(request, task_id):
+    task = Task.objects.get(pk=task_id)
+    file = open('static/task.task_file', 'rb')
+    response = HttpResponse(file)
+    response['Content-Type'] = 'application/octet-stream'  # 设置头信息，告诉浏览器这是个文件
+    response['Content-Disposition'] = 'attachment;filename="任务附件"'
+    return response

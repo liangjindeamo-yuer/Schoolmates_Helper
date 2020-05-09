@@ -30,12 +30,10 @@
         <div class="card">
             <h2>发布者</h2>
             <hr>
-
-
-            <!--swf 2020年4月25日 新增：显示头像，且点击头像可以进入发布者用户详情页面？怎么放？-->
             <!-- yjl 5.3 图片无法显示-->
+            {# 2020年5月9日 swf 头像显示成功 但是合并到手机端后 路径要改成手机端的static #}
             <a href={% url 'tasks_square:publisher_detail' task.publisher_id %}><img
-                    src="{{ MEDIA_URL }}{{ task.publisher.icon }}"
+                    src="/../../static/uploads/{{ task.publisher.icon }}"
                     width="50%" height="20%"></a>
             <br/>
             <a style="text-decoration: none;color:black"
@@ -46,6 +44,13 @@
                 <hr>
             </h2>
             {{ task.task_sketch }}<br></div>
+        {# 2020年5月9日 swf 没想好怎么实现取附件 #}
+        <div class="card">
+            <h2>任务附件
+                <hr>
+            </h2>
+            <a href="{% url 'tasks_square:download' task.id %}" rel="external nofollow" >点我下载</a><br>
+            文件名：{{ task.task_file }}<br></div>
         <div class="card">
             <h2>任务酬劳
                 <hr>
