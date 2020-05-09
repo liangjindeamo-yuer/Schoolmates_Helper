@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="631b33f4-cef7-4efd-a61d-31abf0df1595" name="默认更改列表" comment="swf:html改动 已完成任务不显示撤销/完成按钮">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/730a1594-71cb-49dc-99a5-a6b8c1f132fe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/730a1594-71cb-49dc-99a5-a6b8c1f132fe.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/780d9aff-a08a-4f52-8ead-4a2e21d66493.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/780d9aff-a08a-4f52-8ead-4a2e21d66493.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +44,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1aJMfolh5qQJkdPZr19Go7mGrRG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -102,6 +103,7 @@
       <workItem from="1586604329851" duration="1860000" />
       <workItem from="1586610126474" duration="1406000" />
       <workItem from="1586745459954" duration="1470000" />
+      <workItem from="1589006306933" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="swf:html改动 已完成任务不显示撤销/完成按钮">
       <created>1586746643963</created>
@@ -163,10 +165,11 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="700" y="0" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1280.689@0.0.1280.689" timestamp="1586515260765" />
-    <state x="161" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1586610127830">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="193" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1589006307733">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="161" y="187" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1586610127830" />
+    <state x="193" y="224" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589006307733" />
     <state x="439" y="263" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586746549704">
       <screen x="0" y="0" width="1280" height="689" />
     </state>

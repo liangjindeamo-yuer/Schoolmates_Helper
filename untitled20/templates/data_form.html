@@ -1,0 +1,80 @@
+<meta charset="UTF-8">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <style type="text/css">
+        body {
+            background: linear-gradient(to left,#d18189,#bfe6ba);
+        }
+
+        table {
+            width: max-content;
+        }
+
+        form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            padding: 40px;
+            background: rgba(0, 0, 0, .4);
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, .3);
+            border-radius: 10px;
+        }
+
+        input {
+            position: relative;
+            width: 100%;
+            padding: 0 0;
+            font-size: 16px;
+            letter-spacing: 1px;
+            margin-bottom: 7px;
+            border: none;
+            border-bottom: 1px solid #000000;
+            outline: none;
+            background: transparent;
+        }
+
+        label {
+            padding: 10px 0;
+            font-size: 16px;
+            pointer-events: none;
+            transition: .5s;
+            vertical-align: text-top;
+        }
+
+        input[type="submit"] {
+            margin: 20px 100px;
+            width: 100px;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            background: #03a9f4;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <table border="0">
+            <caption>
+                <h1>注册</h1>
+            </caption>
+            {{ user1.as_table }}
+        </table>
+        <input type="submit" value="提交">
+        {{ user1.type.type }}
+    </form>
+</body>
+
+</html>
