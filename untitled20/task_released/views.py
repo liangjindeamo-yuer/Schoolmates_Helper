@@ -9,33 +9,106 @@ from django.views.decorators.csrf import csrf_exempt
 
 
 def acp(request):
-    id1 = request.session['user_id']
-    user = User.objects.get(pk=id1)
-    missions = Task.objects.filter(publisher_id=user)
-    context = {
-        "missions": missions
-    }
-    return render(request, 'task_released/acp.html', context=context)
+    if request.method == 'GET':
+        id2 = 0
+        id1 = request.session['user_id']
+        user = User.objects.get(pk=id1)
+        missions = Task.objects.filter(publisher_id=user)
+        context = {
+            "missions": missions,
+            "id2": id2
+        }
+        return render(request, 'task_released/acp.html', context=context)
+    elif request.method == 'POST':
+        if request.POST.get('task_type') == "0":
+            id2 = 0
+        elif request.POST.get('task_type') == "1":
+            id2 = 1
+        elif request.POST.get('task_type') == "2":
+            id2 = 2
+        elif request.POST.get('task_type') == "3":
+            id2 = 3
+        elif request.POST.get('task_type') == "4":
+            id2 = 4
+        elif request.POST.get('task_type') == "5":
+            id2 = 5
+        id1 = request.session['user_id']
+        user = User.objects.get(pk=id1)
+        missions = Task.objects.filter(publisher_id=user)
+        context = {
+            "missions": missions,
+            "id2": id2,
+        }
+        return render(request, 'task_released/acp.html', context=context)
 
 
 def finish(request):
-    id1 = request.session['user_id']
-    user = User.objects.get(pk=id1)
-    missions = Task.objects.filter(publisher_id=user)
-    context = {
-        "missions": missions
-    }
-    return render(request, 'task_released/finish.html', context=context)
+    if request.method == 'GET':
+        id2 = 0
+        id1 = request.session['user_id']
+        user = User.objects.get(pk=id1)
+        missions = Task.objects.filter(publisher_id=user)
+        context = {
+            "missions": missions,
+            "id2": id2
+        }
+        return render(request, 'task_released/finish.html', context=context)
+    elif request.method == 'POST':
+        if request.POST.get('task_type') == "0":
+            id2 = 0
+        elif request.POST.get('task_type') == "1":
+            id2 = 1
+        elif request.POST.get('task_type') == "2":
+            id2 = 2
+        elif request.POST.get('task_type') == "3":
+            id2 = 3
+        elif request.POST.get('task_type') == "4":
+            id2 = 4
+        elif request.POST.get('task_type') == "5":
+            id2 = 5
+        id1 = request.session['user_id']
+        user = User.objects.get(pk=id1)
+        missions = Task.objects.filter(publisher_id=user)
+        context = {
+            "missions": missions,
+            "id2": id2,
+        }
+        return render(request, 'task_released/finish.html', context=context)
 
 
+@csrf_exempt
 def un_acp(request):
-    id1 = request.session['user_id']
-    user = User.objects.get(pk=id1)
-    missions = Task.objects.filter(publisher_id=user)
-    context = {
-        "missions": missions
-    }
-    return render(request, 'task_released/un_acp.html', context=context)
+    if request.method == 'GET':
+        id2 = 0
+        id1 = request.session['user_id']
+        user = User.objects.get(pk=id1)
+        missions = Task.objects.filter(publisher_id=user)
+        context = {
+            "missions": missions,
+            "id2": id2
+        }
+        return render(request, 'task_released/un_acp.html', context=context)
+    elif request.method == 'POST':
+        if request.POST.get('task_type') == "0":
+            id2 = 0
+        elif request.POST.get('task_type') == "1":
+            id2 = 1
+        elif request.POST.get('task_type') == "2":
+            id2 = 2
+        elif request.POST.get('task_type') == "3":
+            id2 = 3
+        elif request.POST.get('task_type') == "4":
+            id2 = 4
+        elif request.POST.get('task_type') == "5":
+            id2 = 5
+        id1 = request.session['user_id']
+        user = User.objects.get(pk=id1)
+        missions = Task.objects.filter(publisher_id=user)
+        context = {
+            "missions": missions,
+            "id2": id2,
+        }
+        return render(request, 'task_released/un_acp.html', context=context)
 
 
 def f_mission(request):

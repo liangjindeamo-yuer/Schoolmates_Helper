@@ -36,10 +36,25 @@
             </ul>
         </div>
     </div>
+    <form method="post">
+            <div class="form-group">
+                <label for="task_type_input">任务类型</label>
+                <select class="form-control" name="task_type" style="width: 10rem;">
+                    <option value=0>全部</option>
+                    <option value=1>快递服务</option>
+                    <option value=2>修理服务</option>
+                    <option value=3>课业指导</option>
+                    <option value=4>邂逅表白</option>
+                    <option value=5>其他服务</option>
+                </select>
+            </div>
+            <input type="submit" name="Submit" value="提交">
+    </form>
     <div class="rightcolumn">
         {% for mission in missions %}
         {% if mission.is_pickedup == True %}
         {% if mission.is_finished == False %}
+        {% if id2 == 0 or mission.task_type.type_id == id2 %}
         <div class="card">
 
             <h2>{{ mission.task_name }}</h2>
@@ -48,7 +63,8 @@
                     <a class="button" href="/task_released/m_detail/?id={{ mission.id }}">任务详情</a>
 
         </div>
-        {%endif%}
+        {% endif %}
+        {% endif %}
         {% endif %}
         {% endfor %}
 
