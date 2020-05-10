@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 
 # Create your models here.
@@ -72,6 +73,7 @@ class Task(models.Model):
 
     def removehunter(self):
         self.hunter = None
+        self.contact_type_hunter=None
 
     class Meta:
         db_table = 'smh_task'
@@ -83,3 +85,18 @@ class Revoke_reason(models.Model):
 
     class Meta:
         db_table = 'smh_reason'
+class Discuss(models.Model):
+    discussant = models.ForeignKey(User, on_delete=models.DO_NOTHING, related_name='discuss_user', verbose_name='评论方',
+                                   db_constraint=False, blank=False, null=False)
+    discuss = models.CharField(max_length=512, blank=False, null=False)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE, related_name='discussed_task')
+    discusstime = models.DateTimeField(auto_now_add=True)
+
+
+class Response(models.Model):
+    response = models.CharField(max_length=512, blank=False, null=False)
+    discuss = models.ForeignKey(Discuss, on_delete=models.CASCADE, related_name='response_discuss', null=True,
+                                db_constraint=False)
+    respondent = models.ForeignKey(User, on_delete=models.DO_NOTHING, related_name='response_user', verbose_name='回复方',
+                                   db_constraint=False, blank=False, null=False)
+    responsetime = models.DateTimeField(auto_now_add=True)

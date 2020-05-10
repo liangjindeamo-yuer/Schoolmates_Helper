@@ -53,7 +53,7 @@
                 {{ task.task_time }}
             </div>
         </div>
-        {% if is_login and task.publisher.id == user.id or task.hunter.id == user.id %}
+        {% if is_login and  task.publisher.id == user.id or is_login and task.hunter.id == user.id %}
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">发布方任务联系方式:{{ task.contact_type_publisher.typename }}</h3>
@@ -74,7 +74,7 @@
             </div>
         {% endif %}
 
-        {% if is_login and task.is_pickedup and task.publisher.id == user.id or task.hunter.id == user.id %}
+        {% if is_login and task.is_pickedup and task.publisher.id == user.id or is_login and task.is_pickedup and task.hunter.id == user.id %}
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title">委托人任务联系方式:{{ task.contact_type_hunter.typename }}</h3>
@@ -273,6 +273,66 @@
             <button type="submit" onclick="on_click_alltask({{ task.id }},{{ is_login }})"
                     class="btn btn-block btn-success">接受任务
             </button>
+        {% endif %}
+        <h1 style="font-family: 华文行楷,serif;font-size: 0.6rem;color: purple;text-align: center;margin-top: 0.2rem">
+            任务讨论区</h1>
+        {% for discuss in discuss_list %}
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title" style="font-size: large">{{ discuss.discussant.username }} </h3>
+                    <h4 style="font-size: small">{{ discuss.discusstime }}</h4>
+                </div>
+                <div class="panel-body" style="width: 10rem;word-wrap:break-word;">
+                    {{ discuss.discuss }}
+                </div>
+                {% for response in response_list %}
+                    {% if response.discuss_id == discuss.id %}
+                        <div class="panel-heading" style="margin-left: 0.5rem">
+                            <h3 class="panel-title"
+                                style="font-size: large">{{ response.respondent.username }}回复：{{ discuss.discussant.username }}   </h3>
+                            <h4 style="font-size: small">{{ response.responsetime }}</h4>
+                        </div>
+                        <div class="panel-body" style="width: 9.5rem;word-wrap:break-word;margin-left: 0.5rem;">
+                            {{ response.response }}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                {% if is_login and is_activate %}
+                    <form method="post" enctype="multipart/form-data"
+                          action="{% url 'App:taskcontent' task.id %}"
+                          onsubmit="return checkresponse({{ discuss.id }})">
+                        {% csrf_token %}
+                        <div class="form-group">
+                        <textarea rows="3" class="form-control" placeholder="请输入你的回复"
+                                  id="response_input{{ discuss.id }}"
+                                  name="response"></textarea>
+                            <span id="response_info{{ discuss.id }}"></span>
+                        </div>
+
+                        <label style="display: none">
+                            <select name="r_discuss" style="display: none">
+                                <option value={{ discuss.id }}>a</option>
+                            </select>
+                        </label>
+                        <button type="submit" class="btn  btn-warning" style="margin-top: -0.3rem">回复帖子</button>
+                    </form>
+                {% endif %}
+            </div>
+        {% endfor %}
+        {% if is_login and is_activate %}
+            <form method="post" enctype="multipart/form-data"
+                  action="{% url 'App:taskcontent' task.id %}"
+                  onsubmit="return checkdiscuss()">
+                {% csrf_token %}
+                <label>自拟帖子</label>
+                <div class="form-group">
+                        <textarea rows="3" class="form-control" placeholder="请输入你想说的话"
+                                  id="discuss_input"
+                                  name="discuss"></textarea>
+                    <span id="discuss_info"></span>
+                </div>
+                <button type="submit" class="btn  btn-warning" style="margin-top: -0.3rem">发帖子</button>
+            </form>
         {% endif %}
     </div>
 
