@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d3fe759-315c-43f1-801b-b4e6a5e8f1ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled20/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled20/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled20/hunt/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled20/hunt/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled20/hunt/templates/hunt/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled20/hunt/templates/hunt/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled20/hunt/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled20/hunt/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="2d3fe759-315c-43f1-801b-b4e6a5e8f1ef" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,27 +22,21 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
   </component>
-  <component name="ProjectId" id="1byt5fCHOiXN3EyjipT8qZIwWhL" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="950" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql&#10;sqlite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Desktop/courseware/software_homework/untitled20" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -58,15 +44,15 @@
     <property name="settings.editor.splitter.proportion" value="0.22266401" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Desktop\courseware\schoolmate helper\schoolmates_helper\static\Schoolmateshelper\user\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\python\nginx-1.12.2\schoolmates_helper\static\app" />
       <recent name="F:\python\nginx-1.12.2\schoolmates_helper" />
       <recent name="D:\Desktop\courseware\software_homework\schoolmate helper\schoolmates_helper\static\Schoolmateshelper\user\css" />
       <recent name="D:\Desktop\courseware\software_homework\schoolmate helper\schoolmates_helper\static\Schoolmateshelper\user\js" />
       <recent name="D:\Desktop\courseware\software_homework\schoolmate helper\schoolmates_helper\templates\user" />
-      <recent name="D:\Desktop\courseware\schoolmate helper\schoolmates_helper\static\Schoolmateshelper\user\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\courseware\schoolmate helper\schoolmates_helper\static\Schoolmateshelper\user\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -166,12 +152,12 @@
       <workItem from="1588658703925" duration="694000" />
       <workItem from="1588854022048" duration="366000" />
       <workItem from="1589007068062" duration="1288000" />
-      <workItem from="1589024914104" duration="10763000" />
-      <workItem from="1589615980700" duration="1730000" />
+      <workItem from="1589024914104" duration="12395000" />
+      <workItem from="1589622571109" duration="478000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
 </project>

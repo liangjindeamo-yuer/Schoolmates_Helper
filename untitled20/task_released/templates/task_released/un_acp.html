@@ -55,6 +55,12 @@
             {% if id2 == 0 or mission.task_type.type_id == id2 %}
                 <div class="card">
                     <h2>{{ mission.task_name }}</h2>
+                    <span style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;">{{ mission.task_sketch }}</span>
+                    <div class="card-date">截止时间：{{ mission.ddltime }}<br></div>
+                    <div class="card-money">
+                                ¥&nbsp;{{ mission.task_reward }}<br>
+                    </div>
+                    <h3></h3>
                     <a class="button" href="/task_released/d_unacpm/?id={{ mission.id }}">删除</a>
                     <a class="button" href="/task_released/m_detail/?id={{ mission.id }}">任务详情</a>
                     <a class="button" href="/task_released/m_change/?id={{ mission.id }}">修改任务</a>
