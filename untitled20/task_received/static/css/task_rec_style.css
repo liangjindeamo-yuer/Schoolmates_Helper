@@ -135,7 +135,7 @@ body {
     border: solid 1px rgb(165, 140, 240);
     border-top: solid 3px rgb(165, 140, 240);
     border-bottom: solid 2px rgb(165, 140, 240);
-    width: 150px;
+    width: 140px;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -181,8 +181,8 @@ body {
 
 #status {
     float: right;
-    margin-right: 20px;
-    margin-bottom: 10px;
+    margin-right: 5%;
+    margin-bottom: -10%;
 }
 
 
@@ -211,8 +211,52 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    width: 400px;
+    width: 40%;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     float: left;
+}
+
+.pagination {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.current {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    color: grey;
+    width: 160px;
+    height: 100px;
+    text-align: center;
+
+}
+
+.arrowhead a:link {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    color: grey;
+    width: 30px;
+    height: 100px;
+    text-align: center;
+}
+
+.arrowhead a:visited {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    color: grey;
+    width: 30px;
+    height: 100px;
+    text-align: center;
+}
+
+.arrowhead a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: white;
+    width: 30px;
+    height: 100px;
+    text-align: center;
+
 }
