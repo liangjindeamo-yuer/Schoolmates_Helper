@@ -120,6 +120,8 @@ def edit0(request):
 
     user_id = request.session.get('user_id')
     user = User.objects.get(id=user_id)
+    user_name=user.username
+    email0 =user.email
     if request.method == "POST":
         # 注意：这里由于用户名邮箱设置不能重名,所以这里的方法是调用修改后先把他改成一个其他的东西，
         # 这样子如果不修改用户名邮箱，之前的用户名邮箱就会替代这个乱码，这样可能会导致一些问题但目前还没遇到，，
@@ -144,10 +146,13 @@ def edit0(request):
             user.icon = user_cd['icon']
             user.save()
             return render(request, 'hunt/edit.html', {"user_form": user_form})
-        else:
-            ErrorDict = user_form.errors
 
-            return HttpResponse(ErrorDict)
+        else:
+            user.username=user_name
+            user.email=email0
+            user.save()
+            ErrorDict = user_form.errors
+            return render(request, 'hunt/edit.html', {"user_form": user_form})
     else:
 
         user_form = User1(instance=user)

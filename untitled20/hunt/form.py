@@ -4,8 +4,10 @@ from django.contrib.auth.forms import UserChangeForm
 from django.core.exceptions import ValidationError
 from django.contrib.auth.forms import UserCreationForm
 
+
 class DateInput(forms.DateInput):
     input_type = 'ddltime'
+
 
 class Task1(forms.ModelForm):
     class Meta:
@@ -35,7 +37,7 @@ class Task1(forms.ModelForm):
         widgets = {
             'ddltime': DateInput(),
             'password': forms.PasswordInput(),
-            'repassword':forms.PasswordInput()
+            'repassword': forms.PasswordInput()
 
         }
 
@@ -73,24 +75,21 @@ class User1(forms.ModelForm):
             'email': '邮箱',
             'other': '其他信息（选填）',
             'password': '密码',
-            'repassword':'再次输入密码',
+            'repassword': '再次输入密码',
             'icon': '头像',
-            'photo':'头像'
+            'photo': '头像'
 
         }
         widgets = {
             'ddltime': DateInput(),
             'password': forms.PasswordInput(),
-            'repassword':forms.PasswordInput()
+            'repassword': forms.PasswordInput()
 
         }
         error_messages = {
-            '__all__': {
-                'required':'请输入这个信息',
-                'invalid': '请检查格式'},
-            'name': {'required': '请输入',
-                     'invalid': '请检查格式'
-                     }
+            'username': {'required': '请输入',
+                         'invalid': '请检查格式'
+                         }
         }
 
     def clean_email(self):
