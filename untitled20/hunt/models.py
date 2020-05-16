@@ -12,7 +12,7 @@ class User(models.Model):
     tel = models.PositiveIntegerField(blank=True, null=True)
     email = models.EmailField(max_length=30, unique=True)
     # 重构成icon 4.28
-    icon = models.ImageField(upload_to='photo/%Y/%m/%d/', null=True, blank=True, default='photo/2020/04/26/1.jpg')
+    icon = models.ImageField(upload_to='photo/%Y/%m/%d/', null=True, blank=True, default='photo/2020/04/26/haha.jpg')
     qq = models.CharField(max_length=20, blank=True, null=True)
     wechat = models.CharField(max_length=20, blank=True, null=True)
     other = models.CharField(max_length=20, blank=True, null=True)

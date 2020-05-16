@@ -1,6 +1,7 @@
 import os
 
 from django.shortcuts import render
+from django.conf import settings
 from django.shortcuts import HttpResponse
 from hunt import models
 from hunt.models import Task
@@ -286,10 +287,8 @@ def m_change(request):
 
 
 def download(request):
-    site = 'D:/Schoolmates_Helper/untitled20/static/uploads/'
     name = request.GET.get("name")
-    site = site + name
-    file = open(site,'rb')
+    file = open(os.path.join(settings.BASE_DIR,'static','uploads',name),'rb')
     response = HttpResponse(file)
     response['Content-Type'] = 'application/octet-stream'
     response['Content-Disposition'] = 'attachment;filename ='+name.encode('utf-8').decode('ISO-8859-1')
