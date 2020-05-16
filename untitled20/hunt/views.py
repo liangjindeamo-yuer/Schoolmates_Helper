@@ -145,16 +145,16 @@ def edit0(request):
             user.other = user_cd['other']
             user.icon = user_cd['icon']
             user.save()
-            return render(request, 'hunt/edit.html', {"user_form": user_form})
+            return render(request, 'hunt/edit.html', {"user_form": user_form,"user":user})
 
         else:
             user.username=user_name
             user.email=email0
             user.save()
             ErrorDict = user_form.errors
-            return render(request, 'hunt/edit.html', {"user_form": user_form})
+            return render(request, 'hunt/edit.html', {"user_form": user_form,"user":user})
     else:
 
         user_form = User1(instance=user)
 
-        return render(request, 'hunt/edit.html', {"user_form": user_form})
+        return render(request, 'hunt/edit.html', {"user_form": user_form,"user":user})

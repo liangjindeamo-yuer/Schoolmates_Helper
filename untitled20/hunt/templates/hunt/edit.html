@@ -26,6 +26,7 @@
         <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
             <!-- <img src="{{ user_form.icon }}"> -->
             <img class="icon" src="..\static\uploads\photo\2020\04\26\1.jpg">
+
             <div class="row">
                 <div><span>邮箱:</span></div>
                 <div>{{user_form.email}}{{ user_form.errors.email.0 }}</div>
@@ -60,12 +61,13 @@
             </div>
             <div class="row">
                 <div><span>头像:(不要勾选clear)</span></div>
-                <!-- <div>{{user_form.icon}}</div> -->
-                <img class="icon" src="..\static\uploads\photo\2020\04\26\1.jpg">
+                <div>{{user_form.icon}}</div>
+                <span><img src="/../../static/uploads/{{ user.icon }}" style="width:50%;height:20%"></span>
             </div>
             <button type="submit" class="button">修改信息</button>
         </form>
     </div>
+    <a class="button" href={% url 'hunt:login' %}>返回登录界面</a>
     <div class="rightcolumn">
         <!--一登录进去就是任务广场，含有其他按钮:个人中心、我要发布任务之类，链接加到这里-->
         <div class="diamond"><a href={% url 'task_received:all_task_received' %}>
