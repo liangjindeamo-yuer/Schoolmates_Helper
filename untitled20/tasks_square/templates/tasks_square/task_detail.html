@@ -49,8 +49,12 @@
             <h2>任务附件
                 <hr>
             </h2>
+            {% if task.task_file %}
             <a href="{% url 'tasks_square:download' task.id %}" rel="external nofollow" >点我下载</a><br>
-            文件名：{{ task.task_file }}<br></div>
+            {% else %}
+            该任务无附件
+            {% endif %}
+            </div>
         <div class="card">
             <h2>任务酬劳
                 <hr>
