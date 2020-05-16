@@ -7,20 +7,31 @@ from hunt.models import Task
 from hunt.models import User
 from hunt.models import TaskType
 from hunt.models import Cancel_reason
+from hunt.models import Contact
 from django.shortcuts import redirect
 from django.views.decorators.csrf import csrf_exempt
+from django.core.paginator import Paginator , PageNotAnInteger , EmptyPage
 
 
 @csrf_exempt
 def acp(request):
     if request.method == 'GET':
-        id2 = 0
+        id2 = request.session['mclass']
         id1 = request.session['user_id']
         user = User.objects.get(pk=id1)
         missions = Task.objects.filter(publisher_id=user)
+        paginator = Paginator(missions,12,3)
+        try:
+            num = request.GET.get('acp', '1')
+            number = paginator.page(num)
+        except PageNotAnInteger:
+            number = paginator.page(1)
+        except EmptyPage:
+            number = paginator.page(paginator.num_pages)
         context = {
-            "missions": missions,
-            "id2": id2
+            "missions": paginator,
+            "id2": id2,
+            "page":number
         }
         return render(request, 'task_released/acp.html', context=context)
     elif request.method == 'POST':
@@ -37,11 +48,21 @@ def acp(request):
         elif request.POST.get('task_type') == "5":
             id2 = 5
         id1 = request.session['user_id']
+        request.session['mclass'] = id2
         user = User.objects.get(pk=id1)
         missions = Task.objects.filter(publisher_id=user)
+        paginator = Paginator(missions, 12, 3)
+        try:
+            num = request.POST.get('acp', '1')
+            number = paginator.page(num)
+        except PageNotAnInteger:
+            number = paginator.page(1)
+        except EmptyPage:
+            number = paginator.page(paginator.num_pages)
         context = {
-            "missions": missions,
+            "missions": paginator,
             "id2": id2,
+            "page": number
         }
         return render(request, 'task_released/acp.html', context=context)
 
@@ -49,13 +70,22 @@ def acp(request):
 @csrf_exempt
 def finish(request):
     if request.method == 'GET':
-        id2 = 0
+        id2 = request.session['mclass']
         id1 = request.session['user_id']
         user = User.objects.get(pk=id1)
         missions = Task.objects.filter(publisher_id=user)
+        paginator = Paginator(missions,12,3)
+        try:
+            num = request.GET.get('finish', '1')
+            number = paginator.page(num)
+        except PageNotAnInteger:
+            number = paginator.page(1)
+        except EmptyPage:
+            number = paginator.page(paginator.num_pages)
         context = {
-            "missions": missions,
-            "id2": id2
+            "missions": paginator,
+            "id2": id2,
+            "page":number
         }
         return render(request, 'task_released/finish.html', context=context)
     elif request.method == 'POST':
@@ -72,11 +102,21 @@ def finish(request):
         elif request.POST.get('task_type') == "5":
             id2 = 5
         id1 = request.session['user_id']
+        request.session['mclass'] = id2
         user = User.objects.get(pk=id1)
         missions = Task.objects.filter(publisher_id=user)
+        paginator = Paginator(missions, 12, 3)
+        try:
+            num = request.POST.get('finish', '1')
+            number = paginator.page(num)
+        except PageNotAnInteger:
+            number = paginator.page(1)
+        except EmptyPage:
+            number = paginator.page(paginator.num_pages)
         context = {
-            "missions": missions,
+            "missions": paginator,
             "id2": id2,
+            "page": number
         }
         return render(request, 'task_released/finish.html', context=context)
 
@@ -84,13 +124,22 @@ def finish(request):
 @csrf_exempt
 def un_acp(request):
     if request.method == 'GET':
-        id2 = 0
+        id2 = request.session['mclass']
         id1 = request.session['user_id']
         user = User.objects.get(pk=id1)
         missions = Task.objects.filter(publisher_id=user)
+        paginator = Paginator(missions,12,3)
+        try:
+            num = request.GET.get('un_acp', '1')
+            number = paginator.page(num)
+        except PageNotAnInteger:
+            number = paginator.page(1)
+        except EmptyPage:
+            number = paginator.page(paginator.num_pages)
         context = {
-            "missions": missions,
-            "id2": id2
+            "missions": paginator,
+            "id2": id2,
+            "page":number
         }
         return render(request, 'task_released/un_acp.html', context=context)
     elif request.method == 'POST':
@@ -107,11 +156,21 @@ def un_acp(request):
         elif request.POST.get('task_type') == "5":
             id2 = 5
         id1 = request.session['user_id']
+        request.session['mclass'] = id2
         user = User.objects.get(pk=id1)
         missions = Task.objects.filter(publisher_id=user)
+        paginator = Paginator(missions, 12, 3)
+        try:
+            num = request.POST.get('un_acp', '1')
+            number = paginator.page(num)
+        except PageNotAnInteger:
+            number = paginator.page(1)
+        except EmptyPage:
+            number = paginator.page(paginator.num_pages)
         context = {
-            "missions": missions,
+            "missions": paginator,
             "id2": id2,
+            "page": number
         }
         return render(request, 'task_released/un_acp.html', context=context)
 
@@ -137,7 +196,7 @@ def comment(request):
         task = Task.objects.get(pk=id1)
         task.comment_for_hunter=comment1
         task.save()
-        return redirect('/task_released/finish/')
+        return render(request, 'task_released/success.html')
 
 
 def d_mission(request):
@@ -165,7 +224,7 @@ def reason(request):
         cancel.task = Task.objects.get(pk=id1)
         cancel.user = User.objects.get(pk=hunter)
         cancel.save()
-        return redirect("/task_released/finish/")
+        return render(request, 'task_released/success.html')
 
 
 def d_unacpm(request):
@@ -220,7 +279,8 @@ def m_change(request):
         mission.task_sketch = d
         mission.task_reward = g
         mission.task_file = file.name
-        mission.contact_type_publisher = c
+
+        mission.contact_type_publisher = Contact.objects.get(pk=c)
         mission.save()
         return redirect("/task_released/un_acp/")
 

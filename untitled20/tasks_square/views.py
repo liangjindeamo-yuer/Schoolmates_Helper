@@ -12,6 +12,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def task_square(request):
     user_id = request.session.get('user_id')
     task_types = TaskType.objects.all()
+    request.session['mclass'] = 0
     if user_id:
         username = request.session.get('username')
         tasks_list = Task.objects.filter(is_pickedup=False).exclude(publisher_id=user_id)
