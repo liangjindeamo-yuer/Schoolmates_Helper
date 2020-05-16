@@ -15,8 +15,7 @@
 </div>
 
 <div class="topnav">
-    <a href="#" style="margin-left: 100px;">首页</a>
-    <a href={% url 'tasks_square:task_square' %}>任务广场</a>
+    <a href={% url 'tasks_square:task_square' %} style="margin-left: 100px;">任务广场</a>
     <a href={% url 'hunt:up0' %}>我要发布</a>
     <a href={% url 'hunt:edit' %} class="active">个人中心</a>
     <a href="#" style="float:right; margin-right: 100px;"><img src="..\..\static\image\user_center.png" width="35px"
@@ -49,7 +48,7 @@
 
     </div>
 
-    <b style="font-size: 30px; margin-left: 380px; margin-top: 20px;">任务列表</b>
+    <b style="font-size: 30px; margin-left: 40%; margin-top: 20px;">任务列表</b>
     {% for task in tasklist_sometype_not_finished %}
         <div class="task_box">
             <a href={% url 'task_received:task_detail' task.id %}>{{ task.task_name }}</a>
