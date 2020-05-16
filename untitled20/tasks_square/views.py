@@ -243,6 +243,7 @@ def delete(request, id, type, task_id):
 # 未实现 swf 日期
 def download(request, task_id):
     task = Task.objects.get(pk=task_id)
+    
     file = open('static/task.task_file', 'rb')
     response = HttpResponse(file)
     response['Content-Type'] = 'application/octet-stream'  # 设置头信息，告诉浏览器这是个文件
