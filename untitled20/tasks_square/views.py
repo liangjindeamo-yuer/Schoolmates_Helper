@@ -1,21 +1,60 @@
 # author：苏婉芳
+import os
 
+from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
+from django.urls import reverse
+
 from hunt.models import *
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 
 def task_square(request):
     user_id = request.session.get('user_id')
-    username = request.session.get('username')
     task_types = TaskType.objects.all()
-    tasks_list = Task.objects.filter(is_pickedup=False).exclude(publisher_id=user_id)
-    data = {
-        'tasks_list': tasks_list,
-        'task_types': task_types,
-        'type_id': 0,
-        'username': username,
-    }
-    return render(request, 'tasks_square/task_square.html', context=data)
+    request.session['mclass'] = 0
+    if user_id:
+        username = request.session.get('username')
+        tasks_list = Task.objects.filter(is_pickedup=False).exclude(publisher_id=user_id)
+        paginator = Paginator(tasks_list, 10)  # Show 5 contacts per page
+        page = request.GET.get('page')
+        try:
+            tasks = paginator.page(page)
+        except PageNotAnInteger:
+            # If page is not an integer, deliver first page.
+            tasks = paginator.page(1)
+        except EmptyPage:
+            # If page is out of range (e.g. 9999), deliver last page of results.
+            tasks = paginator.page(paginator.num_pages)
+        data = {
+            'tasks_list': tasks_list,
+            'task_types': task_types,
+            'type_id': 0,
+            'username': username,
+            'tasks': tasks,
+        }
+        return render(request, 'tasks_square/task_square.html', context=data)
+    # 2020年4月30日 swf 新增 用户未登录时也可看广场
+    else:
+        tasks_list = Task.objects.filter(is_pickedup=False)
+        paginator = Paginator(tasks_list, 10)  # Show 5 contacts per page
+        page = request.GET.get('page')
+        try:
+            tasks = paginator.page(page)
+        except PageNotAnInteger:
+            # If page is not an integer, deliver first page.
+            tasks = paginator.page(1)
+        except EmptyPage:
+            # If page is out of range (e.g. 9999), deliver last page of results.
+            tasks = paginator.page(paginator.num_pages)
+        data = {
+            'tasks_list': tasks_list,
+            'task_types': task_types,
+            'type_id': 0,
+            'username': None,
+            'tasks': tasks,
+        }
+        return render(request, 'tasks_square/task_square.html', context=data)
 
 
 def task_square_sort(request, type_id, order):
@@ -36,14 +75,31 @@ def task_square_sort(request, type_id, order):
 
     if type_id != 0:
         sort = TaskType.objects.get(pk=type_id).typename
-        tasks_list = Task.objects.filter(is_pickedup=False, task_type=type_id).order_by(order).exclude(
-            publisher_id=user_id)
+        if user_id:
+            tasks_list = Task.objects.filter(is_pickedup=False, task_type=type_id).order_by(order).exclude(
+                publisher_id=user_id)
+        else:
+            tasks_list = Task.objects.filter(is_pickedup=False, task_type=type_id).order_by(order)
     else:
         sort = '全部任务'
-        tasks_list = Task.objects.filter(is_pickedup=False).order_by(order).exclude(publisher_id=user_id)
+        if user_id:
+            tasks_list = Task.objects.filter(is_pickedup=False).order_by(order).exclude(publisher_id=user_id)
+        else:
+            tasks_list = Task.objects.filter(is_pickedup=False).order_by(order)
+
+    paginator = Paginator(tasks_list, 10)  # Show 5 contacts per page
+    page = request.GET.get('page')
+    try:
+        tasks = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer, deliver first page.
+        tasks = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range (e.g. 9999), deliver last page of results.
+        tasks = paginator.page(paginator.num_pages)
 
     data = {
-        'tasks_list': tasks_list,
+        'tasks': tasks,
         'username': username,
         'task_types': task_types,
         'type_id': type_id,
@@ -54,29 +110,145 @@ def task_square_sort(request, type_id, order):
 
 
 def check_hunt(request, task_id):
+    user_id = request.session.get('user_id')
     task = Task.objects.get(pk=task_id)
-    return render(request, 'tasks_square/check_hunt.html', context={'task': task})
+    if user_id:
+        return render(request, 'tasks_square/check_hunt.html', context={'task': task,
+                                                                        'user_id': user_id})
+    else:
+        return render(request, 'tasks_square/check_hunt.html', context={'task': task,
+                                                                        'user_id': None})
 
 
 def hunt_task(request, task_id):
     user_id = request.session.get('user_id')
+    user = User.objects.get(pk=user_id)
+    contactid = request.POST.get('contacthunter')
+    contactname = Contact.objects.get(pk=contactid).typename
     task = Task.objects.get(pk=task_id)
     task.is_pickedup = True
     task.hunter_id = user_id
-    task.contact_type_hunter=request.POST.get('contacthunter')
-    task.save()
-    return render(request, 'tasks_square/hunt_successfully.html', context={'task': task})
+    task.contact_type_hunter_id = contactid
+    if getattr(user, contactname) == None:
+        return render(request, 'tasks_square/contacttype.html', context={'task': task,
+                                                                         'contactname': contactname, })
+    else:
+        task.save()
+        return render(request, 'tasks_square/hunt_successfully.html', context={'task': task, })
 
 
 def task_detail(request, task_id):
     task = Task.objects.get(pk=task_id)
-    return render(request, 'tasks_square/task_detail.html', context={'task': task})
+    user_id = request.session.get('user_id')
+    if user_id:
+        data = {
+            'task': task,
+            'user_id': user_id,
+        }
+    else:
+        data = {
+            'task': task,
+            'user_id': None,
+        }
+    return render(request, 'tasks_square/task_detail.html', data)
 
 
 # swf 2020年4月25日 新增
 def publisher_detail(request, publisher_id):
     publisher = User.objects.get(pk=publisher_id)
     his_alltasks = publisher.publisher.all()
+    his_finished = publisher.hunter.all()
     return render(request, 'tasks_square/publisher_detail.html',
                   context={'publisher': publisher,
-                           'his_alltasks': his_alltasks})
+                           'his_alltasks': his_alltasks,
+                           'his_finished':his_finished})
+
+
+def findtasks(request):
+    keywords = request.POST.get('keywords')
+    user_id = request.session.get('user_id')
+    task_types = TaskType.objects.all()
+    if user_id:
+        user = User.objects.get(pk=user_id)
+        tasks = Task.objects.all().exclude(publisher_id=user_id)
+        finded = []
+        for task in tasks:
+            if keywords in task.task_name:
+                finded.append(task)
+            else:
+                if task.task_sketch:
+                    if keywords in task.task_sketch:
+                        finded.append(task)
+        data = {
+            'tasks': finded,
+            'task_types': task_types,
+            'type_id': 0,
+            'username': user.username,
+        }
+        return render(request, 'tasks_square/task_square.html', context=data)
+    else:
+        tasks = Task.objects.all()
+        finded = []
+        for task in tasks:
+            if keywords in task.task_name:
+                finded.append(task)
+            else:
+                if task.task_sketch:
+                    if keywords in task.task_sketch:
+                        finded.append(task)
+        data = {
+            'tasks': finded,
+            'task_types': task_types,
+            'type_id': 0,
+            'username': None,
+        }
+        return render(request, 'tasks_square/task_square.html', context=data)
+
+
+def discuss(request, task_id):
+    user_id = request.session.get('user_id')
+    user = User.objects.get(pk=user_id)
+    task = Task.objects.get(pk=task_id)
+    discussion = Discuss()
+    discussion.task = task
+    discussion.discuss = request.POST.get('discussion')
+    discussion.discussant = user
+    discussion.save()
+    return HttpResponseRedirect(reverse('tasks_square:task_detail', args=[task_id]))
+
+
+def response(request, task_id, discussion_id):
+    user_id = request.session.get('user_id')
+    if user_id:
+        user = User.objects.get(pk=user_id)
+        task = Task.objects.get(pk=task_id)
+        discussion1 = Discuss.objects.get(pk=discussion_id)
+        response1 = Response()
+        response1.discuss = discussion1
+        response1.response = request.POST.get('response')
+        response1.respondent = user
+        response1.save()
+        return HttpResponseRedirect(reverse('tasks_square:task_detail', args=[task_id]))
+    else:
+        return render(request, 'tasks_square/task_detail.html')
+
+
+def delete(request, id, type, task_id):
+    if type == 'discuss':
+        Discuss.objects.get(pk=id).delete()
+    elif type == 'response':
+        Response.objects.get(pk=id).delete()
+    return HttpResponseRedirect(reverse('tasks_square:task_detail', args=[task_id]))
+
+# 未实现 swf 日期
+def download(request, task_id):
+    task = Task.objects.get(pk=task_id)
+    site = 'static/uploads/'
+    name=str(task.task_file)
+    site=site+name
+    file = open(site, 'rb')
+    download_name = name.split("/")[3]
+    response = HttpResponse(file)
+    response['Content-Type'] = 'application/octet-stream'  # 设置头信息，告诉浏览器这是个文件
+    response['Content-Disposition'] = 'attachment;filename='+download_name
+    return response

@@ -4,7 +4,7 @@
 <head> 
     <meta charset="utf-8">
     <title>我接受的任务</title> 
-    <link rel="stylesheet" type="text/css" href="..\..\static\css\style.css">
+    <link rel="stylesheet" type="text/css" href="..\..\static\css\task_rec_style.css">
 </head>
 
 <body>
@@ -12,17 +12,17 @@
     <h1>SCHOOL Helper</h1>
     <p><b>我接受的任务</b></p>
 </div>
+<!--2020年4月30日 新增 swf 未登录显示 if-->
+{% if user_id %}
 
 <div class="topnav">
-    <a href="#" style="margin-left: 100px;">首页</a>
-    <a href={% url 'tasks_square:task_square' %}>任务广场</a>
-    <a href={% url 'hunt:up0' %} class="active">我要发布</a>
-    <a href={% url 'hunt:edit' %}>个人中心</a>
+    <a href={% url 'tasks_square:task_square' %} style="margin-left: 100px;">任务广场</a>
+    <a href={% url 'hunt:up0' %}>我要发布</a>
+    <a href={% url 'hunt:edit' %} class="active">个人中心</a>
     <a href="#" style="float:right; margin-right: 100px;"><img src="..\..\static\image\user_center.png" width="35px"
                                                                height="35px"></a>
 
 </div>
-
 <div id="navbar">
     <h2>我接受的任务</h2>
     <ul>
@@ -43,14 +43,12 @@
         {% endfor %}
     </div>
 
-    <b style="font-size: 30px; margin-left: 380px; margin-top: 20px;">任务列表</b>
+    <b style="font-size: 30px; margin-left: 40%; margin-top: 20px;">任务列表</b>
     {% for task in task_received_list %}
         <div class="task_box">
             <a href={% url 'task_received:task_detail' task.id %}>{{ task.task_name }}</a>
-            <!--加这个标签，让简介只显示两行简介：但是页面移位了？？？article可以换成p span等 但是都有问题-->
             <p>任务简述：
-                <article
-                        style="overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;">{{ task.task_sketch }}</article>
+                <article>{{ task.task_sketch }}</article>
             </p>
             <div id="status">
                 {% if task.is_finished == False %}
@@ -64,14 +62,34 @@
                         <input type="submit" value="完成任务"/>
                     </form>
                 {% else %}
-                    <p style="float: right; margin-right: 18px; margin-top: 50px; display: block;
+                    <p style="float: right; margin-top: 30px; display: block;
             background: rgb(168, 185, 223); padding: 10px;border-radius: 25px;
             ">该任务已完成</p>
                 {% endif %}
             </div>
         </div>
     {% endfor %}
+<!--2020年4月30日 swf 分页功能-->
+<div class="pagination">
+    <span class="step-links">
+        {% if task_received_list.has_previous %}
+            <a href="?page={{ task_received_list.previous_page_number }}">上一页</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ task_received_list.number }} of {{ task_received_list.paginator.num_pages }}.
+        </span>
+
+        {% if task_received_list.has_next %}
+            <a href="?page={{ task_received_list.next_page_number }}">下一页</a>
+        {% endif %}
+    </span>
 </div>
+</div>
+
+{% else %}
+<a href={% url 'hunt:login' %}>请先登录！</a>
+{% endif %}
 </body>
 
 </html>

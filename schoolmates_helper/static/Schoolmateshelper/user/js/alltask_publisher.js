@@ -14,7 +14,7 @@ finishtask = function (task_id) {
     flag = false;
     alert('任务已完成，快去评价吧！');
     $.getJSON('/App/finishtask/',{'task_id':task_id,},function(data){
-        window.location.href='/App/taskcontent/task_id/';
+        window.location.href='/App/taskcontent/'+task_id.toString()+'/';
     })
 };
 modifytask = function (task_id) {

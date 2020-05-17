@@ -20,6 +20,9 @@ from schoolmates_helper import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.home),
-    path('App/',include(('App.urls','App'),namespace='App')),
+    path('', views.home),
+    path('App/', include(('App.urls', 'App'), namespace='App')),
+    path('task_square/', include('tasks_square.urls')),
+    path('task_received/', include('task_received.urls')),
+    path('hunt/', include(('hunt.urls', 'hunt'), namespace='hunt')),
 ]

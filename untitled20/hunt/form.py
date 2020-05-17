@@ -4,8 +4,10 @@ from django.contrib.auth.forms import UserChangeForm
 from django.core.exceptions import ValidationError
 from django.contrib.auth.forms import UserCreationForm
 
+
 class DateInput(forms.DateInput):
     input_type = 'ddltime'
+
 
 class Task1(forms.ModelForm):
     class Meta:
@@ -34,6 +36,9 @@ class Task1(forms.ModelForm):
         }
         widgets = {
             'ddltime': DateInput(),
+            'password': forms.PasswordInput(),
+            'repassword': forms.PasswordInput()
+
         }
 
 
@@ -61,7 +66,7 @@ class User1(forms.ModelForm):
         model = User
         fields = '__all__'
         # exclude用于禁止模型字段转换表单字段
-        exclude = ['star', 'is_active', 'is_delete']
+        exclude = ['rank', 'is_active', 'is_delete']
         labels = {
             'username': '用户名',
             'tel': '手机号（选填）',
@@ -70,18 +75,21 @@ class User1(forms.ModelForm):
             'email': '邮箱',
             'other': '其他信息（选填）',
             'password': '密码',
+            'repassword': '再次输入密码',
             'icon': '头像',
-            'photo':'头像'
+            'photo': '头像'
 
         }
+        widgets = {
+            'ddltime': DateInput(),
+            'password': forms.PasswordInput(),
+            'repassword': forms.PasswordInput()
 
+        }
         error_messages = {
-            '__all__': {
-                'required':'请输入这个信息',
-                'invalid': '请检查格式'},
-            'name': {'required': '请输入',
-                     'invalid': '请检查格式'
-                     }
+            'username': {'required': '请输入',
+                         'invalid': '请检查格式'
+                         }
         }
 
     def clean_email(self):
@@ -90,3 +98,13 @@ class User1(forms.ModelForm):
             return email
         else:
             raise forms.ValidationError("请输入交大邮箱")
+
+    def clean_repassword(self):
+        pwd1 = self.cleaned_data.get('password')
+
+        pwd2 = self.cleaned_data.get('repassword')
+
+        if pwd1 != pwd2:
+            raise forms.ValidationError('密码输入不一致')
+        else:
+            return self.cleaned_data

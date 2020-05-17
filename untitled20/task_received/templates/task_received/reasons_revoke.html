@@ -14,10 +14,9 @@
     </div>
 
     <div class="topnav">
-        <a href="#" style="margin-left: 100px;">首页</a>
-        <a href="#">任务广场</a>
-        <a href="#" class="active">我要发布</a>
-        <a href="#">个人中心</a>
+        <a href={% url 'tasks_square:task_square' %} style="margin-left: 100px;">任务广场</a>
+        <a href={% url 'hunt:up0' %}>我要发布</a>
+        <a href={% url 'hunt:edit' %} class="active">个人中心</a>
         <a href="#" style="float:right; margin-right: 100px;"><img src="..\..\..\..\static\image\user_center.png"
                 width="35px" height="35px"></a>
 
@@ -30,8 +29,7 @@
         <form method="post" action={% url 'task_received:revoke' %}>
             {% csrf_token %}
             <p><b>请输入撤销原因: </b></p>
-            <input type="text" name="reasons" value="请输入撤销原因"
-                style="width:800px; height:200px; margin-top: 20px;"><br>
+            <input type="text" name="reasons" value="请输入撤销原因" style="width:800px; height:200px; margin-top: 20px;"><br>
             <input type="submit" id="btn" value="提交，确定撤销">
         </form>
         <a href={% url 'task_received:all_task_received' %}>取消，返回</a>
@@ -39,5 +37,3 @@
 </body>
 
 </html>
-
-

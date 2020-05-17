@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e03cab6-c750-40ef-a8f1-9084444ded0c" name="Default Changelist" comment="" />
+    <list default="true" id="7e03cab6-c750-40ef-a8f1-9084444ded0c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1786de0d-836e-474a-8402-d18be0ddd288.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1786de0d-836e-474a-8402-d18be0ddd288.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/61d3bda8-b1a8-437f-b2f3-3cbb36baa0e3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/61d3bda8-b1a8-437f-b2f3-3cbb36baa0e3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +90,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="SQLITE-SQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -120,6 +125,11 @@
       <workItem from="1587206306326" duration="147000" />
       <workItem from="1587206528558" duration="4865000" />
       <workItem from="1587213363036" duration="4000" />
+      <workItem from="1588004805274" duration="54000" />
+      <workItem from="1588004905601" duration="202000" />
+      <workItem from="1588005506481" duration="282000" />
+      <workItem from="1588006143013" duration="1946000" />
+      <workItem from="1588173752038" duration="94000" />
     </task>
     <servers />
   </component>

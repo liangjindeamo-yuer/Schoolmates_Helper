@@ -113,19 +113,18 @@ def task(request):
         taskdate = ''
 
         if taskdate_year:
-            taskdate  =taskdate+taskdate_year + '-'
+            taskdate = taskdate + taskdate_year + '-'
         else:
-            taskdate  =taskdate+str(deadline.year) + '-'
+            taskdate = taskdate + str(deadline.year) + '-'
         print(taskdate)
         if taskdate_month:
-            taskdate  =taskdate+taskdate_month + '-'
+            taskdate = taskdate + taskdate_month + '-'
         else:
-            taskdate  =taskdate+str(deadline.month) + '-'
+            taskdate = taskdate + str(deadline.month) + '-'
         if taskdate_day:
-            taskdate  =taskdate+taskdate_day
+            taskdate = taskdate + taskdate_day
         else:
-            taskdate  =taskdate+str(deadline.day)
-
+            taskdate = taskdate + str(deadline.day)
 
         task.task_time = taskdate
         try:
@@ -173,6 +172,7 @@ def register(request):
         username = request.POST.get('username')
         email = request.POST.get('email')
         password = request.POST.get('password')
+        repassword=password
         icon = request.FILES.get('icon')
         QQ = request.POST.get('QQ')
         wechat = request.POST.get('wechat')
@@ -182,10 +182,15 @@ def register(request):
         user.username = username
         user.email = email
         user.password = password
+        user.repassword=password
         user.icon = icon
         user.qq = QQ
         user.wechat = wechat
-        user.tel = tel
+        try:
+            if tel:
+                user.tel=int(eval(tel))
+        except:
+            pass
         user.other = other
         try:
             u_token = uuid.uuid4().hex
@@ -366,19 +371,19 @@ def receivetask(request):
             if user.is_active:
                 task.hunter_id = user_id
                 task.is_pickedup = 1
-                contact_way = 'email:'+user.email
+                contact_way = 'email:' + user.email
                 if contact_id == '1':
                     pass
                 elif contact_id == '2':
-                    contact_way = 'QQ:'+user.qq
+                    contact_way = 'QQ:' + user.qq
                 elif contact_id == '3':
-                    contact_way = 'wechat:'+user.wechat
+                    contact_way = 'wechat:' + user.wechat
                 elif contact_id == '4':
-                    contact_way = 'telephone:'+str(user.tel)
+                    contact_way = 'telephone:' + str(user.tel)
                 elif contact_id == '5':
-                    contact_way = '其它联系方式:'+user.other
+                    contact_way = '其它联系方式:' + user.other
                 send_email_receive(task.publisher.username, user.username, task_id, task.task_name,
-                                   task.publisher.email, user.email,contact_way)
+                                   task.publisher.email, user.email, contact_way)
                 task.contact_type_hunter_id = contact_id
                 task.save()
             else:
@@ -491,7 +496,8 @@ def relievetask(request):
     revoke_reason.task_id = task_id
     revoke_reason.save()
 
-    send_email_relieve(task.publisher.username, task.hunter.username, task_id, task.task_name, task.hunter.email,reason)
+    send_email_relieve(task.publisher.username, task.hunter.username, task_id, task.task_name, task.hunter.email,
+                       reason)
     task.is_pickedup = 0
     task.removehunter()
     task.save()
@@ -509,7 +515,8 @@ def relievetask2(request):
     revoke_reason.revoke_reason = reason
     revoke_reason.task_id = task_id
     revoke_reason.save()
-    send_email_relieve2(task.publisher.username, task.hunter.username, task_id, task.task_name, task.publisher.email,reason)
+    send_email_relieve2(task.publisher.username, task.hunter.username, task_id, task.task_name, task.publisher.email,
+                        reason)
     task.is_pickedup = 0
     task.removehunter()
     task.save()
@@ -716,6 +723,12 @@ def comment(request, typeid, sort_way):
 
 def taskcontent(request, task_id):
     task = Task.objects.get(pk=task_id)
+
+    discuss_list = Discuss.objects.all().filter(task_id=task_id)
+    response_list = Response.objects.filter(discuss_id=-20)
+    for discuss in discuss_list:
+        if Response.objects.all().filter(discuss_id=discuss.id):
+            response_list = Response.objects.all().filter(discuss_id=discuss.id) | response_list
     is_login = 0
     is_activate = 0
     data = {
@@ -725,6 +738,8 @@ def taskcontent(request, task_id):
         'SERVER_HOST': SERVER_HOST,
         'SERVER_PORT': SERVER_PORT,
         'SERVER_NAME': SERVER_NAME,
+        'discuss_list': discuss_list,
+        'response_list': response_list
     }
     is_PorH = 0
     try:
@@ -746,13 +761,31 @@ def taskcontent(request, task_id):
         return render(request, 'mine_all/taskcontent.html', context=data)
     elif request.method == 'POST':
         comment = request.POST.get('comment')
-        if is_PorH == 1:
-            task.comment_publisher = comment
-            task.save()
-        elif is_PorH == 2:
-            task.comment_hunter = comment
-            task.save()
-        return render(request, 'mine_all/taskcontent.html', context=data)
+        if comment:
+            if is_PorH == 1:
+                task.comment_publisher = comment
+                task.save()
+            elif is_PorH == 2:
+                task.comment_hunter = comment
+                task.save()
+        response = request.POST.get('response')
+        if response:
+            user_id = request.session.get('user_id')
+            discuss_id = request.POST.get('r_discuss')
+            new_response = Response()
+            new_response.respondent_id = user_id
+            new_response.discuss_id = discuss_id
+            new_response.response =response
+            new_response.save()
+        discuss = request.POST.get('discuss')
+        if discuss:
+            user_id = request.session.get('user_id')
+            new_discuss = Discuss()
+            new_discuss.discuss =discuss
+            new_discuss.discussant_id = user_id
+            new_discuss.task_id = task_id
+            new_discuss.save()
+        return redirect(reverse('App:taskcontent',kwargs={'task_id':task_id}))
 
 
 def modifyuser(request):
@@ -778,7 +811,7 @@ def modifyuser(request):
         if email:
             user.email = email
             user.is_active = 0
-            if user.rank >= 1 :
+            if user.rank >= 1:
                 user.rank -= 1
             u_token = uuid.uuid4().hex
             cache.set(u_token, user.id, timeout=60 * 60 * 24)
@@ -795,7 +828,7 @@ def modifyuser(request):
 
         qq = request.POST.get('QQ')
         if qq:
-            user.qq=qq
+            user.qq = qq
 
         wechat = request.POST.get('wechat')
         if wechat:
@@ -851,13 +884,13 @@ def modifytask(request, task_id):
         deadline = now + delta
         taskdate = ''
         if taskdate_year:
-            taskdate = taskdate + taskdate_year +'-'
+            taskdate = taskdate + taskdate_year + '-'
         else:
-            taskdate = taskdate + str(task.task_time.year)+'-'
+            taskdate = taskdate + str(task.task_time.year) + '-'
         if taskdate_month:
-            taskdate = taskdate + taskdate_month +'-'
+            taskdate = taskdate + taskdate_month + '-'
         else:
-            taskdate = taskdate + str(task.task_time.month)+'-'
+            taskdate = taskdate + str(task.task_time.month) + '-'
         if taskdate_day:
             taskdate = taskdate + taskdate_day
         else:

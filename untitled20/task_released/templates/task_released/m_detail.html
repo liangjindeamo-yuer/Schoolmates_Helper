@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>我发布的任务</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/what_I_release.css">
+    <link rel="stylesheet" type="text/css" href="/../../static/css/what_I_release.css">
 </head>
 <body>
 <div class="header">
@@ -14,17 +14,32 @@
 
 <div class="topnav">
     <a href="#">首页</a>
-    <a href="#">任务广场</a>
-    <a href="#">我要发布</a>
-    <a href="#" style="float:right" class="active"><img src="../static/image/user_center.png" width="35px" height="35px"
-                                                        alt="user center"></a>
+    <a href={% url 'tasks_square:task_square' %}>任务广场</a>
+    <a href={% url 'hunt:up0' %}>我要发布</a>
+    <a href={% url 'hunt:edit' %}>个人中心</a>
+    <a href="#" style="float:right"><img src="/../../static/image/user_center.png" width="35px" height="35px"
+                                         alt="user center"></a>
 
 </div>
 <div class="row">
     <div class="leftcolumn">
-        <img src="../static/image/details.png" alt="details button">
+        <div class="card">
+            <ul>
+                <li><a href="http://127.0.0.1:8000/task_released/un_acp"
+                       >&nbsp;&nbsp;&nbsp;&nbsp;返回</a></li>
+            </ul>
+        </div>
+        <img src="/../../static/image/details.png" alt="details button">
     </div>
     <div class="rightcolumn">
+        {% if mission.hunter != Null %}
+            接收者：<a href={% url 'tasks_square:publisher_detail' mission.hunter_id %}>{{ mission.hunter.username }}</a><br>
+        {% endif %}
+        <div class="card">
+            <h2>希望的联系方式</h2>
+            <hr>
+            <p>{{mission.contact_type_publisher}}</p>
+        </div>
         <div class="card">
             <h2>截止日期</h2>
             <hr>
@@ -39,6 +54,11 @@
             <h2>任务详情</h2>
             <hr>
             <p>{{mission.task_sketch}}</p>
+        </div>
+        <div class="card">
+            <h2>附件下载</h2>
+            <hr>
+            <a href="http://127.0.0.1:8000/task_released/download?name={{mission.task_file}}">{{ mission.task_file }}</a>
         </div>
         <div class="card">
         <h2>酬金（元）</h2>

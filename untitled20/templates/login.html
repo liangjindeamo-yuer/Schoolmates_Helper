@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="style1.css">
+
+    <title>haha</title>
+</head>
+<body>
+ <form method="post" enctype="multipart/form-data" action="" >
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="username_input">用户名/邮箱</label>
+                <input type="text" class="form-control" id="username_input" placeholder="请输入用户名" name="username">
+                <span id="username_info"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="password_input">密码</label>
+                <input type="password" class="form-control" id="password_input" placeholder="请输入密码" name="password">
+                <span id="password_info"></span>
+            </div>
+
+            <input type="submit" value="提交">
+        </form>
+</body>
+</html>ml>
