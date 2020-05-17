@@ -17,6 +17,7 @@ class MainWheel(models.Model):
 class User(models.Model):
     username = models.CharField(max_length=32, unique=True)
     password = models.CharField(max_length=256)
+    repassword = models.CharField(max_length=256)
     email = models.EmailField(max_length=30, unique=True)
     icon = models.ImageField(upload_to='icons/%Y/%m/%d/', null=True)
     is_active = models.BooleanField(default=False)
@@ -51,29 +52,29 @@ class Contact(models.Model):
 
 class Task(models.Model):
     contact_type_publisher = models.ForeignKey(Contact, on_delete=models.CASCADE, related_name='contact_publisher',
-                                               verbose_name='发布人联系方式', db_constraint=False, null=True)
+                                               verbose_name='发布人联系方式', db_constraint=False, null=True,blank=True)
     contact_type_hunter = models.ForeignKey(Contact, on_delete=models.CASCADE, related_name='contact_hunter',
-                                            verbose_name='委托人联系方式', db_constraint=False, null=True)
+                                            verbose_name='委托人联系方式', db_constraint=False, null=True,blank=True)
 
     task_name = models.CharField(max_length=32)
-    task_sketch = models.CharField(max_length=512, null=True)
-    task_file = models.FileField(upload_to='task_file/%Y/%m/%d/', null=True)
+    task_sketch = models.CharField(max_length=512, null=True,blank=True)
+    task_file = models.FileField(upload_to='task_file/%Y/%m/%d/', null=True,blank=True)
     task_type = models.ForeignKey(TaskType, default=5, on_delete=models.SET_DEFAULT)
 
     task_time = models.DateField(blank=True, null=True)
 
-    task_reward = models.FloatField(default=0, null=True)
+    task_reward = models.FloatField(default=0, null=True,blank=True)
 
     is_pickedup = models.BooleanField(default=False)
     is_finished = models.BooleanField(default=False)
     is_overtime = models.BooleanField(default=False)
 
-    publisher = models.ForeignKey(User, on_delete=models.CASCADE, related_name='publisher', verbose_name='发布人')
+    publisher = models.ForeignKey(User, on_delete=models.CASCADE, related_name='publisher', verbose_name='发布人',blank=True,null=True)
     hunter = models.ForeignKey(User, on_delete=models.DO_NOTHING, related_name='hunter', verbose_name='委托人',
-                               db_constraint=False, null=True)
+                               db_constraint=False, null=True,blank=True)
 
-    comment_publisher = models.CharField(max_length=1000, null=True)
-    comment_hunter = models.CharField(max_length=1000, null=True)
+    comment_publisher = models.CharField(max_length=1000, null=True,blank=True)
+    comment_hunter = models.CharField(max_length=1000, null=True, blank=True)
 
     def removehunter(self):
         self.hunter = None

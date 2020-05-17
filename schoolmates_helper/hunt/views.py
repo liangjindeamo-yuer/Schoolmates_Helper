@@ -1,16 +1,9 @@
 # Create your views here.
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.db.models import Q
-from django.contrib.auth import authenticate, login
-from django.contrib.auth.hashers import check_password
-from hunt.form import User1, Task1
+from App.form import User1, Task1
 from django.urls import reverse
 from django.http import HttpResponse, HttpResponseRedirect
-from django.contrib.auth.forms import UserChangeForm
-from django.core.exceptions import ValidationError
-from hunt.models import *
-from django.contrib.auth.decorators import login_required
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 import random
 from App.models import *
 

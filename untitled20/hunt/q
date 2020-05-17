@@ -1,0 +1,57 @@
+   <form action="" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
+        <caption id="cap">发布</caption>
+        <div class="row">
+            <div><label for="id_contact_type_publisher">你希望的联系方式:</label></div>
+            <div class="select"><select name="contact_type_publisher" id="id_contact_type_publisher">
+                    <option value="0" selected>email</option>
+
+                    <option value="1">qq</option>
+
+                    <option value="2">wechat</option>
+
+                    <option value="3">tel</option>
+
+                    <option value="4">other</option>
+
+                </select></div>
+        </div>
+        <div class="row">
+            <div><label for="id_task_name">任务名(必填）:</label></div>
+            <div><input type="text" name="task_name" maxlength="32" required id="id_task_name"></div>
+        </div>
+        <div class="row">
+            <div><label for="id_task_sketch">任务描述:</label></div>
+            <div><input type="text" name="task_sketch" maxlength="512" id="id_task_sketch"></div>
+        </div>
+        <div class="row">
+            <div><label for="id_task_file">相关文件:</label></div>
+            <div><input type="file" name="task_file" id="id_task_file"></div>
+        </div>
+        <div class="row">
+            <div><label for="id_task_type">任务类型:</label></div>
+            <div class="select"><select name="task_type" id="id_task_type">
+                    <option value="1">快递服务</option>
+
+                    <option value="2">修理服务</option>
+
+                    <option value="3">课业指导</option>
+
+                    <option value="4">恋爱邂逅</option>
+
+                    <option value="5">其他</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div><label for="id_task_time">截止时间:</label></div>
+            <div><input type="date" name="task_time" value="2021-09-03" required id="id_task_time"></div>
+        </div>
+        <div class="row">
+            <div><label for="id_task_reward">任务奖励（必填）:</label></div>
+            <div><input type="number" name="task_reward" value="0" id="id_task_reward"></div>
+        </div>
+        <button type="submit" class="button">提交</button>
+
+    </form>

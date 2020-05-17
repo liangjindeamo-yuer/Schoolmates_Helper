@@ -172,6 +172,7 @@ def register(request):
         username = request.POST.get('username')
         email = request.POST.get('email')
         password = request.POST.get('password')
+        repassword=password
         icon = request.FILES.get('icon')
         QQ = request.POST.get('QQ')
         wechat = request.POST.get('wechat')
@@ -181,10 +182,15 @@ def register(request):
         user.username = username
         user.email = email
         user.password = password
+        user.repassword=password
         user.icon = icon
         user.qq = QQ
         user.wechat = wechat
-        user.tel = tel
+        try:
+            if tel:
+                user.tel=int(eval(tel))
+        except:
+            pass
         user.other = other
         try:
             u_token = uuid.uuid4().hex
