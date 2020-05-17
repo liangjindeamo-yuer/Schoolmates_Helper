@@ -12,11 +12,15 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 def task_square(request):
     user_id = request.session.get('user_id')
     task_types = TaskType.objects.all()
+
     request.session['mclass'] = 0
     if user_id:
         username = request.session.get('username')
-        tasks_list = Task.objects.filter(is_pickedup=False).exclude(publisher_id=user_id)
-        paginator = Paginator(tasks_list, 9)  # Show 5 contacts per page
+        tasks_list1 = Task.objects.filter(is_pickedup=False, is_overtime=False).exclude(publisher_id=user_id)
+        for task in tasks_list1:
+            task.delete()
+        tasks_list = Task.objects.filter(is_pickedup=False, is_overtime=False).exclude(publisher_id=user_id)
+        paginator = Paginator(tasks_list, 9)  # Show 9 contacts per page
         page = request.GET.get('page')
         try:
             tasks = paginator.page(page)
@@ -36,7 +40,10 @@ def task_square(request):
         return render(request, 'tasks_square/task_square.html', context=data)
     # 2020年4月30日 swf 新增 用户未登录时也可看广场
     else:
-        tasks_list = Task.objects.filter(is_pickedup=False)
+        tasks_list1 = Task.objects.filter(is_pickedup=False, is_overtime=False)
+        for task in tasks_list1:
+            task.delete()
+        tasks_list = Task.objects.filter(is_pickedup=False, is_overtime=False)
         paginator = Paginator(tasks_list, 10)  # Show 5 contacts per page
         page = request.GET.get('page')
         try:
@@ -76,16 +83,29 @@ def task_square_sort(request, type_id, order):
     if type_id != 0:
         sort = TaskType.objects.get(pk=type_id).typename
         if user_id:
-            tasks_list = Task.objects.filter(is_pickedup=False, task_type=type_id).order_by(order).exclude(
-                publisher_id=user_id)
+            tasks_list1 = Task.objects.filter(is_pickedup=False, task_type=type_id, is_overtime=False).order_by(
+                order).exclude(publisher_id=user_id)
+            for task in tasks_list1:
+                task.delete()
+            tasks_list = tasks_list1.filter(is_overtime=False)
         else:
-            tasks_list = Task.objects.filter(is_pickedup=False, task_type=type_id).order_by(order)
+            tasks_list1 = Task.objects.filter(is_pickedup=False, task_type=type_id, is_overtime=False).order_by(order)
+            for task in tasks_list1:
+                task.delete()
+            tasks_list = tasks_list1.filter(is_overtime=False)
     else:
         sort = '全部任务'
         if user_id:
-            tasks_list = Task.objects.filter(is_pickedup=False).order_by(order).exclude(publisher_id=user_id)
+            tasks_list1 = Task.objects.filter(is_pickedup=False, is_overtime=False).order_by(order).exclude(
+                publisher_id=user_id)
+            for task in tasks_list1:
+                task.delete()
+            tasks_list = tasks_list1.filter(is_overtime=False)
         else:
-            tasks_list = Task.objects.filter(is_pickedup=False).order_by(order)
+            tasks_list1 = Task.objects.filter(is_pickedup=False, is_overtime=False).order_by(order)
+            for task in tasks_list1:
+                task.delete()
+            tasks_list = tasks_list1.filter(is_overtime=False)
 
     paginator = Paginator(tasks_list, 10)  # Show 5 contacts per page
     page = request.GET.get('page')
@@ -161,7 +181,7 @@ def publisher_detail(request, publisher_id):
     return render(request, 'tasks_square/publisher_detail.html',
                   context={'publisher': publisher,
                            'his_alltasks': his_alltasks,
-                           'his_finished':his_finished})
+                           'his_finished': his_finished})
 
 
 def findtasks(request):
@@ -240,15 +260,16 @@ def delete(request, id, type, task_id):
         Response.objects.get(pk=id).delete()
     return HttpResponseRedirect(reverse('tasks_square:task_detail', args=[task_id]))
 
+
 # 未实现 swf 日期
 def download(request, task_id):
     task = Task.objects.get(pk=task_id)
     site = 'static/uploads/'
-    name=str(task.task_file)
-    site=site+name
+    name = str(task.task_file)
+    site = site + name
     file = open(site, 'rb')
     download_name = name.split("/")[3]
     response = HttpResponse(file)
     response['Content-Type'] = 'application/octet-stream'  # 设置头信息，告诉浏览器这是个文件
-    response['Content-Disposition'] = 'attachment;filename='+download_name
+    response['Content-Disposition'] = 'attachment;filename=' + download_name
     return response

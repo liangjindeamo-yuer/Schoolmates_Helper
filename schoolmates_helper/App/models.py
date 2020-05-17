@@ -1,3 +1,5 @@
+import datetime
+
 from django.db import models
 from django.utils import timezone
 
@@ -42,14 +44,16 @@ class TaskType(models.Model):
 class Contact(models.Model):
     type_id = models.IntegerField(default=0)
     typename = models.CharField(max_length=32)
+
     class Meta:
         db_table = 'smh_contact_type'
 
+
 class Task(models.Model):
     contact_type_publisher = models.ForeignKey(Contact, on_delete=models.CASCADE, related_name='contact_publisher',
-                                               verbose_name='发布人联系方式',db_constraint=False, null=True)
+                                               verbose_name='发布人联系方式', db_constraint=False, null=True)
     contact_type_hunter = models.ForeignKey(Contact, on_delete=models.CASCADE, related_name='contact_hunter',
-                                            verbose_name='委托人联系方式',db_constraint=False, null=True)
+                                            verbose_name='委托人联系方式', db_constraint=False, null=True)
 
     task_name = models.CharField(max_length=32)
     task_sketch = models.CharField(max_length=512, null=True)
@@ -73,7 +77,17 @@ class Task(models.Model):
 
     def removehunter(self):
         self.hunter = None
-        self.contact_type_hunter=None
+        self.contact_type_hunter = None
+
+    # 2020年5月16日 swf 软删除过期任务
+    # 重写数据库删除方法实现逻辑删除
+    def delete(self, using=None, keep_parents=False):
+        if self.task_time <= datetime.date.today():
+            self.is_overtime = True
+            self.save()
+
+    def __str__(self):
+        return 'is_overtime:%s' % self.is_overtime
 
     class Meta:
         db_table = 'smh_task'
@@ -81,10 +95,12 @@ class Task(models.Model):
 
 class Revoke_reason(models.Model):
     revoke_reason = models.CharField(max_length=512, null=True)
-    task = models.ForeignKey(Task,on_delete=models.CASCADE, related_name='revoked_tasks',db_constraint=False)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE, related_name='revoked_tasks', db_constraint=False)
 
     class Meta:
         db_table = 'smh_reason'
+
+
 class Discuss(models.Model):
     discussant = models.ForeignKey(User, on_delete=models.DO_NOTHING, related_name='discuss_user', verbose_name='评论方',
                                    db_constraint=False, blank=False, null=False)

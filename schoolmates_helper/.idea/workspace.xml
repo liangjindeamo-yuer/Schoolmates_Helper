@@ -2,28 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3fe759-315c-43f1-801b-b4e6a5e8f1ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2d021a6-27be-4722-a758-3822a80c9e7a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d2d021a6-27be-4722-a758-3822a80c9e7a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb8c0459-2070-4d1e-a635-65dd4f786b04.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb8c0459-2070-4d1e-a635-65dd4f786b04.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schoolmates_helper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/schoolmates_helper/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schoolmates_helper/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/schoolmates_helper/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/Schoolmateshelper/user/js/alltask_publisher.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/Schoolmateshelper/user/js/alltask_publisher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/allhome.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allhome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/mine_all/taskcontent.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/mine_all/taskcontent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks_square/templates/tasks_square/task_square.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/templates/tasks_square/task_square.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks_square/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks_square/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled20/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled20/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled20/hunt/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled20/hunt/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled20/hunt/templates/hunt/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled20/hunt/templates/hunt/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled20/hunt/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled20/hunt/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled20/task_released/templates/task_released/acp.html" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled20/task_released/templates/task_released/acp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled20/task_released/templates/task_released/finish.html" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled20/task_released/templates/task_released/finish.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled20/task_released/templates/task_released/un_acp.html" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled20/task_released/templates/task_released/un_acp.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled20/task_released/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled20/task_released/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +76,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../my_Django_code/schoolmates_helper" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -211,10 +196,17 @@
       <workItem from="1589024914104" duration="12395000" />
       <workItem from="1589622571109" duration="478000" />
       <workItem from="1589637851117" duration="1897000" />
+      <workItem from="1589646850470" duration="5639000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="421" y="105" key="FileChooserDialogImpl" timestamp="1589646934268">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="421" y="105" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589646934268" />
   </component>
 </project>
