@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2d3fe759-315c-43f1-801b-b4e6a5e8f1ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks_square/templates/tasks_square/task_square.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/templates/tasks_square/task_square.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks_square/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks_square/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks_square/templates/tasks_square/check_hunt.html" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/templates/tasks_square/check_hunt.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled20/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled20/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -76,7 +73,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../my_Django_code/schoolmates_helper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -197,6 +194,9 @@
       <workItem from="1589622571109" duration="478000" />
       <workItem from="1589637851117" duration="1897000" />
       <workItem from="1589646850470" duration="5639000" />
+      <workItem from="1589683540082" duration="4000" />
+      <workItem from="1589774666402" duration="970000" />
+      <workItem from="1589775738708" duration="88000" />
     </task>
     <servers />
   </component>
@@ -204,9 +204,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="105" key="FileChooserDialogImpl" timestamp="1589646934268">
+    <state x="421" y="105" key="FileChooserDialogImpl" timestamp="1589774918582">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="421" y="105" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589646934268" />
+    <state x="421" y="105" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589774918582" />
+    <state x="336" y="175" key="com.intellij.ide.util.TipDialog" timestamp="1589774666349">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="336" y="175" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1589774666349" />
   </component>
 </project>
