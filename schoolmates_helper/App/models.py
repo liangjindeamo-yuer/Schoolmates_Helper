@@ -82,7 +82,7 @@ class Task(models.Model):
 
     # 2020年5月16日 swf 软删除过期任务
     # 重写数据库删除方法实现逻辑删除
-    def delete(self, using=None, keep_parents=False):
+    def soft_delete(self):
         if self.task_time <= datetime.date.today():
             self.is_overtime = True
             self.save()
