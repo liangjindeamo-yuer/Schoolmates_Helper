@@ -102,6 +102,12 @@ class Revoke_reason(models.Model):
         db_table = 'smh_reason'
 
 
+class Cancel_reason(models.Model):
+    cancel_reason = models.CharField(max_length=512, null=True)
+    task = models.ForeignKey(Task, on_delete=models.CASCADE, related_name='canceled_tasks', db_constraint=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_canceled', db_constraint=False)
+
+
 class Discuss(models.Model):
     discussant = models.ForeignKey(User, on_delete=models.DO_NOTHING, related_name='discuss_user', verbose_name='评论方',
                                    db_constraint=False, blank=False, null=False)

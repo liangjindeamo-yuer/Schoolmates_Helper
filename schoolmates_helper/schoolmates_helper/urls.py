@@ -25,4 +25,5 @@ urlpatterns = [
     path('task_square/', include('tasks_square.urls')),
     path('task_received/', include('task_received.urls')),
     path('hunt/', include(('hunt.urls', 'hunt'), namespace='hunt')),
+    path('task_released/', include('task_released.urls')),
 ]

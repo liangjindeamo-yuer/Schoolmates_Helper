@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'task_received.apps.TaskReceivedConfig',
     'tasks_square.apps.TasksSquareConfig',
+    'task_released.apps.TaskReleasedConfig',
     'hunt.apps.HuntConfig',
     'django.contrib.admin',
     'django.contrib.auth',
