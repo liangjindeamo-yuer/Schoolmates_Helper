@@ -7,14 +7,14 @@
 </head>
 <body>
 <div class="header">
-    <h1>SCHOOL Helper</h1>
+    <h1>Dark Forest</h1>
     <h3>任务广场</h3>
 </div>
 
 <div class="topnav">
-    <a href="#">首页</a>
-    <a href="#" class="active">任务广场</a>
+    <a href="#" class="active" style="margin-left: 100px;">任务广场</a>
     <a href="#">我要发布</a>
+    <a href={% url 'hunt:edit' %}>个人中心</a>
     <a href="#" style="float:right"><img src="/../../static/image/user_center.png" width="35px" height="35px"
                                          alt="user center"></a>
 
@@ -32,12 +32,13 @@
             <hr>
             <!-- yjl 5.3 图片无法显示-->
             {# 2020年5月9日 swf 头像显示成功 但是合并到手机端后 路径要改成手机端的static #}
-            <a href={% url 'tasks_square:publisher_detail' task.publisher_id %}><img
+            <div style="text-align:center;"><a href={% url 'tasks_square:publisher_detail' task.publisher_id %}><img
                     src="/../../static/uploads/{{ task.publisher.icon }}"
-                    width="50%" height="20%"></a>
+                    width="25%" height="10%"></a></div>
             <br/>
-            <a style="text-decoration: none;color:black"
-               href={% url 'tasks_square:publisher_detail' task.publisher_id %}>{{ task.publisher.username }}</a><br>
+            <div style="text-align:center;"><a style="text-decoration: none;color:black"
+                                               href={% url 'tasks_square:publisher_detail' task.publisher_id %}>{{ task.publisher.username }}</a><br>
+            </div>
         </div>
         <div class="card">
             <h2>任务简介
@@ -50,11 +51,12 @@
                 <hr>
             </h2>
             {% if task.task_file %}
-            <a href="{% url 'tasks_square:download' task.id %}" rel="external nofollow" >点我下载</a><br>
+                <div><a class="button" href="{% url 'tasks_square:download' task.id %}" rel="external nofollow">点我下载</a><br>
+                </div>
             {% else %}
-            该任务无附件
+                该任务无附件
             {% endif %}
-            </div>
+        </div>
         <div class="card">
             <h2>任务酬劳
                 <hr>
@@ -80,7 +82,7 @@
             {% if user_id %}
                 <form action="{% url 'tasks_square:check_hunt' task.id %}" method="post">
                     {% csrf_token %}
-                    <input class="button" type="submit" value="接受任务"/>
+                    <input class="button" style="font-size:20px" type="submit" value="接受任务"/>
                 </form>
                 </div>
 
@@ -93,27 +95,24 @@
                             <li>
                                 <div class="card">
                                     <a href={% url 'tasks_square:publisher_detail' discussion.discussant.id %}><strong>{{ discussion.discussant.username }}</strong></a>
-                                    <br/>
-                                    {{ discussion.discuss }}<br>
-                                    回复时间:{{ discussion.discusstime }}<br>
-                                    {# 删除评论 #}
-                                    {% if user_id == discussion.discussant.id %}
-                                        <p>
-                                            <script language="javascript">
-                                                function delcfm() {
-                                                    if (!confirm("确认要删除？")) {
-                                                        window.event.returnValue = false;
-                                                    }
+                                    <br/> {{ discussion.discuss }}<br> 回复时间:{{ discussion.discusstime }}<br>
+                                    {# 删除评论 #} {% if user_id == discussion.discussant.id %}
+                                    <p>
+                                        <script language="javascript">
+                                            function delcfm() {
+                                                if (!confirm("确认要删除？")) {
+                                                    window.event.returnValue = false;
                                                 }
-                                            </script>
-                                        <form action="{% url 'tasks_square:delete' discussion.id 'discuss' task.id %}"
-                                              target="_blank" method="get">
-                                            <input name="" type="submit" value="删除" onClick="delcfm()"/></form>
-                                        </p>
-                                    {% endif %}
+                                            }
+                                        </script>
+                                    <form action="{% url 'tasks_square:delete' discussion.id 'discuss' task.id %}"
+                                          target="_blank" method="get">
+                                        <input name="" type="submit" value="删除" onClick="delcfm()"/></form>
+                                    </p>
+                                {% endif %}
 
                                 </div>
-                                {# 查过 可以用前端实现 点击"回复"后显示回复框 现在直接显示出来 #}
+
 
                                 {% if discussion.response_discuss.all.exists %}
                                     <ul>
@@ -121,33 +120,29 @@
                                             <li>
                                                 <div class="card">
                                                     <a href={% url 'tasks_square:publisher_detail' response.respondent.id %}><strong>{{ response.respondent.username }}</strong></a>
-                                                    <br>
-                                                    {{ response.response }}<br>
-                                                    回复时间:{{ response.responsetime }}
-                                                    <br>
-                                                    {# 删除评论 #}
-                                                    {% if user_id == discussion.discussant.id %}
-                                                        <p>
-                                                            <script language="javascript">
-                                                                function delcfm() {
-                                                                    if (!confirm("确认要删除？")) {
-                                                                        window.event.returnValue = false;
-                                                                    }
+                                                    <br> {{ response.response }}<br/> 回复时间:{{ response.responsetime }}
+                                                    <br> {# 删除评论 #} {% if user_id == discussion.discussant.id %}
+                                                    <p>
+                                                        <script language="javascript">
+                                                            function delcfm() {
+                                                                if (!confirm("确认要删除？")) {
+                                                                    window.event.returnValue = false;
                                                                 }
-                                                            </script>
-                                                        <form action="{% url 'tasks_square:delete' response.id 'response' task.id %}"
-                                                              target="_blank" method="get">
-                                                            <input name="" type="submit" value="删除" onClick="delcfm()"/>
-                                                        </form>
-                                                        </p>
-                                                    {% endif %}
+                                                            }
+                                                        </script>
+                                                    <form action="{% url 'tasks_square:delete' response.id 'response' task.id %}"
+                                                          target="_blank" method="get">
+                                                        <input name="" type="submit" value="删除" onClick="delcfm()"/>
+                                                    </form>
+                                                    </p>
+                                                {% endif %}
 
                                                 </div>
+
                                             </li>
                                         {% endfor %}
                                     </ul>
                                 {% endif %}
-
                                 <form action="{% url 'tasks_square:response' task.id discussion.id %}" method="post">
                                     <script type="text/javascript">
                                         window.onload = function () {
@@ -167,14 +162,11 @@
                                                 }
                                             }
                                         }
-
                                     </script>
-                                    {% csrf_token %}
-                                    {# 前端可以设置一下这个input非空 #}
+                                    {% csrf_token %} {# 前端可以设置一下这个input非空 #}
                                     <br/>
                                     <br/>
-                                    <input class="button" type="button" id="check" style="display:block;"
-                                           value="回复本楼层"><br>
+                                    <input class="button" type="button" id="check" style="display:block;" value="回复本楼层"><br>
                                     <textarea class="sub" style="display:none;" name="response" id="response"
                                               required></textarea>
                                     <input class="button" style="display:none;" id="submit" type="submit"
@@ -182,24 +174,25 @@
 
 
                                 </form>
+
                             </li>
                         {% endfor %}
                     </ul>
-                {% endif %}
+                    {% endif %}
                 <form action="{% url 'tasks_square:discuss' task.id %}" method="post">
                     {% csrf_token %}
                     <label for="discussion"><strong>讨论</strong></label>
-                    <br/>
-                    {# 前端可以设置一下这个input非空 #}
+                    <br/> {# 前端可以设置一下这个input非空 #}
                     <textarea class="discussion" name="discussion" id="discussion" required></textarea>
                     <br/>
-                    <input class="button" type="submit" value="发布"/><br>
+                    <input class="button" style="margin-left:40px;" type="submit" value="发布"/><br>
                 </form>
                 </div>
                 </div>
             {% else %}
                 <a href={% url 'hunt:login' %}>请先登录！</a>
             {% endif %}
+
 <div class="footer">
     <h4>
 

@@ -58,7 +58,7 @@ body {
 /* 激活 */
 
 .topnav a.active {
-    background-color: white;
+    background-color: rgb(160, 160, 151);
     color: black;
 }
 /* 搜索框 */
