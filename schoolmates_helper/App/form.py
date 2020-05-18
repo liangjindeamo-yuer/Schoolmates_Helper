@@ -14,14 +14,14 @@ class Task1(forms.ModelForm):
         model = Task
         fields = '__all__'
         # exclude用于禁止模型字段转换表单字段
-        exclude = ['is_pickedup', 'hunter', 'reason', 'is_finished', 'comment_for_hunter', 'comment_for_publisher',
-                   'contact_type_hunter']
+        exclude = ['is_pickedup', 'hunter', 'reason', 'is_finished', 'comment_hunter', 'comment_publisher',
+                   'contact_hunter','is_overtime','contact_type_hunter']
         labels = {
             'task_name': '任务名',
             'task_file': '相关文件（选填）',
             'task_reward': '任务奖励（必填）',
             'task_sketch': '任务描述（必填）',
-            'ddltime': '截止时间（必填格式）',
+            'task_time': '截止时间（必填格式）',
             'task_type': '任务类型',
             'contact_type_publisher': '你希望给出的联系方式'
 
@@ -35,7 +35,7 @@ class Task1(forms.ModelForm):
                         }
         }
         widgets = {
-            'ddltime': DateInput(),
+            'task_time': DateInput(),
             'password': forms.PasswordInput(),
             'repassword': forms.PasswordInput()
 

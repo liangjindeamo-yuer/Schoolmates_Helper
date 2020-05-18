@@ -20,7 +20,6 @@
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <auth-required>false</auth-required>
       <schema-mapping>
         <introspection-scope>
           <node kind="schema" qname="@" />
@@ -32,7 +31,6 @@
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <auth-required>false</auth-required>
       <schema-mapping>
         <introspection-scope>
           <node kind="schema" qname="@" />

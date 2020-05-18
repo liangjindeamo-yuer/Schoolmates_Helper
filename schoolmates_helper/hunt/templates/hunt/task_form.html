@@ -21,66 +21,51 @@
         <a href="#" style="float:right; margin-right: 100px;"><img src="..\..\static\image\user_center.png" width="35px"
                 height="35px"></a>
     </div>
-
-
-    {# 2020年5月9日 swf 改了冲突 #}
-    <form action="" method="post" enctype="multipart/form-data">
+    <form action="" method="post"enctype="multipart/form-data">
         <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
-        <caption id="cap">发布</caption>
-        <div class="row">
-            <div><label for="id_contact_type_publisher">你希望的联系方式:</label></div>
-            <div class="select"><select name="contact_type_publisher" id="id_contact_type_publisher">
-                    <option value="0" selected>email</option>
+        <table border="0">
+            <caption>
+                <h1>注册</h1>
+            </caption>
+            <tr><th><label for="id_contact_type_publisher">你希望给出的联系方式:</label></th><td><select name="contact_type_publisher" id="id_contact_type_publisher">
+  <option value="" selected>---------</option>
 
-                    <option value="1">qq</option>
+  <option value="1">email</option>
 
-                    <option value="2">wechat</option>
+  <option value="2">QQ</option>
 
-                    <option value="3">tel</option>
+  <option value="3">Wechat</option>
 
-                    <option value="4">other</option>
+  <option value="4">Tel</option>
 
-                </select></div>
-        </div>
-        <div class="row">
-            <div><label for="id_task_name">任务名(必填）:</label></div>
-            <div><input type="text" name="task_name" maxlength="32" required id="id_task_name"></div>
-        </div>
-        <div class="row">
-            <div><label for="id_task_sketch">任务描述:</label></div>
-            <div><input type="text" name="task_sketch" maxlength="512" id="id_task_sketch"></div>
-        </div>
-        <div class="row">
-            <div><label for="id_task_file">相关文件:</label></div>
-            <div><input type="file" name="task_file" id="id_task_file"></div>
-        </div>
-        <div class="row">
-            <div><label for="id_task_type">任务类型:</label></div>
-            <div class="select"><select name="task_type" id="id_task_type">
-                    <option value="1">快递服务</option>
+  <option value="5">其他信息</option>
 
-                    <option value="2">修理服务</option>
+</select></td></tr>
+<tr><th><label for="id_task_name">任务名:</label></th><td><input type="text" name="task_name" maxlength="32" required id="id_task_name"></td></tr>
+<tr><th><label for="id_task_sketch">任务描述（必填）:</label></th><td><input type="text" name="task_sketch" maxlength="512" id="id_task_sketch"></td></tr>
+<tr><th><label for="id_task_file">相关文件（选填）:</label></th><td><input type="file" name="task_file" id="id_task_file"></td></tr>
+<tr><th><label for="id_task_type">任务类型:</label></th><td><select name="task_type" id="id_task_type">
+  <option value="1">快递服务</option>
 
-                    <option value="3">课业指导</option>
+  <option value="2">修理服务</option>
 
-                    <option value="4">恋爱邂逅</option>
+  <option value="3">课业指导</option>
 
-                    <option value="5">其他</option>
+  <option value="4">T邂逅表白</option>
 
-                </select>
-            </div>
-        </div>
-        <div class="row">
-            <div><label for="id_ddltime">截止时间:</label></div>
-            <div><input type="date" name="ddltime" value="2021-09-03" required id="id_ddltime"></div>
-        </div>
-        <div class="row">
-            <div><label for="id_task_reward">任务奖励（必填）:</label></div>
-            <div><input type="number" name="task_reward" value="0" id="id_task_reward"></div>
-        </div>
-        <button type="submit" class="button">提交</button>
+  <option value="5" selected>其他信息</option>
+
+</select></td></tr>
+<tr><th><label for="id_task_time">截止时间（必填格式）:</label></th><td><input type="date" name="task_time" id="id_task_time" value="2021-09-03"></td></tr>
+<tr><th><label for="id_task_reward">任务奖励（必填）:</label></th><td><input type="number" name="task_reward" value="0" step="any" id="id_task_reward"></td></tr>
+
+        </table>
+        <input type="submit" value="提交">
 
     </form>
+
+    {# 2020年5月9日 swf 改了冲突 #}
+
     <div class="footer">
         <h4>
             Written by Group 5.<br>
