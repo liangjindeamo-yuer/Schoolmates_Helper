@@ -5,26 +5,21 @@ body
     font-family: sans-serif;
     background-image: url("../image/shuicaino.jpg");
     background-size: cover;
+
 }
 .box
 {
     position: absolute;
     top: 50%;
     left: 50%;
+    color:white;
     transform: translate(-50%,-50%);
-    width: 600px;
+    width: 400px;
     padding: 40px;
     background: rgba(0,0,0,.6);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.3);
     border-radius: 10px;
-}
-select {
-    width: 50%;
-    padding: 16px 20px;
-    border: none;
-    border-radius: 4px;
-    background-color: white;
 }
 .button {
     background: #1e7db9;
@@ -40,7 +35,7 @@ select {
     text-shadow: 0 -1px 1px #222;
     border-bottom: 1px solid #222;
     position: relative;
-    left:50%;
+    left:42%;
     transform: translateX(-50%);
     cursor: pointer;
 }
@@ -57,5 +52,8 @@ select {
     -webkit-box-shadow: 0 1px 3px #999;
     text-shadow: 0 -1px 1px #222;
     border-bottom: 1px solid #222;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
     cursor: pointer;
 }

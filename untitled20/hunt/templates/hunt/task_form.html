@@ -22,12 +22,12 @@
                 height="35px"></a>
     </div>
 
-
+    <div class="submit">
     {# 2020年5月9日 swf 改了冲突 #}
     <form action="" method="post" enctype="multipart/form-data">
         <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
         <caption id="cap">发布</caption>
-        <div class="row">
+            <div class="row">
             <div><label for="id_contact_type_publisher">你希望的联系方式:</label></div>
             <div class="select"><select name="contact_type_publisher" id="id_contact_type_publisher">
                     <option value="0" selected>email</option>
@@ -78,15 +78,12 @@
             <div><label for="id_task_reward">任务奖励（必填）:</label></div>
             <div><input type="number" name="task_reward" value="0" id="id_task_reward"></div>
         </div>
-        <button type="submit" class="button">提交</button>
+        <div style="text-align: center"><button type="submit" class="button">提交</button></div>
 
     </form>
+        </div>
     <div class="footer">
-        <h4>
-            Written by Group 5.<br>
-            Visit us at:<br>
-            上海市闵行区东川路800号<br>
-        </h4>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
 
 </body>

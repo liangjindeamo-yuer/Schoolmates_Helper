@@ -5,6 +5,9 @@
 body {
     font-family: Arial;
     padding: 10px;
+    background-size: cover;
+    margin-top: -20px;
+    background-image: url('/../../static/image/edit_back_light.jpg');
 }
 /*html
 {
@@ -73,12 +76,6 @@ body {
 }
 .header p {
     margin-top: 10px;
-}
-
-body {
-    background-size: cover;
-    margin-top: -20px;
-    background-image: url('/../../static/image/edit_back_light.jpg');
 }
 
 

@@ -1,17 +1,38 @@
 
 * {
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
-html
+body {
+    font-family: Arial;
+    padding: 10px;
+    background-size: cover;
+    margin-top: 20px;
+    background-image: url('/../../static/image/forest_light.jpg');
+}
+/*html
 {
     background: url("../image/edit_bg.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}*/
+.header {
+    margin-top:30px;
+    padding: 30px;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+        color:black;
+    background-color: white;
+    background-image: url('../image/forest.jpg');
+    background-repeat: no-repeat;
+    background-size:100% 100%;
 }
+.header h1 {
+    font-size: 50px;
 
+}
 .topnav {
     overflow: hidden;
     background-color: #333;
@@ -56,13 +77,14 @@ html
 .header p {
     margin-top: 10px;
 }
-
-body {
-    background-size: cover;
-    margin-top: -20px;
+.submit{
+    margin-top:40px;
 }
-
-
+.submit:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 form
 {
     box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.5);
@@ -109,10 +131,13 @@ input:focus{
 }
 
 .footer {
-    margin-top: 45%;
+    margin-top: 55%;
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background-image: url('/../../static/image/diduan2.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+
 }
 
 .icon
@@ -124,9 +149,8 @@ input:focus{
 
 .button {
     width: auto;
-    margin-left: 60%;
     margin-top: 10px;
-    background: #1e7db9;
+    background: #318e7b;
     padding: 5px 10px;
     color: #fff;
     text-decoration: none;
