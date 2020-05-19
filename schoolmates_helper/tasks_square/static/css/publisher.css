@@ -58,7 +58,7 @@ body {
 /* 激活 */
 
 .topnav a.active {
-    background-color: white;
+    background-color: rgb(160, 160, 151);
     color: black;
 }
 /* Left column */
@@ -107,7 +107,7 @@ li a {
     text-shadow: 0 -1px 1px #222;
     border-bottom: 1px solid #222;
     position: relative;
-    cursor: pointer;
+    width:880px;
 }
 .row:after {
     content: "";
@@ -119,6 +119,8 @@ li a {
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
-    margin-top: 20px;
+    background-image: url('/../../static/image/diduan2.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+
 }

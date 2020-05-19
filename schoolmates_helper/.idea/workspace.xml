@@ -20,13 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2d3fe759-315c-43f1-801b-b4e6a5e8f1ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/hunt/static/css/contact.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hunt/static/css/useredit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hunt/static/image/diduan2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hunt/static/image/edit_back.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hunt/static/image/edit_back_light.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hunt/static/image/forest.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hunt/static/image/forest_light.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/dataSources/730a1594-71cb-49dc-99a5-a6b8c1f132fe.xml" beforeDir="false" />
@@ -90,19 +83,6 @@
       <change beforePath="$PROJECT_DIR$/../../HelloWorld/templates/release.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../HelloWorld/templates/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../HelloWorld/templates/un_acp.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2d021a6-27be-4722-a758-3822a80c9e7a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d2d021a6-27be-4722-a758-3822a80c9e7a.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb8c0459-2070-4d1e-a635-65dd4f786b04.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb8c0459-2070-4d1e-a635-65dd4f786b04.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunt/static/css/data_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/static/css/data_form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunt/static/css/edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/static/css/edit.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunt/templates/hunt/data_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/templates/hunt/data_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunt/templates/hunt/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/templates/hunt/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunt/templates/hunt/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/templates/hunt/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunt/templates/hunt/logon_successfully.html" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/templates/hunt/logon_successfully.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunt/templates/hunt/task_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/templates/hunt/task_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunt/templates/hunt/task_nocontact.html" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/templates/hunt/task_nocontact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunt/templates/hunt/task_up_successfully.html" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/templates/hunt/task_up_successfully.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/dataSources.xml" beforeDir="false" />
@@ -1279,6 +1259,7 @@
       <workItem from="1589877094223" duration="780000" />
       <workItem from="1589878248126" duration="315000" />
       <workItem from="1589879979036" duration="6754000" />
+      <workItem from="1589902627564" duration="78000" />
     </task>
     <servers />
   </component>
