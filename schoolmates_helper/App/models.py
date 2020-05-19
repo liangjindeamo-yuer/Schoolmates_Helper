@@ -52,14 +52,14 @@ class Contact(models.Model):
 
 class Task(models.Model):
     contact_type_publisher = models.ForeignKey(Contact, on_delete=models.CASCADE, related_name='contact_publisher',
-                                               verbose_name='发布人联系方式', db_constraint=False, null=True,blank=True)
+                                               verbose_name='发布人联系方式', db_constraint=False, null=True,blank=True,default=1)
     contact_type_hunter = models.ForeignKey(Contact, on_delete=models.CASCADE, related_name='contact_hunter',
                                             verbose_name='委托人联系方式', db_constraint=False, null=True,blank=True)
 
     task_name = models.CharField(max_length=32)
     task_sketch = models.CharField(max_length=512, null=True,blank=True)
     task_file = models.FileField(upload_to='task_file/%Y/%m/%d/', null=True,blank=True)
-    task_type = models.ForeignKey(TaskType, default=5, on_delete=models.SET_DEFAULT)
+    task_type = models.ForeignKey(TaskType, default=1, on_delete=models.SET_DEFAULT)
 
     task_time = models.DateField(blank=True, null=True)
 
