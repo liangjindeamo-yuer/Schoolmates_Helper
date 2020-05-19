@@ -18,7 +18,7 @@ def task_square(request):
         username = request.session.get('username')
         tasks_list1 = Task.objects.filter(is_pickedup=False, is_overtime=False).exclude(publisher_id=user_id)
         for task in tasks_list1:
-            task.delete()
+            task.soft_delete()
         tasks_list = Task.objects.filter(is_pickedup=False, is_overtime=False).exclude(publisher_id=user_id)
         paginator = Paginator(tasks_list, 9)  # Show 9 contacts per page
         page = request.GET.get('page')
@@ -42,7 +42,7 @@ def task_square(request):
     else:
         tasks_list1 = Task.objects.filter(is_pickedup=False, is_overtime=False)
         for task in tasks_list1:
-            task.delete()
+            task.soft_delete()
         tasks_list = Task.objects.filter(is_pickedup=False, is_overtime=False)
         paginator = Paginator(tasks_list, 10)  # Show 5 contacts per page
         page = request.GET.get('page')
@@ -86,12 +86,12 @@ def task_square_sort(request, type_id, order):
             tasks_list1 = Task.objects.filter(is_pickedup=False, task_type=type_id, is_overtime=False).order_by(
                 order).exclude(publisher_id=user_id)
             for task in tasks_list1:
-                task.delete()
+                task.soft_delete()
             tasks_list = tasks_list1.filter(is_overtime=False)
         else:
             tasks_list1 = Task.objects.filter(is_pickedup=False, task_type=type_id, is_overtime=False).order_by(order)
             for task in tasks_list1:
-                task.delete()
+                task.soft_delete()
             tasks_list = tasks_list1.filter(is_overtime=False)
     else:
         sort = '全部任务'
@@ -99,12 +99,12 @@ def task_square_sort(request, type_id, order):
             tasks_list1 = Task.objects.filter(is_pickedup=False, is_overtime=False).order_by(order).exclude(
                 publisher_id=user_id)
             for task in tasks_list1:
-                task.delete()
+                task.soft_delete()
             tasks_list = tasks_list1.filter(is_overtime=False)
         else:
             tasks_list1 = Task.objects.filter(is_pickedup=False, is_overtime=False).order_by(order)
             for task in tasks_list1:
-                task.delete()
+                task.soft_delete()
             tasks_list = tasks_list1.filter(is_overtime=False)
 
     paginator = Paginator(tasks_list, 10)  # Show 5 contacts per page

@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d3fe759-315c-43f1-801b-b4e6a5e8f1ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/task_released/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2d021a6-27be-4722-a758-3822a80c9e7a.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d2d021a6-27be-4722-a758-3822a80c9e7a.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb8c0459-2070-4d1e-a635-65dd4f786b04.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb8c0459-2070-4d1e-a635-65dd4f786b04.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schoolmates_helper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/schoolmates_helper/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schoolmates_helper/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/schoolmates_helper/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks_square/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,18 +31,18 @@
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db [3]" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db [3]" type="feb32156:DbDataSourceImpl" />
+        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="db [3]" type="feb32156:DbDataSourceImpl" />
+        <item name="db [2]" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db [3]" type="feb32156:DbDataSourceImpl" />
       </path>
     </expand>
     <select />
@@ -83,7 +78,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../my_Django_code/schoolmates_helper 2020年5月19日 都没问题" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -211,6 +206,7 @@
       <workItem from="1589776205226" duration="1263000" />
       <workItem from="1589777985578" duration="496000" />
       <workItem from="1589791949084" duration="886000" />
+      <workItem from="1589876066604" duration="705000" />
     </task>
     <servers />
   </component>
@@ -261,14 +257,14 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="100" y="114" width="1080" height="464" key="DiffContextDialog" timestamp="1589778253741">
+    <state x="100" y="114" width="1080" height="464" key="DiffContextDialog" timestamp="1589876324657">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="100" y="114" width="1080" height="464" key="DiffContextDialog/0.0.1280.689@0.0.1280.689" timestamp="1589778253741" />
-    <state x="421" y="105" key="FileChooserDialogImpl" timestamp="1589774918582">
+    <state x="100" y="114" width="1080" height="464" key="DiffContextDialog/0.0.1280.689@0.0.1280.689" timestamp="1589876324657" />
+    <state x="421" y="105" key="FileChooserDialogImpl" timestamp="1589876362372">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="421" y="105" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589774918582" />
+    <state x="421" y="105" key="FileChooserDialogImpl/0.0.1280.689@0.0.1280.689" timestamp="1589876362372" />
     <state x="418" y="71" key="RollbackChangesDialog" timestamp="1589778137397">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
