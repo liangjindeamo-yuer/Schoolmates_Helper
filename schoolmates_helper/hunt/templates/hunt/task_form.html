@@ -25,20 +25,20 @@
         <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}">
         <table border="0">
             <caption>
-                <h1>注册</h1>
+                <h1>发布你的悬赏吧</h1>
             </caption>
-            <tr><th><label for="id_contact_type_publisher">你希望给出的联系方式:</label></th><td><select name="contact_type_publisher" id="id_contact_type_publisher">
+            <tr><th><label for="id_contact_type_publisher">怎么联系到你呢:</label></th><td><select name="contact_type_publisher" id="id_contact_type_publisher">
   <option value="" selected>---------</option>
 
-  <option value="1">email</option>
+  <option value="1">我的交大邮箱</option>
 
   <option value="2">QQ</option>
 
-  <option value="3">Wechat</option>
+  <option value="3">微信</option>
 
-  <option value="4">Tel</option>
+  <option value="4">我的手机号</option>
 
-  <option value="5">其他信息</option>
+  <option value="5">我注册时填的其他信息</option>
 
 </select></td></tr>
 <tr><th><label for="id_task_name">任务名:</label></th><td><input type="text" name="task_name" maxlength="32" required id="id_task_name"></td></tr>
@@ -51,13 +51,13 @@
 
   <option value="3">课业指导</option>
 
-  <option value="4">T邂逅表白</option>
+  <option value="4">邂逅表白</option>
 
-  <option value="5" selected>其他信息</option>
+  <option value="5" selected>其他类型</option>
 
 </select></td></tr>
 <tr><th><label for="id_task_time">截止时间（必填格式）:</label></th><td><input type="date" name="task_time" id="id_task_time" value="2021-09-03"></td></tr>
-<tr><th><label for="id_task_reward">任务奖励（必填）:</label></th><td><input type="number" name="task_reward" value="0" step="any" id="id_task_reward"></td></tr>
+<tr><th><label for="id_task_reward">任务奖励（必填RMB）:</label></th><td><input type="number" name="task_reward" value="0" step="any" id="id_task_reward"></td></tr>
 
         </table>
         <input type="submit" value="提交">

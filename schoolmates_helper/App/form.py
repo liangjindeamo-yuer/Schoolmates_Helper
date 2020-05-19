@@ -76,7 +76,7 @@ class User1(forms.ModelForm):
             'other': '其他信息（选填）',
             'password': '密码',
             'repassword': '再次输入密码',
-            'icon': '头像',
+            'icon': '头像（选填）',
             'photo': '头像'
 
         }

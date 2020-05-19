@@ -19,7 +19,7 @@ class User(models.Model):
     password = models.CharField(max_length=256)
     repassword = models.CharField(max_length=256)
     email = models.EmailField(max_length=30, unique=True)
-    icon = models.ImageField(upload_to='icons/%Y/%m/%d/', null=True)
+    icon = models.ImageField(upload_to='icons/%Y/%m/%d/', null=True,default='icons/haha.jpg')
     is_active = models.BooleanField(default=False)
     is_delete = models.BooleanField(default=False)
     rank = models.IntegerField(default=0)
