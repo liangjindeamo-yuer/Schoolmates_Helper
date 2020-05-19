@@ -10,20 +10,30 @@
 <body>
     <div class="box">
         <h2>登录</h2>
+
         <form method="post" enctype="multipart/form-data" action="">
             {% csrf_token %}
             <div class="inputBox">
-
+                <label for="username_input">用户名/邮箱<br/></label>
+                <br/>
+                <br/>
                 <input type="text" id="username_input" name="username">
-                <label for="username_input">用户名/邮箱</label>
+
+        <br/>
+
             </div>
 
             <div class="inputBox">
+                <label for="password_input">密码<br/></label>
+                <br/>
+                <br/>
                 <input type="password" id="password_input" name="password">
-                <label for="password_input">密码</label>
+
+        <br/>
+
             </div>
 
-            <input type="submit" value="提交">
+            <div style="text-align: center"><input type="submit" value="提交"></div>
         </form>
         <a href={% url 'hunt:index' %}>点我注册</a>
     </div>
