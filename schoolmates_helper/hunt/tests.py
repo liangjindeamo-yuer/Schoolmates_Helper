@@ -23,6 +23,8 @@ class ModelTest(TestCase):
     def test_login_action_username_password_error(self):
         '''用户名密码错误'''
         test_data = {'username': 'tester', 'password': '123'}
+        response = self.client.post('/hunt/logon/', data=test_data)
+        self.assertEqual(response.status_code, 200)
         response = self.client.post('/hunt/login/', data=test_data)
         self.assertEqual(response.status_code, 200)
 
