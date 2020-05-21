@@ -21,16 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="51688325-699a-47b3-9fd4-7ed326c2048a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunt/templates/hunt/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/templates/hunt/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunt/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/schoolmates_helper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/schoolmates_helper/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hunt/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/task_received/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_received/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_received/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_received/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tasks_square/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks_square/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks_square/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

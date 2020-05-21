@@ -46,6 +46,13 @@ class WebstatusTest(TestCase):
         Task.objects.create(task_name='task6', contact_type_publisher_id=1, publisher_id=1, task_type_id=5,
                             task_time='2020-10-16')
 
+        # contact
+        Contact.objects.create(type_id=1,typename='email')
+        Contact.objects.create(type_id=2,typename='QQ')
+        Contact.objects.create(type_id=3,typename='wechat')
+        Contact.objects.create(type_id=4,typename='telephone')
+        Contact.objects.create(type_id=5,typename='其它联系方式')
+
     def test_tasks_received(self):
         self.create_database()
         response = self.client.get('/task_received/all_task_received/1/')
@@ -71,10 +78,13 @@ class WebstatusTest(TestCase):
         # 完成任务
         response = self.client.get('/task_received/1/task_finished')
         self.assertEqual(response.status_code, 200)
-'''
+
     def test_task_detail(self):
         self.create_database()
         # 任务详情
-        response = self.client.get('/task_received/1/task_detail')
+        c = Client(enforce_csrf_checks=True)
+        test_data = {'username': 'user1', 'password': '0'}
+        c.post('/hunt/login/', data=test_data)
+        response = c.get('/task_received/1/task_detail')
         self.assertEqual(response.status_code, 200)
-'''
+

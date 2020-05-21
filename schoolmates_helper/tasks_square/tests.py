@@ -115,7 +115,8 @@ class ViewsTest(TestCase):
 
         # hack the session code to change it to the right one
         c = Client(enforce_csrf_checks=True)
-        c.post('/hunt/login/', {'username': 'user2','password':0})
+        test_data = {'username': 'user1', 'password': '0'}
+        c.post('/hunt/login/', data=test_data)
         '''
         尝试更改缓存session
         session = Session.objects.get(pk=self.client.cookies['sessionid'].value)
@@ -123,7 +124,6 @@ class ViewsTest(TestCase):
         session.session_data = SessionStore().encode(newsession)
         session.save()
         '''
-        c = Client(enforce_csrf_checks=True)
         c.post('/task_square/discuss/1/', {'discussion': '讨论测试用例1'})
         discussion = Discuss.objects.get(task_id=1)
         self.assertEqual(discussion.discuss, '讨论测试用例1')
