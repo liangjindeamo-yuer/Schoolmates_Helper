@@ -114,29 +114,37 @@ def comment(request):
 
 
 def task_sometype(request, tasktype_id):
-    username = request.session.get('username')
-    user_id = request.session.get('user_id')
-    user = User.objects.get(username=username)
-    tasktype = TaskType.objects.get(pk=tasktype_id)
     task_types = TaskType.objects.all()
-    tasklist_sometype = Task.objects.filter(task_type=tasktype, hunter_id=user_id)
-    paginator = Paginator(tasklist_sometype, 5)  # Show 5 contacts per page
-    page = request.GET.get('page')
-    try:
-        tasklist_sometype = paginator.page(page)
-    except PageNotAnInteger:
-        # If page is not an integer, deliver first page.
-        tasklist_sometype = paginator.page(1)
-    except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results.
-        tasklist_sometype = paginator.page(paginator.num_pages)
-    return render(request, 'task_received/tasks_sometype.html',
-                  context={
-                      'tasklist_sometype': tasklist_sometype,
-                      'task_types': task_types,
-                      'typeid_now': tasktype_id
-                  }
-                  )
+    user_id = request.session.get('user_id')
+    tasktype = TaskType.objects.get(pk=tasktype_id)
+    if user_id:
+        tasklist_sometype = Task.objects.filter(task_type=tasktype, hunter_id=user_id)
+        paginator = Paginator(tasklist_sometype, 5)  # Show 5 contacts per page
+        page = request.GET.get('page')
+        try:
+            tasklist_sometype = paginator.page(page)
+        except PageNotAnInteger:
+            # If page is not an integer, deliver first page.
+            tasklist_sometype = paginator.page(1)
+        except EmptyPage:
+            # If page is out of range (e.g. 9999), deliver last page of results.
+            tasklist_sometype = paginator.page(paginator.num_pages)
+        return render(request, 'task_received/tasks_sometype.html',
+                      context={
+                          'tasklist_sometype': tasklist_sometype,
+                          'task_types': task_types,
+                          'typeid_now': tasktype_id
+                      }
+                      )
+    else:
+        tasklist_sometype = Task.objects.filter(task_type=tasktype, hunter_id=user_id)
+        return render(request, 'task_received/tasks_sometype.html',
+               context={
+                   'tasklist_sometype': tasklist_sometype,
+                   'task_types': task_types,
+                   'typeid_now': tasktype_id,
+               }
+               )
 
 
 def task_sometype_finished(request, tasktype_id):
@@ -190,48 +198,60 @@ def task_sometype_not_finished(request, tasktype_id):
 
 def received_tasks_finished(request):
     user_id = request.session.get('user_id')
-    username = request.session.get('username')
-    user = User.objects.get(username=username)
     task_types = TaskType.objects.all()
-    taskslist_received_finished = Task.objects.filter(is_finished=True, hunter_id=user_id)
-    paginator = Paginator(taskslist_received_finished, 5)  # Show 5 contacts per page
-    page = request.GET.get('page')
-    try:
-        taskslist_received_finished = paginator.page(page)
-    except PageNotAnInteger:
-        # If page is not an integer, deliver first page.
-        taskslist_received_finished = paginator.page(1)
-    except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results.
-        taskslist_received_finished = paginator.page(paginator.num_pages)
-    context = {
-        'task_types': task_types,
-        'taskslist_received_finished': taskslist_received_finished,
-    }
-    return render(request, 'task_received/received_tasks_finished.html', context)
+    if user_id:
+        taskslist_received_finished = Task.objects.filter(is_finished=True, hunter_id=user_id)
+        paginator = Paginator(taskslist_received_finished, 5)  # Show 5 contacts per page
+        page = request.GET.get('page')
+        try:
+            taskslist_received_finished = paginator.page(page)
+        except PageNotAnInteger:
+            # If page is not an integer, deliver first page.
+            taskslist_received_finished = paginator.page(1)
+        except EmptyPage:
+            # If page is out of range (e.g. 9999), deliver last page of results.
+            taskslist_received_finished = paginator.page(paginator.num_pages)
+        context = {
+            'task_types': task_types,
+            'taskslist_received_finished': taskslist_received_finished,
+        }
+        return render(request, 'task_received/received_tasks_finished.html', context)
+    else:
+        taskslist_received_finished = Task.objects.filter(is_finished=True)
+        context = {
+            'task_types': task_types,
+            'taskslist_received_finished': taskslist_received_finished,
+        }
+        return render(request, 'task_received/received_tasks_finished.html', context)
 
 
 def received_tasks_not_finished(request):
     user_id = request.session.get('user_id')
-    username = request.session.get('username')
-    user = User.objects.get(username=username)
     task_types = TaskType.objects.all()
-    taskslist_received_not_finished = Task.objects.filter(is_finished=False, hunter_id=user_id)
-    paginator = Paginator(taskslist_received_not_finished, 5)  # Show 5 contacts per page
-    page = request.GET.get('page')
-    try:
-        taskslist_received_not_finished = paginator.page(page)
-    except PageNotAnInteger:
-        # If page is not an integer, deliver first page.
-        taskslist_received_not_finished = paginator.page(1)
-    except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results.
-        taskslist_received_not_finished = paginator.page(paginator.num_pages)
-    context = {
-        'task_types': task_types,
-        'taskslist_received_not_finished': taskslist_received_not_finished,
-    }
-    return render(request, 'task_received/received_tasks_not_finished.html', context)
+    if user_id:
+        taskslist_received_not_finished = Task.objects.filter(is_finished=False, hunter_id=user_id)
+        paginator = Paginator(taskslist_received_not_finished, 5)  # Show 5 contacts per page
+        page = request.GET.get('page')
+        try:
+            taskslist_received_not_finished = paginator.page(page)
+        except PageNotAnInteger:
+            # If page is not an integer, deliver first page.
+            taskslist_received_not_finished = paginator.page(1)
+        except EmptyPage:
+            # If page is out of range (e.g. 9999), deliver last page of results.
+            taskslist_received_not_finished = paginator.page(paginator.num_pages)
+        context = {
+            'task_types': task_types,
+            'taskslist_received_not_finished': taskslist_received_not_finished,
+        }
+        return render(request, 'task_received/received_tasks_not_finished.html', context)
+    else: # 单元测试所用
+        taskslist_received_not_finished = Task.objects.filter(is_finished=False)
+        context = {
+            'task_types': task_types,
+            'taskslist_received_not_finished': taskslist_received_not_finished,
+        }
+        return render(request, 'task_received/received_tasks_not_finished.html', context)
 
 
 # 退出登录

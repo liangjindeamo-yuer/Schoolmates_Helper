@@ -4,6 +4,7 @@ import os
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
 from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
 
 from App.models import *
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
@@ -44,7 +45,7 @@ def task_square(request):
         for task in tasks_list1:
             task.soft_delete()
         tasks_list = Task.objects.filter(is_pickedup=False, is_overtime=False)
-        paginator = Paginator(tasks_list, 10)  # Show 5 contacts per page
+        paginator = Paginator(tasks_list, 9)  # Show 5 contacts per page
         page = request.GET.get('page')
         try:
             tasks = paginator.page(page)
@@ -107,7 +108,7 @@ def task_square_sort(request, type_id, order):
                 task.soft_delete()
             tasks_list = tasks_list1.filter(is_overtime=False)
 
-    paginator = Paginator(tasks_list, 10)  # Show 5 contacts per page
+    paginator = Paginator(tasks_list, 9)  # Show 5 contacts per page
     page = request.GET.get('page')
     try:
         tasks = paginator.page(page)
@@ -183,7 +184,7 @@ def publisher_detail(request, publisher_id):
                            'his_alltasks': his_alltasks,
                            'his_finished': his_finished})
 
-
+@csrf_exempt #客户端提交的post如果不加这段，tests里会出现403error
 def findtasks(request):
     keywords = request.POST.get('keywords')
     user_id = request.session.get('user_id')
@@ -224,7 +225,7 @@ def findtasks(request):
         }
         return render(request, 'tasks_square/task_square.html', context=data)
 
-
+@csrf_exempt
 def discuss(request, task_id):
     user_id = request.session.get('user_id')
     user = User.objects.get(pk=user_id)

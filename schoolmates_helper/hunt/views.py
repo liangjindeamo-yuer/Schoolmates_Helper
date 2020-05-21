@@ -1,6 +1,8 @@
 # Create your views here.
 from django.shortcuts import render
 from django.db.models import Q
+from django.views.decorators.csrf import csrf_exempt
+
 from App.form import User1, Task1
 from django.urls import reverse
 from django.http import HttpResponse, HttpResponseRedirect
@@ -60,7 +62,7 @@ def taskcopy(request):
     task.save()
 
 
-# 用户登录
+@csrf_exempt # 用户登录
 def login(request):
     if request.method == 'GET':
         data = {

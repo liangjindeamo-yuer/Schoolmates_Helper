@@ -87,8 +87,8 @@ class Task(models.Model):
             self.is_overtime = True
             self.save()
 
-    def __str__(self):
-        return 'is_overtime:%s' % self.is_overtime
+    def __str__(self):      # tests.py中查询结果的断言，使用到该函数
+        return 'id=%s' % self.pk
 
     class Meta:
         db_table = 'smh_task'
