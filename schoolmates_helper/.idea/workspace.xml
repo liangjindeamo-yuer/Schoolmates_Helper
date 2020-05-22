@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51688325-699a-47b3-9fd4-7ed326c2048a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/allhome.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allhome.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hunt/templates/hunt/no login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hunt/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,10 +65,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="html" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Python Script" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -89,7 +88,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../my_Django_code/mysite" />
+    <property name="last_opened_file_path" value="$USER_HOME$/my_Django_code/mysite" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -224,11 +223,12 @@
       <workItem from="1589879979036" duration="6754000" />
       <workItem from="1589902627564" duration="78000" />
       <workItem from="1590130778769" duration="394000" />
+      <workItem from="1590141835446" duration="161000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -270,13 +270,12 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="100" y="114" width="1080" height="464" key="DiffContextDialog" timestamp="1589876324657">

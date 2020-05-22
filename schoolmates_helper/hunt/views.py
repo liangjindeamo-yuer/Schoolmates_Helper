@@ -38,21 +38,26 @@ def task_up(request):
     else:
         task1 = Task1(request.POST, request.FILES)
         if task1.is_valid():
-            user_id = request.session.get('user_id')
-            user = User.objects.get(pk=user_id)
-            contactid = request.POST.get('contact_type_publisher')
-            contactname = Contact.objects.get(pk=contactid).typename
+            try:
+                user_id = request.session.get('user_id')
+                user = User.objects.get(pk=user_id)
+                contactid = request.POST.get('contact_type_publisher')
+                contactname = Contact.objects.get(pk=contactid).typename
 
-            task1.cleaned_data['publisher_id'] = user_id
-            if getattr(user, contactname) == None:
+                task1.cleaned_data['publisher_id'] = user_id
+                if getattr(user, contactname) == None:
                 #return render(request, 'hunt/task_form.html', locals())
-                return render(request, 'hunt/task_nocontact.html', context={'task': task1,
+                    return render(request, 'hunt/task_nocontact.html', context={'task': task1,
                                                                       'contactname': contactname, })
+            except:
+                return render(request, 'hunt/no login.html')
+
             else:
                 Task.objects.create(**task1.cleaned_data)
                 return render(request, 'hunt/task_up_successfully.html', locals())
         else:
             return render(request, 'hunt/task_form.html', locals())
+
 
 
 def taskcopy(request):
@@ -115,43 +120,50 @@ def edit0(request):
     character = random.sample(alphabet, 5)
     characters=character[0]+character[1]+character[2]+character[3]+character[4]
 
-    user_id = request.session.get('user_id')
-    user = User.objects.get(id=user_id)
-    user_name=user.username
-    email0 =user.email
-    if request.method == "POST":
+    try:
+        user_id = request.session.get('user_id')
+
+
+
+        user = User.objects.get(id=user_id)
+        user_name=user.username
+        email0 =user.email
+        if request.method == "POST":
         # 注意：这里由于用户名邮箱设置不能重名,所以这里的方法是调用修改后先把他改成一个其他的东西，
         # 这样子如果不修改用户名邮箱，之前的用户名邮箱就会替代这个乱码，这样可能会导致一些问题但目前还没遇到，，
-        user.username = characters
-        user.email = characters+'1shshhs@sjtu.edu.cn'
-        user_form = User1(request.POST, request.FILES)
-        user.save()
-        Photo=user.icon
-        context = {
+            user.username = characters
+            user.email = characters+'1shshhs@sjtu.edu.cn'
+            user_form = User1(request.POST, request.FILES)
+            user.save()
+            Photo=user.icon
+            context = {
             'imgs': Photo
         }
-        if user_form.is_valid():
-            user_cd = user_form.cleaned_data
-            user.email = user_cd['email']
-            user.tel = user_cd['tel']
-            user.username = user_cd['username']
-            user.qq = user_cd['qq']
-            user.password=user_cd['password']
-            user.repassword = user_cd['password']
-            user.wechat = user_cd['wechat']
-            user.other = user_cd['other']
-            user.icon = user_cd['icon']
-            user.save()
-            return render(request, 'hunt/edit.html', {"user_form": user_form,"user":user})
+            if user_form.is_valid():
+                user_cd = user_form.cleaned_data
+                user.email = user_cd['email']
+                user.tel = user_cd['tel']
+                user.username = user_cd['username']
+                user.qq = user_cd['qq']
+                user.password=user_cd['password']
+                user.repassword = user_cd['password']
+                user.wechat = user_cd['wechat']
+                user.other = user_cd['other']
+                user.icon = user_cd['icon']
+                user.save()
+                return render(request, 'hunt/edit.html', {"user_form": user_form,"user":user})
 
+            else:
+                user.username=user_name
+                user.email=email0
+                user.save()
+                ErrorDict = user_form.errors
+                return render(request, 'hunt/edit.html', {"user_form": user_form,"user":user})
         else:
-            user.username=user_name
-            user.email=email0
-            user.save()
-            ErrorDict = user_form.errors
+
+            user_form = User1(instance=user)
+
             return render(request, 'hunt/edit.html', {"user_form": user_form,"user":user})
-    else:
+    except:
+        return render(request, 'hunt/no login.html')
 
-        user_form = User1(instance=user)
-
-        return render(request, 'hunt/edit.html', {"user_form": user_form,"user":user})
