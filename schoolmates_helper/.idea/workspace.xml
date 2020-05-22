@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="51688325-699a-47b3-9fd4-7ed326c2048a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunt/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_received/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_received/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tasks_square/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tasks_square/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/allhome.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/allhome.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +141,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2d3fe759-315c-43f1-801b-b4e6a5e8f1ef" name="Default Changelist" comment="" />
+      <changelist id="51688325-699a-47b3-9fd4-7ed326c2048a" name="Default Changelist" comment="" />
       <created>1584691867932</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -224,6 +223,7 @@
       <workItem from="1589878248126" duration="315000" />
       <workItem from="1589879979036" duration="6754000" />
       <workItem from="1589902627564" duration="78000" />
+      <workItem from="1590130778769" duration="394000" />
     </task>
     <servers />
   </component>
@@ -291,10 +291,10 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="418" y="71" key="RollbackChangesDialog/0.0.1280.689@0.0.1280.689" timestamp="1589778137397" />
-    <state x="403" y="209" key="com.intellij.ide.util.TipDialog" timestamp="1589791950128">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="336" y="175" key="com.intellij.ide.util.TipDialog" timestamp="1590130807321">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
-    <state x="336" y="175" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1589774666349" />
+    <state x="336" y="175" key="com.intellij.ide.util.TipDialog/0.0.1280.689@0.0.1280.689" timestamp="1590130807321" />
     <state x="403" y="209" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1589791950128" />
     <state x="303" y="1" width="672" height="687" key="search.everywhere.popup" timestamp="1590075252169">
       <screen x="0" y="0" width="1280" height="689" />
