@@ -25,7 +25,8 @@
     </div>
     <div class="rightcolumn">
         <div class="card">
-            <h1>{{ task.task_name }}</h1></div>
+            <h1>{{ task.task_name }}</h1>
+        </div>
         <!--swf 2020年4月25日 改动 新增用户信息页面-->
         <div class="card">
             <h2>发布者</h2>
@@ -133,19 +134,20 @@
 
                                     {# 查过 可以用前端实现 点击"回复"后显示回复框 现在直接显示出来 #}
 
-                                        <br/>
-                                        {% if discussion.response_discuss.all.exists %}
-                                            <ul>
-                                                {% for response in discussion.response_discuss.all %}
-                                                    <div class="respon">
+                                    <br/>
+                                    {% if discussion.response_discuss.all.exists %}
+                                        <ul>
+                                            {% for response in discussion.response_discuss.all %}
+                                                <div class="respon">
                                                     <li>
 
                                                         <div class="left">
-                                                            <a href={% url 'tasks_square:publisher_detail' response.respondent.id %}><span style="font-size:13px;"><strong>{{ response.respondent.username }}</strong></span></a>
+                                                            <a href={% url 'tasks_square:publisher_detail' response.respondent.id %}><span
+                                                                    style="font-size:13px;"><strong>{{ response.respondent.username }}</strong></span></a>
                                                             <br/>
                                                             <span style="font-size:13px;color:grey">{{ response.responsetime }}</span>
                                                             {# 删除评论 #}
-                                                            {% if user_id == discussion.discussant.id %}
+                                                            {% if user_id == response.respondent.id %}
                                                                 <p>
                                                                     <script language="javascript">
                                                                         function delcfm() {
@@ -156,7 +158,9 @@
                                                                     </script>
                                                                 <form action="{% url 'tasks_square:delete' response.id 'response' task.id %}"
                                                                       target="_blank" method="get">
-                                                                    <input class="button" style="background: #5b9eb9;font-weight: normal;font-size:13px;" name="" type="submit"
+                                                                    <input class="button"
+                                                                           style="background: #5b9eb9;font-weight: normal;font-size:13px;"
+                                                                           name="" type="submit"
                                                                            value="删除本回复"
                                                                            onClick="delcfm()"/>
                                                                 </form>
@@ -171,48 +175,44 @@
 
 
                                                     </li>
-                                                    </div>
-                                                {% endfor %}
-                                            </ul>
-                                        {% endif %}
+                                                </div>
+                                            {% endfor %}
+                                        </ul>
+                                    {% endif %}
 
                                     <br/>
-                                    <form action="{% url 'tasks_square:response' task.id discussion.id %}" method="post">
-                                    <script type="text/javascript">
-                                        window.onload = function () {
-                                            let wenzi = document.getElementById('check');
-                                            let res = document.getElementById('response');
-                                            let sub = document.getElementById('submit');
-                                            wenzi.onfocus = function () {
-                                                if (res.style.display == 'block') {
-                                                    res.style.display = 'none';
+                                    <form action="{% url 'tasks_square:response' task.id discussion.id %}"
+                                          method="post">
+                                        <script type="text/javascript">
+
+                                            div{{forloop.counter}} = function () {
+                                                var res{{forloop.counter}} = document.getElementById("response{{forloop.counter}}");
+                                                var sub{{forloop.counter}} = document.getElementById("submit{{forloop.counter}}");
+                                                if (res{{forloop.counter}}.style.display == 'block') {
+                                                    res{{forloop.counter}}.style.display = 'none';
                                                 } else {
-                                                    res.style.display = 'block';
+                                                    res{{forloop.counter}}.style.display = 'block';
                                                 }
-                                                if (sub.style.display == 'block') {
-                                                    sub.style.display = 'none';
+                                                if (sub{{forloop.counter}}.style.display == 'block') {
+                                                    sub{{forloop.counter}}.style.display = 'none';
                                                 } else {
-                                                    sub.style.display = 'block';
+                                                    sub{{forloop.counter}}.style.display = 'block';
                                                 }
                                             }
-                                        }
-
-                                    </script>
-                                    {% csrf_token %}
-                                    {# 前端可以设置一下这个input非空 #}
-                                    <br/>
-                                    <br/>
-                                    <input class="button" type="button" id="check" style="display:block;"
-                                           value="回复本楼层"><br>
-                                    <textarea class="sub" style="display:none;" name="response" id="response"
-                                              required></textarea>
-                                    <input class="button" style="display:none;" id="submit" type="submit"
-                                           value="提交"><br>
 
 
-                                </form>
+                                        </script>
+                                        {% csrf_token %}
+                                        {# 前端可以设置一下这个input非空 #}
+                                        <br/>
+                                        <br/>
+                                        <input class="button" type="button" onclick="div{{forloop.counter}}();" id="check{{forloop.counter}}" style="display:block;" value="回复本楼层"><br>
+                                        <textarea class="sub" style="display:none;" name="response" id="response{{forloop.counter}}" required></textarea>
+                                        <input class="button" style="display:none;" id="submit{{forloop.counter}}" type="submit" value="提交"><br>
+
+                                    </form>
                                 </div>
-                            <br/>
+                                <br/>
                             </li>
                         {% endfor %}
                     </ol>
@@ -226,13 +226,16 @@
                     <br/>
                     <input class="button" type="submit" value="发布"/><br>
                 </form>
-                </div>
-                </div>
+
             {% else %}
-                <div class="button"><a href={% url 'hunt:login' %}>请先登录！</a></div>
+                <a class="button" href={% url 'hunt:login' %}>请先登录！</a>
             {% endif %}
-<div class="footer">
-   <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    </div>
+    </div>
 </div>
+<div class="footer">
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+
 </body>
 </html>
