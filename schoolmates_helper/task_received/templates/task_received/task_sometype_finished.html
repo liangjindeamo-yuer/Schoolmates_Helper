@@ -27,9 +27,9 @@
     <h2>我接受的任务</h2>
     <ul>
         <li><a href={% url 'task_received:all_task_received' %}>全部</a></li>
-        <li><a href={% url 'task_received:received_tasklist_sometype_finished_not_finished' %}>未完成</a></li>
-        <li><a href={% url 'task_received:received_tasklist_sometype_finished_finished' %} class="current-top">已完成</a></li>
-        <li><a href={% url 'tasklist_sometype_finished_square:task_square' %}>回到任务广场</a></li>
+        <li><a href={% url 'task_received:received_tasks_not_finished' %}>未完成</a></li>
+        <li><a href={% url 'task_received:received_tasks_finished' %} class="current-top">已完成</a></li>
+        <li><a href={% url 'tasks_square:task_square' %}>回到任务广场</a></li>
     </ul>
 </div>
 <div id="content">
@@ -37,7 +37,7 @@
 
         <!--任务类别；选中哪个类别的任务，加粗显示现在是什么类别，这个没做出来-->
         <!-- <b>任务类别</b> -->
-        <a href={% url 'task_received:received_tasklist_sometype_finished_finished' %}>全部</a>
+        <a href={% url 'task_received:received_tasks_finished' %}>全部</a>
         {% for tasktype in task_types %}
             {% if tasktype.pk == typeid_now %}
                 <a href={% url 'task_received:task_sometype_finished' tasktype.id %} class="current_menu">{{ tasktype.typename }}</a>
