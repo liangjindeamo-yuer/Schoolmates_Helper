@@ -27,7 +27,7 @@
     <div class="info">
         <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
             <!-- <img src="{{ user_form.icon }}"> -->
-            <img class="icon" src="..\static\uploads\photo\2020\04\26\1.jpg">
+            <img class="icon" src="/../../static/uploads/{{ user.icon }}">
 
             <div class="row">
                 <div><span>邮箱:</span></div>
