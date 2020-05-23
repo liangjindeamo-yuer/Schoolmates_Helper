@@ -64,6 +64,7 @@ class Type1(forms.ModelForm):
 class User1(forms.ModelForm):
     class Meta:
         model = User
+
         fields = '__all__'
         # exclude用于禁止模型字段转换表单字段
         exclude = ['rank', 'is_active', 'is_delete']
@@ -101,10 +102,13 @@ class User1(forms.ModelForm):
 
     def clean_repassword(self):
         pwd1 = self.cleaned_data.get('password')
-
+        pwd=str(pwd1)
         pwd2 = self.cleaned_data.get('repassword')
 
         if pwd1 != pwd2:
             raise forms.ValidationError('密码输入不一致')
+        elif len(pwd)<6:
+            raise forms.ValidationError('密码至少六位')
+
         else:
             return self.cleaned_data

@@ -21,9 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="51688325-699a-47b3-9fd4-7ed326c2048a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/form.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunt/templates/hunt/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/templates/hunt/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hunt/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/hunt/tests.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,6 +234,7 @@
       <workItem from="1590228754125" duration="367000" />
       <workItem from="1590232353676" duration="45000" />
       <workItem from="1590232442531" duration="1893000" />
+      <workItem from="1590234788603" duration="1156000" />
     </task>
     <servers />
   </component>
