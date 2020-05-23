@@ -27,7 +27,7 @@
     <div class="info">
         <form action="" method="post" enctype="multipart/form-data">{% csrf_token %}
             <!-- <img src="{{ user_form.icon }}"> -->
-            <img class="icon" src="..\static\uploads\photo\2020\04\26\1.jpg">
+            <img class="icon" src="/../../static/uploads/{{ user.icon }}">
 
             <div class="row">
                 <div><span>邮箱:</span></div>
@@ -63,8 +63,11 @@
             </div>
             <div class="row">
                 <div><span>头像:</span></div>
-                <div>{{ user_form.icon }}</div>
-                <span><img src="/../../static/uploads/{{ user.icon }}" style="width:50%;height:20%"></span>
+                <div>
+修改:
+<input type="file" name="icon" accept="image/*" id="id_icon"></div>
+
+                <span>当前头像:<img src="/../../static/uploads/{{ user.icon }}" style="width:50%;height:20%"></span>
             </div>
             <div style="text-align: center"><button type="submit" class="button">修改信息</button></div>
         </form>
