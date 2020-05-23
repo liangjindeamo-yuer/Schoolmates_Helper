@@ -283,8 +283,6 @@ def checklogin(request):
 
 def alltask_sort(request, typeid, typesort1, typesort2, typesort3):
     tasktypes = TaskType.objects.all()
-    print(typesort1)
-    print(type(typesort1))
     if typeid != 0:
         task_list = Task.objects.all().filter(is_pickedup=0).filter(task_type_id=typeid).order_by(typesort1, typesort2,
                                                                                                   typesort3)
