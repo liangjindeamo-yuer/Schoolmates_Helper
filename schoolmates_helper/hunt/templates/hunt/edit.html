@@ -61,13 +61,10 @@
                 <div><span>手机号:</span></div>
                 <div>{{ user_form.tel }}</div>
             </div>
-
-                <div class="row">
+            <div class="row">
                 <div><span>头像:</span></div>
-                <div>
-修改:
-<input type="file" name="icon" accept="image/*" id="id_icon"></div>
-                <span>当前头像：<img src="/../../static/uploads/icons/2020/05/23/小火火的任务广场_Ubn5FtH.png" style="width:50%;height:20%"></span>
+                <div>{{ user_form.icon }}</div>
+                <span><img src="/../../static/uploads/{{ user.icon }}" style="width:50%;height:20%"></span>
             </div>
             <div style="text-align: center"><button type="submit" class="button">修改信息</button></div>
         </form>
