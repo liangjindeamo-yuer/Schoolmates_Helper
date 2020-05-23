@@ -49,6 +49,14 @@ $(function () {
 
         var password = $password.val().trim();
         password = password.toString();
+        if (password.length<=6){
+            var $password_info = $('#password_info');
+            $password_info.html('你的密码过于简单').css('color', 'red');
+        }
+        else{
+             var $password_info = $('#password_info');
+            $password_info.html('密码安全').css('color', 'green');
+        }
         if (!(password_confirm == password)) {
             var $password_confirm_info = $('#password_confirm_info');
             $password_confirm_info.html('验证密码不一致').css('color', 'red');
@@ -64,6 +72,14 @@ $(function () {
 
         var password = $password.val().trim();
         password = password.toString();
+        if (password.length<=6){
+            var $password_info = $('#password_info');
+            $password_info.html('你的密码过于简单').css('color', 'red');
+        }
+        else{
+             var $password_info = $('#password_info');
+            $password_info.html('密码安全').css('color', 'green');
+        }
         if (!(password_confirm == password)) {
             var $password_confirm_info = $('#password_confirm_info');
             $password_confirm_info.html('验证密码不一致').css('color', 'red');
@@ -126,7 +142,8 @@ function check() {
     var info_username_color = $('#username_info').css('color');
     var info_email_color = $('#email_info').css('color');
     var info_password_confirm_color = $('#password_confirm_info').css('color');
-    if (info_username_color == 'rgb(255, 0, 0)' || info_email_color == 'rgb(255, 0, 0)' || info_password_confirm_color == 'rgb(255, 0, 0)') {
+    var info_password_color = $('#password_info').css('color')
+    if (info_username_color == 'rgb(255, 0, 0)' || info_email_color == 'rgb(255, 0, 0)' || info_password_confirm_color == 'rgb(255, 0, 0)'||info_password_color == 'rgb(255, 0, 0)') {
         return false;
     } else {
         alert('注册成功，请注意前往邮箱激活您的账户');

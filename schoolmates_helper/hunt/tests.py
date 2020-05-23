@@ -50,7 +50,6 @@ class ModelTest(TestCase):
         self.assertEqual(response.status_code, 200)
 
     def test_task_models(self):
-        "测试任务"
         result = Task.objects.get(task_name="test")
         self.assertEqual(result.task_reward, 1)
 
