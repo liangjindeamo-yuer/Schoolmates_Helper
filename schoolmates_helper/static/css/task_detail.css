@@ -4,6 +4,7 @@
     margin-top: 20px;
     width: 40%;
     margin-left: 30%;
+    overflow: hidden;
 }
 .card hr
 {
@@ -31,16 +32,14 @@
     float: left;
 }
 
-.card1 {
-    background-color: rgba(255,255,255,0.7);
-    padding: 20px;
-    margin-top: 20px;
-    width: 40%;
-    margin-left: 30%;
-    height: 80px;
-}
-.card1 hr
+.card form
 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    display: inline;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
 }

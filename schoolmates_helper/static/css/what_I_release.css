@@ -58,7 +58,7 @@ body {
 /* 激活 */
 
 .topnav a.active {
-    background-color: white;
+    background-color: rgb(160, 160, 151);
     color: black;
 }
 
@@ -70,15 +70,25 @@ body {
 
 .leftcolumn {
     float: left;
-    width: 25%;
+    width: 20%;
+    background: rgba(0,0,0,.2);
+}
+
+.leftcolumn h2 {
+    margin-left: 10%;
 }
 
 ul {
+    margin-left: 10%;
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+    width: 90%;
+}
+
+ul li
+{
+    width: 100%;
+    padding-top: 2%;
 }
 
 li a {
@@ -89,14 +99,13 @@ li a {
 }
 
 li a.active {
-    background-color: #0099FF;
-    color: white;
+    border-right: #000 10px solid;
 }
 
-li a:hover:not(.active) {
+/* li a:hover:not(.active) {
     background-color: #555;
     color: white;
-}
+} */
 
 
 /* 右侧栏 */
@@ -107,6 +116,74 @@ li a:hover:not(.active) {
     padding-left: 20px;
 }
 
+.form-group
+{
+    float: left;
+    margin-left: 10%;
+    margin-top: 2%;
+    font-size: 20px;
+}
+.form-group select
+{
+    width: 10%;
+    height: 40px;
+    margin-left: 5px;
+}
+
+form input
+{
+    margin-top: 2.5%;
+    height: 30px;
+    margin-left: 3%;
+    width: 5%;
+}
+
+.select {
+    display: inline-block;
+    width: 300px;
+    position: relative;
+    vertical-align: middle;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    color: #555;
+    border: 1px solid #aaa;
+    text-shadow: none;
+    border-radius: 4px;	
+    transition: box-shadow 0.25s ease;
+    z-index: 2;
+}
+
+.select:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.select:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #ccc;
+    top: 14px;
+    right: 10px;
+    cursor: pointer;
+    z-index: -2;
+}
+.select select {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select select:focus {
+    outline: none;
+}
 
 
 
@@ -115,7 +192,8 @@ li a:hover:not(.active) {
 .card {
     background-color: white;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 25px;
+    box-shadow: 10px 10px 5px #888888;
 }
 
 
@@ -151,4 +229,16 @@ li a:hover:not(.active) {
     text-align: center;
     background: #ddd;
     margin-top: 20px;
+}
+
+.pagination
+{
+    margin-top: 5%;
+    margin-left: 38%;
+}
+
+.disabled
+{
+    text-decoration: none;
+    color: rgb(88, 84, 84);
 }
