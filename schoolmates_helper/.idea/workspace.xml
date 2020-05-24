@@ -20,12 +20,1062 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51688325-699a-47b3-9fd4-7ed326c2048a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2d021a6-27be-4722-a758-3822a80c9e7a.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d2d021a6-27be-4722-a758-3822a80c9e7a/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources/730a1594-71cb-49dc-99a5-a6b8c1f132fe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/dataSources/780d9aff-a08a-4f52-8ead-4a2e21d66493.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/mytask_received.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/.idea/HelloWorld.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/.idea/dataSources/1786de0d-836e-474a-8402-d18be0ddd288.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/.idea/dataSources/61d3bda8-b1a8-437f-b2f3-3cbb36baa0e3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/App/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/App/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/App/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/App/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/App/migrations/0002_auto_20200412_0001.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/App/migrations/0003_auto_20200412_1209.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/App/migrations/0004_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/App/migrations/0005_auto_20200418_1226.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/App/migrations/0006_missioninfo_m_money.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/App/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/App/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/App/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/App/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/HelloWorld/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/HelloWorld/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/HelloWorld/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/HelloWorld/view.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/HelloWorld/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/static/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/static/css/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/static/css/change.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/static/css/what_I_release.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/static/image/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/static/image/details.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/static/image/shuicai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/static/image/shuicaino.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/static/image/user_center.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/static/js/jquery-1.12.4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/templates/acp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/templates/comment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/templates/finish.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/templates/m_change.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/templates/m_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/templates/reason.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/templates/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/templates/release.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/templates/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../HelloWorld/templates/un_acp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/eb8c0459-2070-4d1e-a635-65dd4f786b04.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/eb8c0459-2070-4d1e-a635-65dd4f786b04.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/rev_fin.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/rev_fin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/task_detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/task_detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/task_rec_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/task_rec_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_received/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/task_received/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task_received/all_task_received.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task_received/all_task_received.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task_received/comment_or_revoke_successfuly.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task_received/comment_or_revoke_successfuly.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task_received/reasons_revoke.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task_received/reasons_revoke.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task_received/received_tasks_finished.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task_received/received_tasks_finished.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task_received/received_tasks_not_finished.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task_received/received_tasks_not_finished.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task_received/task_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task_received/task_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task_received/task_finished" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task_received/task_finished" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task_received/task_sometype_finished.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task_received/task_sometype_finished.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task_received/task_sometype_not_finished.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task_received/task_sometype_not_finished.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/task_received/tasks_sometype.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/task_received/tasks_sometype.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/tasks_square/task_square.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/tasks_square/task_square.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/dataSources/6e20c2d1-9c5f-471d-bd7a-0e2985e030ec.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/dataSources/c24e46bd-c741-4be1-b9b6-971e70c52a15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/dataSources/f50cabc2-6578-4833-a527-4c6cf22000f5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/untitled13.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/form.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/migrations/0002_auto_20200411_1703.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/migrations/0003_task.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/migrations/0004_auto_20200413_1052.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/migrations/0005_auto_20200416_0005.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/static/IMG_3081.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/static/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/hunt/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/migrations/0002_remove_user_icon.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/templates/task_received/all_task_received.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/templates/task_received/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/templates/task_received/reasons_revoke.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/templates/task_received/received_tasks_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/templates/task_received/received_tasks_not_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/templates/task_received/task_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/templates/task_received/task_finished" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/templates/task_received/task_sometype_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/templates/task_received/task_sometype_not_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/templates/task_received/tasks_sometype.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/task_received/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/tasks_square/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/tasks_square/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/tasks_square/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/tasks_square/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/tasks_square/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/tasks_square/templates/tasks_square/check_hunt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/tasks_square/templates/tasks_square/hunt_successfully.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/tasks_square/templates/tasks_square/task_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/tasks_square/templates/tasks_square/task_square.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/tasks_square/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/tasks_square/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/tasks_square/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/templates/data_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/templates/login1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/templates/task_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/untitled13/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/untitled13/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/untitled13/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../login_tasksquare_receivedtasks/untitled13/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/.idea/dataSources/730a1594-71cb-49dc-99a5-a6b8c1f132fe.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/.idea/dataSources/780d9aff-a08a-4f52-8ead-4a2e21d66493.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/.idea/mytask_received.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/mytask_received/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/mytask_received/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/mytask_received/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/mytask_received/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/migrations/0002_remove_user_icon.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/templates/task_received/all_task_received.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/templates/task_received/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/templates/task_received/reasons_revoke.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/templates/task_received/received_tasks_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/templates/task_received/received_tasks_not_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/templates/task_received/task_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/templates/task_received/task_finished" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/templates/task_received/task_sometype_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/templates/task_received/task_sometype_not_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/templates/task_received/tasks_sometype.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/task_received/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received_html/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received_html/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received_html/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../mytask_received_html/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../releasetask_2/myScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../releasetask_2/releasetask.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../releasetask_2/releasetask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../releasetask_2/shuicai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../releasetask_2/shuicaino.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../releasetask_2/user_center.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/.idea/schoolmate helper.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/.idea/dataSources/c9776e30-3cd0-4793-b53e-a85a77b6cd18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/.idea/dataSources/c9776e30-3cd0-4793-b53e-a85a77b6cd18/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/.idea/dataSources/eb8c0459-2070-4d1e-a635-65dd4f786b04.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/.idea/schoolmates_helper.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0002_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0003_task.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0004_auto_20200323_1926.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0005_auto_20200323_1947.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0006_auto_20200323_1950.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0007_auto_20200323_2011.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0008_auto_20200323_2013.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0009_auto_20200323_2017.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0010_auto_20200323_2018.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0011_auto_20200323_2023.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0012_auto_20200323_2025.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0013_auto_20200323_2026.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0014_auto_20200323_2051.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0015_auto_20200328_1800.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0016_auto_20200328_2115.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0017_auto_20200406_0843.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0018_auto_20200406_0845.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0019_auto_20200406_1502.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0020_auto_20200406_1637.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/0021_auto_20200418_1215.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/views_constant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/App/views_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/schoolmates_helper/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/schoolmates_helper/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/schoolmates_helper/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/schoolmates_helper/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/schoolmates_helper/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/main/css/alltask.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/main/css/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/main/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/main/css/mine.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/main/css/task.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/main/js/home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/main/js/mine.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/main/js/mine_not_activated.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/css/alltask_hunter.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/css/alltask_publisher.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/css/modifytask.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/css/register.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/css/user.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/js/alltask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/js/alltask_hunter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/js/alltask_publisher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/js/base_main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/js/modifytask.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/js/modifyuser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/js/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/js/task.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/Schoolmateshelper/user/js/taskcontent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/css/swiper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/css/swiper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/img/alltask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/img/alltask_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/img/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/img/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/img/home_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/img/mine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/img/mine_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/img/task.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/img/task_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/js/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/js/swiper.jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/js/swiper.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/21/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_6K4gGX1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_JGkkbGV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_LKU0hiY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_hQ5clms.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_mVeEOS9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/26/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/26/2_C1ZnOYo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/26/2_GT9YquF.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/26/2_HkVY09F.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/26/2_ILeMWTa.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/26/2_O0EPggk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/26/2_hC2YQVZ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/26/2_pvuZ5R6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/26/2_qZptDIW.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/26/2_rapu8Uv.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/26/c.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/28/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/03/28/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/04/06/20180322011308_5aeba29c6e690735d08470c24496dadd_1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/04/17/0A86976899EAB1D7C385CFEB112E097B.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/04/17/3dcdd8564c869cb2b71f757af0c7ecce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/icons/2020/04/18/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/task_file/2020/04/16/课后作业1.6.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/static/uploads/task_file/2020/04/18/3dcdd8564c869cb2b71f757af0c7ecce.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/allhome.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/base_main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/base_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/main/alltask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/main/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/main/mine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/main/mine_not_activated.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/main/mine_not_login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/main/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/mine_all/about us.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/mine_all/callus.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/mine_all/taskcontent.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/activate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/alltask_hunter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/alltask_publisher.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/finish.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/home_alreadylogin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/huntertask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/modifytask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/modifyuser.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/publishertask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/receive.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/relieve.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/relieve2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/taskcomment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/templates/user/taskfinished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/easy-install.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/EGG-INFO/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/EGG-INFO/SOURCES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/EGG-INFO/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/EGG-INFO/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/EGG-INFO/not-zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/EGG-INFO/requires.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/EGG-INFO/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/basecommand.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/baseparser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/build_env.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/cmdoptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/commands/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/commands/check.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/commands/completion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/commands/configuration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/commands/download.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/commands/freeze.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/commands/hash.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/commands/help.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/commands/install.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/commands/list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/commands/search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/commands/show.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/commands/uninstall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/commands/wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/configuration.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/download.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/locations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/models/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/operations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/operations/check.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/operations/freeze.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/operations/prepare.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/pep425tags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/req/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/req/req_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/req/req_install.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/req/req_set.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/req/req_uninstall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/resolve.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/status_codes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/appdirs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/deprecation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/encoding.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/filesystem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/glibc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/hashes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/logging.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/misc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/outdated.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/packaging.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/setuptools_build.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/temp_dir.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/typing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/utils/ui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/vcs/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/vcs/bazaar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/vcs/git.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/vcs/mercurial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/vcs/subversion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_internal/wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/appdirs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/cachecontrol/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/cachecontrol/_cmd.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/cachecontrol/adapter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/cachecontrol/cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/cachecontrol/caches/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/cachecontrol/caches/file_cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/cachecontrol/caches/redis_cache.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/cachecontrol/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/cachecontrol/controller.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/cachecontrol/filewrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/cachecontrol/heuristics.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/cachecontrol/serialize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/cachecontrol/wrapper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/certifi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/certifi/__main__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/certifi/cacert.pem" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/certifi/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/big5freq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/big5prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/chardistribution.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/charsetgroupprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/charsetprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/cli/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/cli/chardetect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/codingstatemachine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/cp949prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/enums.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/escprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/escsm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/eucjpprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/euckrfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/euckrprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/euctwfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/euctwprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/gb2312freq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/gb2312prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/hebrewprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/jisfreq.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/jpcntx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/langbulgarianmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/langcyrillicmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/langgreekmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/langhebrewmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/langhungarianmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/langthaimodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/langturkishmodel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/latin1prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/mbcharsetprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/mbcsgroupprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/mbcssm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/sbcharsetprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/sbcsgroupprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/sjisprober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/universaldetector.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/utf8prober.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/chardet/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/colorama/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/colorama/ansi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/colorama/ansitowin32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/colorama/initialise.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/colorama/win32.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/colorama/winterm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/_backport/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/_backport/misc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/_backport/shutil.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/_backport/sysconfig.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/_backport/sysconfig.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/_backport/tarfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/locators.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/manifest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/markers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/metadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/resources.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/scripts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/t32.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/t64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/w32.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/w64.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distlib/wheel.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/distro.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/_ihatexml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/_inputstream.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/_tokenizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/_trie/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/_trie/_base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/_trie/datrie.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/_trie/py.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/filters/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/filters/alphabeticalattributes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/filters/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/filters/inject_meta_charset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/filters/lint.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/filters/optionaltags.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/filters/sanitizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/filters/whitespace.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/html5parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/serializer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/treeadapters/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/treeadapters/genshi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/treeadapters/sax.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/treebuilders/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/treebuilders/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/treebuilders/dom.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/treebuilders/etree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/treebuilders/etree_lxml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/treewalkers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/treewalkers/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/treewalkers/dom.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/treewalkers/etree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/treewalkers/etree_lxml.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/html5lib/treewalkers/genshi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/idna/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/idna/codec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/idna/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/idna/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/idna/idnadata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/idna/intranges.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/idna/package_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/idna/uts46data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/ipaddress.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/lockfile/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/lockfile/linklockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/lockfile/mkdirlockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/lockfile/pidlockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/lockfile/sqlitelockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/lockfile/symlinklockfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/msgpack/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/msgpack/_version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/msgpack/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/msgpack/fallback.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/packaging/__about__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/packaging/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/packaging/_compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/packaging/_structures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/packaging/markers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/packaging/requirements.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/packaging/specifiers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/packaging/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/packaging/version.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/pkg_resources/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/pkg_resources/py31compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/progress/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/progress/bar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/progress/counter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/progress/helpers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/progress/spinner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/pyparsing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/pytoml/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/pytoml/core.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/pytoml/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/pytoml/writer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/__version__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/_internal_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/adapters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/api.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/auth.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/certs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/compat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/cookies.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/help.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/hooks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/packages.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/sessions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/status_codes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/structures.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/requests/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/retrying.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/six.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/_collections.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/connectionpool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/contrib/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/contrib/_securetransport/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/contrib/_securetransport/bindings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/contrib/_securetransport/low_level.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/contrib/appengine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/contrib/ntlmpool.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/contrib/pyopenssl.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/contrib/securetransport.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/contrib/socks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/exceptions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/fields.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/filepost.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/packages/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/packages/backports/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/packages/backports/makefile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/packages/ordered_dict.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/packages/six.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/packages/ssl_match_hostname/_implementation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/poolmanager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/response.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/util/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/util/connection.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/util/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/util/response.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/util/retry.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/util/selectors.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/util/ssl_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/util/timeout.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/util/url.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/urllib3/util/wait.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/webencodings/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/webencodings/labels.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/webencodings/mklabels.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/webencodings/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/pip-10.0.1-py3.8.egg/pip/_vendor/webencodings/x_user_defined.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/setuptools-39.1.0-py3.8.egg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Lib/site-packages/setuptools.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/Activate.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/activate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/deactivate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/easy_install-3.8-script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/easy_install-3.8.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/easy_install-script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/easy_install.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/pip-script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/pip.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/pip3-script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/pip3.8-script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/pip3.8.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/pip3.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/python.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/Scripts/pythonw.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/pip-selfcheck.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate helper/schoolmates_helper/venv/pyvenv.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/.idea/schoolmate_helper.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/dataSources/eb8c0459-2070-4d1e-a635-65dd4f786b04.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/schoolmates_helper.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/migrations/0002_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/views_constant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/App/views_helper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/schoolmates_helper/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/schoolmates_helper/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/schoolmates_helper/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/schoolmates_helper/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/main/css/alltask.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/main/css/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/main/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/main/css/mine.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/main/css/task.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/main/js/home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/user/css/register.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/user/css/user.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/user/js/login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/Schoolmateshelper/user/js/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/css/swiper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/css/swiper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/alltask.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/alltask_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/home_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/mine.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/mine_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/task.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/img/task_selected.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/js/base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/js/swiper.jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/js/swiper.jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/uploads/icons/2020/03/21/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_6K4gGX1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_JGkkbGV.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_LKU0hiY.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_hQ5clms.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/static/uploads/icons/2020/03/21/01_mVeEOS9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/base_main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/base_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/main/alltask.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/main/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/main/mine.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/main/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/user/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../schoolmate_helper/schoolmates_helper/templates/user/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/migrations/0002_remove_user_icon.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/templates/task_received/all_task_received.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/templates/task_received/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/templates/task_received/reasons_revoke.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/templates/task_received/received_tasks_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/templates/task_received/received_tasks_not_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/templates/task_received/task_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/templates/task_received/task_finished" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/templates/task_received/task_sometype_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/templates/task_received/task_sometype_not_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/templates/task_received/tasks_sometype.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../task_received/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/.idea/untitled20.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/hunt/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/hunt/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/hunt/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/hunt/form.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/hunt/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/hunt/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/hunt/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/hunt/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/hunt/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/hunt/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/migrations/0002_remove_user_icon.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/migrations/0003_auto_20200426_0833.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/static/css/rev_fin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/static/image/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/static/image/bg_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/static/image/user_center.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/templates/task_received/all_task_received.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/templates/task_received/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/templates/task_received/reasons_revoke.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/templates/task_received/received_tasks_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/templates/task_received/received_tasks_not_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/templates/task_received/task_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/templates/task_received/task_finished" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/templates/task_received/task_sometype_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/templates/task_received/task_sometype_not_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/templates/task_received/tasks_sometype.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/task_received/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/tasks_square/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/tasks_square/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/tasks_square/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/tasks_square/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/tasks_square/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/tasks_square/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/tasks_square/templates/tasks_square/check_hunt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/tasks_square/templates/tasks_square/hunt_successfully.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/tasks_square/templates/tasks_square/task_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/tasks_square/templates/tasks_square/task_square.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/tasks_square/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/tasks_square/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/tasks_square/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/templates/data_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/templates/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/templates/task_up_successfully.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/untitled20/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/untitled20/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/untitled20/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20-wzf/untitled20/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/.idea/untitled20.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/form.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0002_auto_20200418_2311.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0002_comment_revoke_reason.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0003_auto_20200420_1022.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0003_auto_20200425_1320.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0004_auto_20200425_1541.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0004_auto_20200426_1654.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0005_auto_20200425_1640.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0005_cnt.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0006_auto_20200425_1733.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0007_task_contact.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0008_auto_20200426_0052.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0009_auto_20200426_0917.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0010_auto_20200426_0933.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0011_auto_20200428_0021.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0012_auto_20200428_0156.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0013_auto_20200428_0157.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0014_auto_20200428_1648.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0015_auto_20200428_1654.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0016_auto_20200428_1719.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0017_auto_20200428_2032.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0018_auto_20200428_2040.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0019_discuss.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0020_auto_20200501_0032.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0021_discuss_discussant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0022_auto_20200501_0115.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0023_auto_20200501_0131.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0024_auto_20200501_0138.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0025_auto_20200501_0145.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0026_response_respondent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0027_auto_20200505_1712.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0028_auto_20200505_1715.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0029_user_repassword.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0030_auto_20200509_0947.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0031_auto_20200509_1343.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0032_auto_20200509_1357.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0033_auto_20200509_1400.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0034_auto_20200509_1401.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0035_merge_20200509_1458.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0036_auto_20200510_0130.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0037_remove_task_reason.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/0038_auto_20200517_1114.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/q" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/css/contact.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/css/data_form.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/css/edit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/css/success.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/image/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/image/bg_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/image/edit_back.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/image/edit_back_light.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/image/edit_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/image/forest.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/image/forest_light.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/image/user_center.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/uploads/2020/04/26/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/uploads/2020/04/26/haha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/uploads/2020/04/26/haha_zyRYkeU.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/uploads/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/uploads/photo/2020/04/26/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/uploads/photo/2020/04/26/haha.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/uploads/photo/2020/04/26/haha_wyaAar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/uploads/photo/2020/05/01/女孩1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/uploads/photo/2020/05/09/d5aac48c9df40464186b325e9d78639.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/static/uploads/photo/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/templates/hunt/data_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/templates/hunt/edit.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/templates/hunt/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/templates/hunt/logon_successfully.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/templates/hunt/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/templates/hunt/task_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/templates/hunt/task_nocontact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/templates/hunt/task_up_successfully.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/try.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/hunt/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/static/uploads/2020/05/09/d5aac48c9df40464186b325e9d78639.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/static/uploads/2020/05/09/d5aac48c9df40464186b325e9d78639_sWVn362.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/static/uploads/2020/05/09/ppt普通版-实用版-等线版.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/static/uploads/2020/05/09/ppt普通版-实用版-等线版_olIERGS.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/static/uploads/2020/05/16/Zoom.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/static/uploads/2020/05/16/download.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/static/uploads/2020/05/16/ppt普通版-实用版-等线版.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/static/uploads/2020/05/16/“赏金任务”网站功能功能清单+优先级.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/static/uploads/2020/05/16/希腊字母.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/static/css/rev_fin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/static/css/task_detail.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/static/css/task_rec_style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/static/image/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/static/image/bg_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/static/image/user_center.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/templates/task_received/all_task_received.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/templates/task_received/comment_or_revoke_successfuly.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/templates/task_received/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/templates/task_received/reasons_revoke.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/templates/task_received/received_tasks_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/templates/task_received/received_tasks_not_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/templates/task_received/task_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/templates/task_received/task_finished" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/templates/task_received/task_sometype_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/templates/task_received/task_sometype_not_finished.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/templates/task_received/tasks_sometype.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_received/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/static/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/static/css/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/static/css/change.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/static/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/static/css/what_I_release.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/static/image/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/static/image/details.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/static/image/shuicai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/static/image/shuicaino.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/static/image/user_center.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/static/js/jquery-1.12.4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/templates/task_released/acp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/templates/task_released/comment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/templates/task_released/finish.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/templates/task_released/m_change.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/templates/task_released/m_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/templates/task_released/reason.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/templates/task_released/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/templates/task_released/success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/templates/task_released/un_acp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/task_released/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/migrations/0002_delete_tasks_display_order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/static/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/static/css/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/static/css/check.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/static/css/contacttype.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/static/css/detail.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/static/css/publisher.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/static/css/square.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/static/image/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/static/image/diduan2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/static/image/publisher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/static/image/shuicai.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/static/image/shuicaino.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/static/image/user_center.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/templates/tasks_square/check_hunt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/templates/tasks_square/contacttype.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/templates/tasks_square/hunt_successfully.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/templates/tasks_square/publisher_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/templates/tasks_square/task_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/templates/tasks_square/task_square.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/tasks_square/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/templates/data_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/templates/task.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/templates/task_up_successfully.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/untitled20/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/untitled20/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/untitled20/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../untitled20/untitled20/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../二维码/android.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../二维码/ios.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../二维码/二维码.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../项目日志.txt" beforeDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/venv/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,95 +1114,6 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schoolmates_helper/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="157" column="29" selection-start-line="157" selection-start-column="15" selection-end-line="157" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/schoolmates_helper/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-140" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/App/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3196">
-              <caret line="203" column="48" selection-start-line="203" selection-start-column="48" selection-end-line="203" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/user/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="84" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/user/js/register.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2584">
-              <caret line="152" selection-start-line="152" selection-end-line="152" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/hunt/login.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/hunt/edit.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://1776cc34-aa65-4dc3-a548-2b112f4f24ae/schema/main/table/smh_user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hunt/models.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hunt/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -167,15 +1128,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/App/views.py" />
-        <option value="$PROJECT_DIR$/static/Schoolmateshelper/user/js/register.js" />
-        <option value="$PROJECT_DIR$/schoolmates_helper/settings.py" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="950" />
     <option name="width" value="980" />
@@ -183,59 +1135,6 @@
   </component>
   <component name="ProjectId" id="1bzbPvDnZxDijOFtgI3vnyOhqGX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
-              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="schoolmates_helper" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="hunt" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="schoolmates_helper" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -256,10 +1155,6 @@
     <property name="settings.editor.splitter.proportion" value="0.22266401" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\97619\Schoolmates_Helper\schoolmates_helper\static\uploads\icons" />
-      <recent name="D:\Desktop\courseware\schoolmate helper\schoolmates_helper\static\Schoolmateshelper\user\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Desktop\courseware\software_homework\schoolmates_helper\App" />
       <recent name="C:\Users\Fluorite\Schoolmates_Helper\Schoolmates_Helper\schoolmates_helper\hunt\static\image" />
@@ -267,18 +1162,10 @@
       <recent name="F:\python\nginx-1.12.2\schoolmates_helper" />
       <recent name="D:\Desktop\courseware\software_homework\schoolmate helper\schoolmates_helper\static\Schoolmateshelper\user\css" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\97619\Schoolmates_Helper\schoolmates_helper\static\uploads\icons" />
+      <recent name="D:\Desktop\courseware\schoolmate helper\schoolmates_helper\static\Schoolmateshelper\user\js" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="schoolmates_helper" type="Python.DjangoServer" factoryName="Django server">
@@ -400,41 +1287,10 @@
       <workItem from="1590240058936" duration="30000" />
       <workItem from="1590240193183" duration="1642000" />
       <workItem from="1590243496353" duration="614000" />
+      <workItem from="1590325242663" duration="31000" />
+      <workItem from="1590325341599" duration="6078000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2887000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26340482" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="DB Browser" order="2" weight="0.3297587" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="DB Execution Console" order="9" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32991204" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="13" />
-      <window_info anchor="bottom" id="Database Console" order="14" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3297587" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -455,12 +1311,6 @@
         <entry key="1">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="FILTERS">
                 <map>
                   <entry key="branch">
@@ -485,12 +1335,7 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -534,86 +1379,5 @@
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1589885830297" />
     <state x="303" y="1" width="672" height="687" key="search.everywhere.popup/0.0.1280.689@0.0.1280.689" timestamp="1590075252169" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/App/tests.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/eb8c0459-2070-4d1e-a635-65dd4f786b04/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://a078582f-4824-44e3-8e88-8c86ae6a9437/schema/main/table/smh_user" />
-    <entry file="file://$PROJECT_DIR$/App/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/App/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3196">
-          <caret line="203" column="48" selection-start-line="203" selection-start-column="48" selection-end-line="203" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="84" selection-start-line="11" selection-start-column="84" selection-end-line="11" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/Schoolmateshelper/user/js/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2584">
-          <caret line="152" selection-start-line="152" selection-end-line="152" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hunt/login.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://1776cc34-aa65-4dc3-a548-2b112f4f24ae/schema/main/table/smh_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hunt/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hunt/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schoolmates_helper/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schoolmates_helper/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="157" column="29" selection-start-line="157" selection-start-column="15" selection-end-line="157" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/hunt/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="65" column="47" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

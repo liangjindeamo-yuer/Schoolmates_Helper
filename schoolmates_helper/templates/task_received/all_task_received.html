@@ -9,7 +9,7 @@
 
 <body>
     <div class="header">
-        <h1>SCHOOL Helper</h1>
+        <h1>Dark Forest</h1>
         <p><b>我接受的任务</b></p>
     </div>
     <!--2020年4月30日 新增 swf 未登录显示 if-->
@@ -75,15 +75,15 @@
             <div class="pagination">
                 <span class="step-links">
                     {% if task_received_list.has_previous %}
-                    <a href="?page={{ task_received_list.previous_page_number }}">上一页</a>
+                    <div class="arrowhead"><a href="?page={{ task_received_list.previous_page_number }}">上一页</a></div>
                     {% endif %}
 
                     <span class="current">
-                        Page {{ task_received_list.number }} of {{ task_received_list.paginator.num_pages }}.
+                        <strong>Page {{ task_received_list.number }} &#47; {{ task_received_list.paginator.num_pages }}</strong>
                     </span>
 
                     {% if task_received_list.has_next %}
-                    <a href="?page={{ task_received_list.next_page_number }}">下一页</a>
+                    <div class="arrowhead"><a href="?page={{ task_received_list.next_page_number }}">下一页</a></div>
                     {% endif %}
                 </span>
             </div>
@@ -94,13 +94,7 @@
     <a href={% url 'hunt:login' %}>请先登录！</a>
     {% endif %}
     <div class="footer">
-        <h4>
-
-            Written by Group 5.<br>
-            Visit us at:<br>
-            上海市闵行区东川路800号<br>
-
-        </h4>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
 </body>
 

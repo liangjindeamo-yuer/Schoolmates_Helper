@@ -216,7 +216,7 @@ form input
 /* 文章卡片效果 */
 
 .card {
-    background-color: white;
+    background-color: rgba(255,255,255,0.5);
     padding: 20px;
     margin-top: 25px;
     box-shadow: 10px 10px 5px #888888;
@@ -268,16 +268,56 @@ form input
 .footer {
     padding: 20px;
     text-align: center;
-    background: #ddd;
+    background-image: url('/../../static/image/diduan2.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 75px;
+}
+
+
+.pagination {
+    padding: 20px;
+    text-align: center;
     margin-top: 20px;
+
+}
+.current {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    color: grey;
+    width: 160px;
+    height: 100px;
+    text-align: center;
+
 }
 
-.pagination
-{
-    margin-top: 5%;
-    margin-left: 38%;
+.arrowhead a:link {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    color: grey;
+    width: 30px;
+    height: 100px;
+    text-align: center;
+}
+/*翻页*/
+.arrowhead a:visited {
+    background-color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    color: grey;
+    width: 30px;
+    height: 100px;
+    text-align: center;
 }
 
+.arrowhead a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: white;
+    width: 30px;
+    height: 100px;
+    text-align: center;
+
+}
 .disabled
 {
     text-decoration: none;

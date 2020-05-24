@@ -9,7 +9,7 @@
 
 <body>
     <div class="header">
-        <h1>SCHOOL Helper</h1>
+        <h1>Dark Forest</h1>
         <p><b>我接受的任务</b></p>
     </div>
 
@@ -68,29 +68,22 @@
             <div class="pagination">
                 <span class="step-links">
                     {% if taskslist_received_not_finished.has_previous %}
-                    <a href="?page={{ taskslist_received_not_finished.previous_page_number }}">上一页</a>
+                        <div class="arrowhead"><a href="?page={{ taskslist_received_not_finished.previous_page_number }}">上一页</a></div>
                     {% endif %}
 
                     <span class="current">
-                        Page {{ taskslist_received_not_finished.number }} of
-                        {{ taskslist_received_not_finished.paginator.num_pages }}.
+                        <strong>Page {{ taskslist_received_not_finished.number }} &#47; {{ taskslist_received_not_finished.paginator.num_pages }}</strong>
                     </span>
 
                     {% if taskslist_received_not_finished.has_next %}
-                    <a href="?page={{ taskslist_received_not_finished.next_page_number }}">下一页</a>
+                        <div class="arrowhead"><a href="?page={{ taskslist_received_not_finished.next_page_number }}">下一页</a></div>
                     {% endif %}
                 </span>
             </div>
         </div>
     </div>
     <div class="footer">
-        <h4>
-
-            Written by Group 5.<br>
-            Visit us at:<br>
-            上海市闵行区东川路800号<br>
-
-        </h4>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     </div>
 </body>
 

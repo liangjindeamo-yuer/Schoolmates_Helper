@@ -9,7 +9,7 @@
 
 <body>
     <div class="header">
-        <h1>SCHOOL Helper</h1>
+        <h1>Dark Forest</h1>
         <h3>个人中心</h3>
         <p>我接受的任务</p>
     </div>
@@ -25,10 +25,11 @@
 
     <div class="row">
         <div class="leftcolumn">
+
+            <img src="/../../static/image/details.png" alt="details button">
             <div>
                 <a class="back" href={% url 'task_received:all_task_received' %}>返回</a>
             </div>
-            <img src="/../../static/image/details.png" alt="details button">
         </div>
 
         <div class="rightcolumn">
@@ -45,7 +46,7 @@
             <div class="card">
                 <h2>发布者</h2>
                 <hr>
-                <p><a href={% url 'tasks_square:publisher_detail' task.publisher_id %}>{{ task.publisher.username }}</a>
+                <p><a style="text-decoration: none;" href={% url 'tasks_square:publisher_detail' task.publisher_id %}>{{ task.publisher.username }}</a>
                 </p>
             </div>
             <div class="card">
