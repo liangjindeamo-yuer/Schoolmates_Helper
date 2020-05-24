@@ -58,8 +58,10 @@
             {% endif %}
         </div>
 
-        <div class="card1">
-            <h2>任务状态<hr></h2>
+        <div class="card">
+            <h2>任务状态
+                <hr>
+            </h2>
             <!--swf 2020年4月25日 加了if语句-->
             {% if task.is_finished == False %}
             <form action="{% url 'task_received:reasons_revoke' task.id %}" method="post">
@@ -70,13 +72,22 @@
             <form action="{% url 'task_received:task_finished' task.id %}" method="post">
                 {% csrf_token %}
                 <input type="submit" class="button" value="完成任务" />
-                {% else %}
-                该任务已完成<br>
-                {% endif %}
             </form>
+            {% else %}
+            该任务已完成<br>
+            {% endif %}
+
         </div>
     </div>
+    <div class="footer">
+        <h4>
 
+            Written by Group 5.<br>
+            Visit us at:<br>
+            上海市闵行区东川路800号<br>
+
+        </h4>
+    </div>
 </body>
 
 </html>
