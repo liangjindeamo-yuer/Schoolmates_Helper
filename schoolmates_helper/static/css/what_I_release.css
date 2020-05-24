@@ -72,6 +72,25 @@ body {
     float: left;
     width: 20%;
     background: rgba(0,0,0,.2);
+    padding-top: 2%;
+}
+
+.row .leftcolumn .back
+{
+    margin-left: 25%;
+    background: #1e7db9;
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    text-shadow: 0 -1px 1px #222;
+    border-bottom: 1px solid #222;
+    cursor: pointer;
 }
 
 .leftcolumn h2 {
@@ -224,12 +243,6 @@ form input
 
 /* 底部 */
 
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-}
 
 .pagination
 {
@@ -241,4 +254,13 @@ form input
 {
     text-decoration: none;
     color: rgb(88, 84, 84);
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-image: url('/../../static/image/diduan2.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 75px;
 }
