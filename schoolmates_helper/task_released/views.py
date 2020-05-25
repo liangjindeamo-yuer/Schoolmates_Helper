@@ -127,6 +127,7 @@ def un_acp(request):
     if request.method == 'GET':
         id2 = request.session['mclass']
         id1 = request.session['user_id']
+        request.session['flag']=True
         user = User.objects.get(pk=id1)
         missions = Task.objects.filter(publisher_id=user)
         paginator = Paginator(missions,12,3)
@@ -184,7 +185,7 @@ def f_mission(request):
     mission.save()
     request.session['id'] = id1
 
-    return redirect("/task_released/comment/")
+    return redirect("/task_released/comment")
 
 
 @csrf_exempt
@@ -208,7 +209,7 @@ def d_mission(request):
     task.hunter = None
     task.save()
     request.session['id'] = id1
-    return redirect("/task_released/reason/")
+    return redirect("/task_released/reason")
 
 # 问题：应该就只能一个任务对应一个reason？大概要改一下。
 @csrf_exempt
@@ -229,11 +230,20 @@ def reason(request):
 
 
 def d_unacpm(request):
-    id1 = request.GET.get("id")
-    mission = Task.objects.get(pk=id1)
-    mission.delete()
+    b = request.session['flag']
+    b = bool(1-b)
+    request.session['flag'] = b
+    if not b:
+        id1 = request.GET.get("id")
+        request.session['id'] = id1
+        return render(request,'task_released/ensure.html')
+    elif b:
+        id1 = request.session['id']
+        mission = Task.objects.get(pk=id1)
+        mission.delete()
+        return redirect("/task_released/un_acp")
 
-    return redirect("/task_released/finish/")
+
 
 
 def m_detail(request):
@@ -283,7 +293,7 @@ def m_change(request):
 
         mission.contact_type_publisher = Contact.objects.get(pk=c)
         mission.save()
-        return redirect("/task_released/un_acp/")
+        return redirect("/task_released/un_acp")
 
 
 def download(request):
@@ -293,3 +303,4 @@ def download(request):
     response['Content-Type'] = 'application/octet-stream'
     response['Content-Disposition'] = 'attachment;filename ='+name.encode('utf-8').decode('ISO-8859-1')
     return response
+
