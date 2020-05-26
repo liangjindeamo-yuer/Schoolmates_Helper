@@ -58,7 +58,7 @@ body {
 /* 激活 */
 
 .topnav a.active {
-    background-color: white;
+    background-color: rgb(160, 160, 151);
     color: black;
 }
 
@@ -69,26 +69,36 @@ body {
 /* Left column */
 
 .leftcolumn {
+
     float: left;
-    width: 50%;
+    width: 40%;
 }
 
 /* 右侧栏 */
 .rightcolumn {
     float: left;
-    width: 50%;
-    padding-left: 20px;
+    width: 60%;
 }
-
+.link{
+    text-decoration: none;
+    color:black;
+}
+.link:hover{
+    color:black;
+}
 
 
 
 /* 文章卡片效果 */
 
 .card {
-    background-color: white;
-    padding: 20px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 5px;
+    float:left;
+    width:200px;
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.5);
     margin-top: 20px;
+    margin-right: 20px;
 }
 input[type=text] {
     outline: none;
@@ -120,6 +130,7 @@ input[type=date] {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+    height:40px;
 }
 input[type=submit] {
     background: #1e7db9;
@@ -137,7 +148,61 @@ input[type=submit] {
     position: relative;
     cursor: pointer;
 }
+.select {
+    display: inline-block;
+    width: 300px;
+    height:40px;
+    position: relative;
+    vertical-align: middle;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    color: #555;
+    border: 1px solid #aaa;
+    text-shadow: none;
+    border-radius: 4px;
+    transition: box-shadow 0.25s ease;
+    z-index: 2;
+}
 
+.select:hover {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+}
+
+.select:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #ccc;
+    top: 14px;
+    right: 10px;
+    cursor: pointer;
+    z-index: -2;
+}
+.select select {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select select:focus {
+    outline: none;
+}
+.summary {
+    width: 300px;
+    height: 150px;
+    resize: none;
+    font-size: 18px;
+    border: solid thin #AAAAAA;
+    border-radius: 5px;
+}
 /* 列后面清除浮动 */
 
 .row:after {
