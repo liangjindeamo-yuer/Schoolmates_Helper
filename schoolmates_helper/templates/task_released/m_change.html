@@ -22,54 +22,58 @@
 </div>
 <div class="row">
 
-    <div class="leftcolumn">
-        <div class="card">
-            <h4>任务名</h4>
+    <div class="change">
+
+        <div class="card1">
+            <h5>任务名</h5>
             <hr>
             <p>{{ mission.task_name}}</p>
-            <a href="/task_released/change_one/?mdl=1">修改</a>
+            <div style="text-align:center;"><a class="button" href="/task_released/change_one/?mdl=1">修改</a></div>
         </div>
-        <div class="card">
-            <h4>希望的联系方式</h4>
+        <div class="card2">
+            <h5>希望的联系方式</h5>
             <hr>
             <p>{{ mission.contact_type_publisher.typename }}</p>
-            <a href="/task_released/change_one/?mdl=2">修改</a>
+            <div style="text-align:center;"><a class="button" href="/task_released/change_one/?mdl=2">修改</a></div>
         </div>
-        <div class="card">
-            <h4>截止日期</h4>
+        <div class="card3">
+            <h5>截止日期</h5>
             <hr>
             <p>{{ mission.task_time }}</p>
-            <a href="/task_released/change_one/?mdl=3">修改</a>
+            <div style="text-align:center;"><a class="button" href="/task_released/change_one/?mdl=3">修改</a></div>
         </div>
-        <div class="card">
-            <h4>任务类型</h4>
+        <div class="card4">
+            <h5>任务类型</h5>
             <hr>
             <p>{{ type }}</p>
-            <a href="/task_released/change_one/?mdl=4">修改</a>
+            <div style="text-align:center;"><a class="button" href="/task_released/change_one/?mdl=4">修改</a></div>
         </div>
-        <div class="card">
+
+        <div class="card5">
+            <h5>酬金（元）</h5>
+            <hr>
+            <p>{{ mission.task_reward }}</p>
+            <div style="text-align:center;"><a class="button" href="/task_released/change_one/?mdl=6">修改</a></div>
+        </div>
+        <div class="card6">
+            <h5>附件下载</h5>
+            <hr>
+            <a href="http://127.0.0.1:8000/task_released/download?name={{mission.task_file}}">{{ mission.task_file }}</a>
+            <div style="text-align:center;"><a class="button" href="/task_released/change_one/?mdl=7">修改</a></div>
+        </div>
+
+        <div class="card7" style="background-color:rgba(0,0,0,0); box-shadow: 5px 5px 10px 5px rgba(0,0,0,0)">
+            <div style="text-align:center;"><a class="button" href="/task_released/change_one/?mdl=8">全部修改</a></div>
+        </div>
+        <div class="card8">
             <h4>任务描述</h4>
             <hr>
             <p>{{ mission.task_sketch }}</p>
-            <a href="/task_released/change_one/?mdl=5">修改</a>
+            <div style="text-align:center;"><a class="button" href="/task_released/change_one/?mdl=5">修改</a></div>
         </div>
-        <div class="card">
-            <h4>酬金（元）</h4>
-            <hr>
-            <p>{{ mission.task_reward }}</p>
-            <a href="/task_released/change_one/?mdl=6">修改</a>
-        </div>
-        <div class="card">
-            <h2>附件下载</h2>
-            <hr>
-            <a
-                    href="http://127.0.0.1:8000/task_released/download?name={{mission.task_file}}">{{ mission.task_file }}</a>
-            <a href="/task_released/change_one/?mdl=7">修改</a>
-        </div>
-        <div>
-            <a href="/task_released/change_one/?mdl=8">全部修改</a>
-        </div>
+
     </div>
 </div>
+
 </body>
 </html>

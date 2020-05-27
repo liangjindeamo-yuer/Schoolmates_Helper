@@ -63,22 +63,16 @@ body {
 }
 
 
-/* 创建两列 */
 
 
-/* Left column */
-
-.leftcolumn {
-
-    float: left;
-    width: 40%;
+.change{
+    float:left;
+    margin-left:50px;
+    position:relative;
+    height:650px;
 }
 
-/* 右侧栏 */
-.rightcolumn {
-    float: left;
-    width: 60%;
-}
+
 .link{
     text-decoration: none;
     color:black;
@@ -91,14 +85,62 @@ body {
 
 /* 文章卡片效果 */
 
-.card {
-    background-color: rgba(255,255,255,0.5);
-    padding: 5px;
+div[class^="card"]{
+    background-color: rgba(255,255,255,0.3);
+    padding: 10px;
     float:left;
-    width:200px;
     box-shadow: 5px 5px 10px 5px rgba(0,0,0,0.5);
     margin-top: 20px;
     margin-right: 20px;
+    position:absolute;
+}
+.card1{
+    width:160px;
+    height:180px;
+    top: 70px;
+    left: 50px;
+}
+.card2{
+    width:160px;
+    height:220px;
+    top: 30px;
+    left: 230px;
+}
+.card3{
+    width:200px;
+    height:170px;
+    top: 80px;
+    left: 410px;
+}
+.card4{
+    width:130px;
+    height:170px;
+    top: 270px;
+    left: 80px;
+}
+.card5{
+    width:160px;
+    height:200px;
+    top: 270px;
+    left: 230px;
+}
+.card6{
+    width:250px;
+    height:170px;
+    top: 270px;
+    left: 410px;
+}
+.card7{
+    width:110px;
+    height:40px;
+    top: 580px;
+    left: 520px;
+}
+.card8{
+    width:300px;
+    height:500px;
+    top: 30px;
+    left: 700px;
 }
 input[type=text] {
     outline: none;
@@ -133,7 +175,7 @@ input[type=date] {
     height:40px;
 }
 input[type=submit] {
-    background: #1e7db9;
+    background: rgba(111, 170, 185,0.5);
     padding: 5px 10px 6px;
     color: #fff;
     text-decoration: none;
@@ -203,6 +245,7 @@ input[type=submit] {
     border: solid thin #AAAAAA;
     border-radius: 5px;
 }
+
 /* 列后面清除浮动 */
 
 .row:after {
@@ -212,7 +255,25 @@ input[type=submit] {
 }
 /* 连接按钮 */
 .button {
-   background: #1e7db9;
+   background-color: rgba(91, 158, 185, 0.7);
+    padding: 5px 10px 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #999;
+    -webkit-box-shadow: 0 1px 3px #999;
+    text-shadow: 0 -1px 1px #222;
+    border-bottom: 1px solid #222;
+    position: absolute;
+    bottom:5px;
+    transform: translate(-50%,0);
+    cursor: pointer;
+}
+/* 连接按钮 */
+.buttonsp {
     padding: 5px 10px 6px;
     color: #fff;
     text-decoration: none;
@@ -228,11 +289,3 @@ input[type=submit] {
     cursor: pointer;
 }
 
-/* 底部 */
-
-.footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-}
